@@ -4,7 +4,6 @@ import {render} from "react-dom";
 export default class BalanceBlockElem extends React.Component {
     constructor(props) {
         super(props);
-
     }
 
     render(){

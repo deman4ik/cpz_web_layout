@@ -5,7 +5,7 @@ import * as d3 from "d3";
 
 import * as ReactD3 from "react-d3-components";
 
-import RobotsMiniTable from '../elements/robotsMiniTable.jsx';
+import RobotsMiniTable from '../../elements/robotsMiniTable.jsx';
 
 
 var AreaChart = ReactD3.AreaChart;
@@ -17,9 +17,7 @@ export default class RobotsElement extends React.Component {
 
     constructor(props) {
         super(props);
-
         this.data = this.props.data;
-
     }
 
     render() {
@@ -41,7 +39,6 @@ export default class RobotsElement extends React.Component {
                         <span>{this.props.exchange}</span>
                     </div>
                     <div className="col-2 align-self-center">
-
                         <span>{this.props.initial_capital} {this.props.coin_name}</span>
                         <span className={'old_coin_value'}>{this.props.initial_capital_old}</span>
                     </div>
@@ -53,7 +50,6 @@ export default class RobotsElement extends React.Component {
                         <div className=" d-flex justify-content-start flex-row align-items-center">
                             <div>
                                 <RobotsMiniTable data={this.data} color={this.props.color} color2={this.props.color2}/>
-
                             </div>
                             <div className={'table_robot_value'}>
                                 <span className={this.props.performance_class}>{this.props.performance_val}</span>

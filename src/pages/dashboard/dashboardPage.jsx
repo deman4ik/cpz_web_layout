@@ -1,20 +1,14 @@
 import React from 'react';
 import {Row, Col} from 'reactstrap';
 
-import BalanceBlock from '../tables/balanceBlock/balanceBlock.jsx';
-import ChartComponent from "../tables/totalPerformance/totalPerfomance.jsx"
+import BalanceBlock from '../../tables/balanceBlock/balanceBlock.jsx';
+import ChartComponent from "../../tables/totalPerformance/totalPerfomance.jsx"
 
 import RobotsBlock from './robots.jsx';
 import CounDropdowns from './counDropdowns.jsx';
 
 
 export default class SettingsPage extends React.Component {
-    constructor(props) {
-        super(props);
-
-    }
-
-
     render() {
         return (
             <div className="row dashboard_container">
@@ -96,7 +90,9 @@ export default class SettingsPage extends React.Component {
                 </div>
                 <div id={'robots_container'}>
 
-                  <RobotsBlock/>
+                  <RobotsBlock
+                    robots={this.props.robots}
+                  />
                 </div>
             </div>
 
