@@ -1,12 +1,47 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+
+import { render } from 'react-dom';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import App from './App';
+
+//меню
+import ExampleMenu from './menu/menu.jsx';
+
+//таблица
+
+// import ChartTP from './tables/totalPerformance/Chart.jsx';
+// import { getData } from "./tables/totalPerformance/utils"
+// import ChartComponent from "./tables/totalPerformance/totalPerfomance.jsx"
+// import { TypeChooser } from "react-stockcharts/lib/helper"
+
+
+//BalanceBlock
+import BalanceBlock from './tables/balanceBlock/balanceBlock.jsx';
+import BalanceBlockElem from './tables/balanceBlock/balanceBlockElem.jsx';
+
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import  DataBlock  from './dataBlock/dataBlock.jsx';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
+import  RobotsPage  from './robotsPage/robotsPage.jsx';
+
+import  SettingsPage  from './settingsPage/settingsPage.jsx';
+
+
+
+
+/* подключения */
+
+
+
+render(<ExampleMenu/>, document.getElementById('main-container'))
+
+
+
+
+
+
+
+
 serviceWorker.unregister();
