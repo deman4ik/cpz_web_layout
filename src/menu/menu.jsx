@@ -12,7 +12,7 @@ import RobotsPage from '../robotsPage/robotsPage.jsx';
 import SettingsPage from '../settingsPage/settingsPage.jsx';
 import {Chart, ChartCanvas} from "react-stockcharts";
 
-import { Robots } from '../demo_data/robots.jsx';
+import { Robots, Crypto } from '../demo_data/robots.jsx';
 
 
 export default class ExampleMenu extends React.Component {
@@ -25,9 +25,7 @@ export default class ExampleMenu extends React.Component {
         this.state = {
             activeTab: '1',
             robots: Robots,
-            crypto: [
-
-            ],
+            crypto: Crypto,
         };
 
         this.activeMenu = false;
@@ -72,7 +70,6 @@ export default class ExampleMenu extends React.Component {
     }
 
     render() {
-        console.log(this.state);
         return (
             <Row>
                 <div id="left-column" className={classnames({'close_menu': this.activeMenu}, this.colMenu)}>
@@ -141,21 +138,20 @@ export default class ExampleMenu extends React.Component {
                             />
                         </TabPane>
                         <TabPane tabId="2" id={'dataBlock'}>
-                            <DataBlock/>
+                            <DataBlock
+                                crypto={this.state.crypto}/>
                         </TabPane>
                         <TabPane tabId="3" id={'robotsPage'}>
-                            <RobotsPage/>
+                            <RobotsPage
+                                robots={this.state.robots}
+                            />
                         </TabPane>
                         <TabPane tabId="4" id={'settingsPage'}>
                             <SettingsPage/>
                         </TabPane>
                     </TabContent>
-
-
                 </div>
             </Row>
-
-
         );
     }
 }
