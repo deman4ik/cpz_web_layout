@@ -1,10 +1,12 @@
 import React from 'react';
-import {Row, Col} from 'reactstrap';
+import {Row, 
+    // Col
+} from 'reactstrap';
 
 import RobotsElement from './robotsElement.jsx';
 import * as d3 from "d3";
-import {scaleLinear} from 'd3-scale'
-import {interpolateLab} from 'd3-interpolate'
+// import {scaleLinear} from 'd3-scale'
+// import {interpolateLab} from 'd3-interpolate'
 
 export default class RobotsBlock extends React.Component {
     data;

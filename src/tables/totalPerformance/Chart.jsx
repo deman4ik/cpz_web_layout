@@ -5,16 +5,16 @@
     import {curveMonotoneX} from "d3-shape";
 
     import {ChartCanvas, Chart} from "react-stockcharts";
-    import {AreaSeries, LineSeries} from "react-stockcharts/lib/series";
+    import {AreaSeries} from "react-stockcharts/lib/series";
     import {XAxis, YAxis} from "react-stockcharts/lib/axes";
     import {fitWidth} from "react-stockcharts/lib/helper";
     import {createVerticalLinearGradient, hexToRGBA} from "react-stockcharts/lib/utils";
 
 
-    import {ema, sma, macd} from "react-stockcharts/lib/indicator";
+    import {ema} from "react-stockcharts/lib/indicator";
 
 
-    import {SingleValueTooltip, HoverTooltip, GroupTooltip, ToolTipText} from "react-stockcharts/lib/tooltip";
+    // import {SingleValueTooltip, HoverTooltip, GroupTooltip, ToolTipText} from "react-stockcharts/lib/tooltip";
 
     import {timeFormat} from "d3-time-format";
 
@@ -34,11 +34,7 @@
 
 
     class AreaChart extends React.Component {
-
-
         render() {
-
-
             const height = 750;
             const {data, type, width, ratio} = this.props;
 
@@ -51,22 +47,21 @@
             const yGrid = showGrid ? {innerTickSize: -1 * gridWidth, tickStrokeOpacity: 0.1,} : {};
             const xGrid = showGrid ? {innerTickSize: -1 * gridHeight, tickStrokeOpacity: 0.1} : {};
 
+            // const ema20 = ema()
+            //     .id(0)
+            //     .options({windowSize: 20})
+            //     .merge((d, c) => {
+            //         d.ema20 = c;
+            //     })
+            //     .accessor(d => d.ema20);
 
-            const ema20 = ema()
-                .id(0)
-                .options({windowSize: 20})
-                .merge((d, c) => {
-                    d.ema20 = c;
-                })
-                .accessor(d => d.ema20);
-
-            const ema50 = ema()
-                .id(2)
-                .options({windowSize: 50})
-                .merge((d, c) => {
-                    d.ema50 = c;
-                })
-                .accessor(d => d.ema50);
+            // const ema50 = ema()
+            //     .id(2)
+            //     .options({windowSize: 50})
+            //     .merge((d, c) => {
+            //         d.ema50 = c;
+            //     })
+            //     .accessor(d => d.ema50);
 
             const dateFormat = timeFormat("%Y-%m-%d");
             const numberFormat = format(".2f");

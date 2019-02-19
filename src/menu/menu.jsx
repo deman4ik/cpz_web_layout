@@ -1,5 +1,7 @@
 import React from 'react';
-import {TabContent, TabPane, Card, Button, CardTitle, CardText, Row, Col} from 'reactstrap';
+import {TabContent, TabPane, Row,
+    // Card, Button, CardTitle, CardText, Col
+} from 'reactstrap';
 import classnames from 'classnames';
 
 import Dashboard from '../pages/dashboard/dashboardPage.jsx';
@@ -7,7 +9,7 @@ import Dashboard from '../pages/dashboard/dashboardPage.jsx';
 import DataBlock from '../dataBlock/dataBlock.jsx';
 
 
-import RobotsPage from '../robotsPage/robotsPage.jsx';
+import RobotsPage from '../pages/robotsPage/robotsPage.jsx';
 
 import SettingsPage from '../settingsPage/settingsPage.jsx';
 import {Chart, ChartCanvas} from "react-stockcharts";

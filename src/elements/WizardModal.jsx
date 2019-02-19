@@ -1,5 +1,11 @@
 import React from 'react';
-import {Collapse, Button, Modal, ModalHeader, ModalBody, ModalFooter, CardBody, Card} from 'reactstrap';
+import {
+    // Collapse, Button, 
+    Modal, 
+    // ModalHeader, 
+    ModalBody, 
+    // ModalFooter, CardBody, Card
+} from 'reactstrap';
 import  SelectElement  from '../elements/selectElement.jsx';
 
 export default class robotsOpenedElement extends React.Component {

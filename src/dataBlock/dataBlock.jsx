@@ -1,11 +1,10 @@
 import React from 'react';
-import {render} from "react-dom";
 
-import {Collapse, Button, CardBody, Card} from 'reactstrap';
+// import {Collapse, Button, CardBody, Card} from 'reactstrap';
 
 
-import DataElement from "./dataElement.jsx";
-import DataElementTable from "./dataElementTable.jsx";
+//import DataElement from "./dataElement.jsx";
+//import DataElementTable from "./dataElementTable.jsx";
 import DataElementCollapse from "./dataElementCollapse.jsx";
 
 export default class dataBlock extends React.Component {

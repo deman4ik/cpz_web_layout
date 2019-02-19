@@ -1,11 +1,12 @@
 import React from 'react';
-import {Row, Col} from 'reactstrap';
+// import {Row, Col} from 'reactstrap';
 
-import { Collapse, Button, CardBody, Card } from 'reactstrap';
+import { Collapse, 
+    // Button, 
+    CardBody, Card } from 'reactstrap';
 
 import DataElement from "./dataElement.jsx";
 import DataElementTable from "./dataElementTable.jsx";
-
 
 
 export default class dataElementCollapse extends React.Component {

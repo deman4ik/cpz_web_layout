@@ -5,16 +5,10 @@ import ChartTP from "./Chart";
 
 export default class ChartComponent extends React.Component {
     addClass;
-    constructor(props) {
-        super(props);
-    }
     componentDidMount() {
         getData().then(data => {
             this.setState({data})
         })
-
-
-
     }
 
     render() {

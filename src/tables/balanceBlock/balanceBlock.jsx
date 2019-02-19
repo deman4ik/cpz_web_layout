@@ -1,6 +1,5 @@
 import React from 'react';
 import * as d3 from "d3";
-import {render} from "react-dom";
 import { PieChart} from 'react-d3-components';
 
 export default class BalanceBlock extends React.Component {

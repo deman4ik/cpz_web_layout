@@ -1,5 +1,5 @@
 import React from 'react';
-import {Row, Col} from 'reactstrap';
+// import {Row, Col} from 'reactstrap';
 
 import BalanceBlock from '../../tables/balanceBlock/balanceBlock.jsx';
 import ChartComponent from "../../tables/totalPerformance/totalPerfomance.jsx"

@@ -24,7 +24,7 @@ import * as serviceWorker from './serviceWorker';
 
 import  DataBlock  from './dataBlock/dataBlock.jsx';
 
-import  RobotsPage  from './robotsPage/robotsPage.jsx';
+import  RobotsPage  from './pages/robotsPage/robotsPage.jsx';
 
 import  SettingsPage  from './settingsPage/settingsPage.jsx';
 

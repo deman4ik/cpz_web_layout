@@ -1,14 +1,11 @@
 import React from 'react';
-import {Row, Col} from 'reactstrap';
+//import {Row, Col} from 'reactstrap';
 
 import EditExchange from './EditExchange.jsx';
 import DeleteExchange from './deleteAccount.jsx';
 
 
 export default class OtherAccount extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     getElementColor(elem){
         switch (elem) {
             case 'Verified':

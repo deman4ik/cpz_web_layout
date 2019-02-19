@@ -2,14 +2,14 @@ import React from 'react';
 import {TabContent, TabPane, Nav, NavItem, NavLink, Row, Col} from 'reactstrap';
 import classnames from 'classnames';
 
-import MoveingAverage from "../tables/MovingAverage/MovingAverage.jsx";
+import MoveingAverage from "../../tables/MovingAverage/MovingAverage.jsx";
 
 
-import TotalPerfomance from "../tables/totalPerformance/totalPerfomance.jsx"
-import RobotsInfoTabs from "./robotsInfoTabs";
+import TotalPerfomance from "../../tables/totalPerformance/totalPerfomance.jsx"
+// import RobotsInfoTabs from "./robotsInfoTabs";
 
 
-import WizardModal from "../elements/WizardModal.jsx";
+import WizardModal from "../../elements/WizardModal.jsx";
 export default class RobotsPageTableTabs extends React.Component {
     elem;
 

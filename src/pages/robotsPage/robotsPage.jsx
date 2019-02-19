@@ -1,8 +1,12 @@
 import React from 'react';
-import {TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col} from 'reactstrap';
-import classnames from 'classnames';
+import {
+    // TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, 
+    Row, 
+    // Col
+} from 'reactstrap';
+// import classnames from 'classnames';
 
-import RobotsPageElement from './robotsPageElement.jsx';
+// import RobotsPageElement from './robotsPageElement.jsx';
 import RobotsElementCollapse from './robotsElementCollapse.jsx';
 
 
@@ -10,7 +14,7 @@ import RobotsPageTableTabs from './robotsPageTableTabs.jsx';
 import RobotsInfoTabs from './robotsInfoTabs.jsx';
 import * as d3 from "d3";
 
-import TotalPerfomance from "../tables/totalPerformance/totalPerfomance.jsx"
+// import TotalPerfomance from "../../tables/totalPerformance/totalPerfomance.jsx"
 
 export default class RobotsPage extends React.Component {
     elem;

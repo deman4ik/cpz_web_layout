@@ -1,14 +1,15 @@
 import React from 'react';
-import {TabContent, TabPane, Nav, NavItem, NavLink, Row, Col} from 'reactstrap';
+import {TabContent, TabPane, Nav, NavItem, NavLink, 
+    // Row, Col
+} from 'reactstrap';
 import classnames from 'classnames';
 
-import MoveingAverage from "../tables/MovingAverage/MovingAverage.jsx";
+// import MoveingAverage from "../../tables/MovingAverage/MovingAverage.jsx";
 
 
-import TotalPerfomance from "../tables/totalPerformance/totalPerfomance.jsx"
+//  import TotalPerfomance from "../../tables/totalPerformance/totalPerfomance.jsx"
 
 export default class RobotsInfoTabs extends React.Component {
-
 
     constructor(props) {
         super(props);
@@ -18,15 +19,6 @@ export default class RobotsInfoTabs extends React.Component {
             activeTab: '1'
         };
     }
-
-    toggle(tab) {
-        if (this.state.activeTab !== tab) {
-            this.setState({
-                activeTab: tab
-            });
-        }
-    }
-
 
     toggle(tab) {
         if (this.state.activeTab !== tab) {

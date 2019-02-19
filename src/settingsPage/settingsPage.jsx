@@ -1,5 +1,5 @@
 import React from 'react';
-import {Row, Col} from 'reactstrap';
+// import {Row, Col} from 'reactstrap';
 
 import OtherAccount from './otherAccount.jsx';
 import AddAccount from './addAccount.jsx';
@@ -7,7 +7,6 @@ import ExtraSettingsElement from './extraSettingsElement.jsx';
 
 
 export default class SettingsPage extends React.Component {
-
     elemStatus;
 
     constructor(props) {
