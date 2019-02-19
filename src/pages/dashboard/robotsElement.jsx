@@ -54,9 +54,9 @@ export default class RobotsElement extends React.Component {
                                 <RobotsMiniTable data={this.data} color={this.props.color} color2={this.props.color2}/>
                             </div>
                             <div className={'table_robot_value'}>
-                                <span className={this.props.performance_class}>{this.props.performance_val}</span>
+                                <span className={this.props.performance_val.search(/\+/) > -1 ? 'green_info' : 'red_info'}>{this.props.performance_val}</span>
                                 <span
-                                    className={this.props.performance_class + ' old_coin_value'}>{this.props.performance_val_old}</span>
+                                    className={(this.props.performance_val_old.search(/\+/) > -1 ? 'green_info' : 'red_info') + ' old_coin_value'}>{this.props.performance_val_old}</span>
                             </div>
                         </div>
                     </div>

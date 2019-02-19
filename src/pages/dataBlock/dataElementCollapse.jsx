@@ -20,9 +20,7 @@ export default class dataElementCollapse extends React.Component {
         this.setState({ collapse: !this.state.collapse });
     }
     render() {
-        console.log(this.props);
         return (
-
             <div className={'data_line_main_container'}>
                 <DataElement onClickElem={this.toggle}  balance_name={this.props.balance_name} balance_dollar={this.props.balance_dollar} crypto_balance_icon={this.props.crypto_balance_icon}
                              change_proc={this.props.change_proc} change_val={this.props.change_val}

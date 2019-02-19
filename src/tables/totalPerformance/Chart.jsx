@@ -127,8 +127,8 @@
                         />
 
 
-                        <CurrentCoordinate yAccessor={d => d.close} fill="rgba(11,152,197,0.5)" r={'14'}/>
-                        <CurrentCoordinate yAccessor={d => d.close} fill="rgba(11,152,197,1)" r={'7'}/>
+                        <CurrentCoordinate yAccessor={d => d.close} fill="rgba(11,152,197,0.5)" r={14}/>
+                        <CurrentCoordinate yAccessor={d => d.close} fill="rgba(11,152,197,1)" r={7}/>
 
                         {/*<SingleValueTooltip*/}
                         {/*yAccessor={ d => d.date}*/}

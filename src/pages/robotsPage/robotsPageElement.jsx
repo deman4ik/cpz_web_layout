@@ -16,9 +16,7 @@ export default class robotsPageElement extends React.Component {
 
     constructor(props) {
         super(props);
-
         this.data = this.props.data;
-
 
         if (this.props.button_type === 'text') {
                 this.buttonText =
@@ -31,16 +29,12 @@ export default class robotsPageElement extends React.Component {
 
         }else {
             this.buttonText = <Row>
-
                 <div className="col-12 d-flex align-self-right justify-content-end button_container ">
-
-                    <input checked = {this.props.button_checkbox} type="checkbox" id="test1"/>
+                    <input defaultChecked={this.props.button_checkbox} type="checkbox" id="test1"/>
                     <label htmlFor="test1"> </label>
-
                 </div>
             </Row>
         }
-
     }
 
     render() {
@@ -72,17 +66,13 @@ export default class robotsPageElement extends React.Component {
                     <div className="col-3 align-self-center">
                         <div className="d-flex justify-content-start flex-row align-items-end">
                             <div>
-
                                 <RobotsMiniTable data={this.data} color={this.props.color} color2={this.props.color2} />
-
                             </div>
                             <div className="table_robot_value">
-                                <span className={this.props.performance_class}>{this.props.performance_val}</span>
+                                <span className={this.props.performance_val.search(/\+/) > -1 ? 'green_info' : 'red_info'}>{this.props.performance_val}</span>
                                 <span
-                                    className={this.props.performance_class + ' old_coin_value'}>{this.props.performance_val_old}</span>
+                                    className={(this.props.performance_val_old.search(/\+/) > -1 ? 'green_info' : 'red_info') + ' old_coin_value'}>{this.props.performance_val_old}</span>
                             </div>
-
-
                         </div>
                     </div>
                     <div className="col-1 align-self-center">

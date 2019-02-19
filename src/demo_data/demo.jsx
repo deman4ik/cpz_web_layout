@@ -92,8 +92,8 @@ export const Robots = [
             'old': '13.87365489'
         },
         'performance_val': {
-            'current': '+ 3,90%',
-            'old': '+ 3,90%'
+            'current': '- 3,90%',
+            'old': '+ 1,90%'
         },
         'performance_class': 'green_info',
         'started': '18/17/2019',

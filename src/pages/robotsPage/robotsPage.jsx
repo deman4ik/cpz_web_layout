@@ -37,9 +37,6 @@ export default class RobotsPage extends React.Component {
             .range(['#F56565']);
         this.toggleBlockTest = this.toggleBlockTest.bind(this);
         this.state = {elementStat: this.elem};
-        this.setState(state => ({
-            elementStat: this.elem
-        }));
     }
 
     toggleBlockTest(elem) {
@@ -115,12 +112,12 @@ export default class RobotsPage extends React.Component {
                                 robot_balance_old={robot.robot_balance.old}
                                 performance_val={robot.performance_val.current}
                                 performance_val_old={robot.performance_val.old}
-                                performance_class={robot.performance_class}
                                 started={robot.started} started_day={robot.started_day}
                                 button_type={robot.button_type}
                                 button_checkbox={robot.button_checkbox}
                                 data={robot.data}
-                                color={this.colorScale} color2={this.colorScale2}
+                                color={robot.performance_val.current.search(/\+/) > -1 ? this.colorScale: this.colorScaleRed} 
+                                color2={robot.performance_val.current.search(/\+/) > -1 ? this.colorScale2: this.colorScale2Red} 
                             />
                         ))}
                     </div>
