@@ -3,7 +3,7 @@ import React from 'react';
 
 import ChartTP from '../tables/totalPerformance/Chart.jsx';
 import {getData} from "../tables/totalPerformance/utils"*/
-import ChartComponent from "../tables/totalPerformance/totalPerfomance.jsx"
+import ChartComponent from "../../tables/totalPerformance/totalPerfomance.jsx"
 
 
 export default class DataElementTable extends React.Component {

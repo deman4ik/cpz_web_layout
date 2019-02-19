@@ -6,7 +6,7 @@ import {Row,
 // import * as d3 from "d3";
 
 // import * as ReactD3 from "react-d3-components";
-import RobotsMiniTable from '../../elements/robotsMiniTable.jsx';
+import RobotsMiniTable from '../../components/robotsMiniTable.jsx';
 
 // var AreaChart = ReactD3.AreaChart;
 

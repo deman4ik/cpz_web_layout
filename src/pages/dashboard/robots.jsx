@@ -27,24 +27,6 @@ export default class RobotsBlock extends React.Component {
         this.colorScale2Red = d3.scaleOrdinal()
             .domain([1, 2])
             .range(['#F56565']);
-
-        this.data = [
-            {
-                label: 'somethingA',
-                values: [
-                    {x: 0, y: 8},
-                    {x: 1.3, y: 5},
-                    {x: 3, y: 6},
-                    {x: 3.5, y: 6.5},
-                    {x: 4, y: 6},
-                    {x: 4.5, y: 6},
-                    {x: 5, y: 7},
-                    {x: 5.5, y: 8}]
-
-            }
-
-        ];
-        console.log(this.props);
     }
 
     render() {
@@ -95,7 +77,7 @@ export default class RobotsBlock extends React.Component {
                         performance_class={robot.performance_class}
                         started={robot.started} started_day={'24 Days Active'} 
                         button_val={robot.button_val} button_class={robot.button_class}
-                        data={this.data}
+                        data={robot.data}
                      />
                 ))}
             </div>)

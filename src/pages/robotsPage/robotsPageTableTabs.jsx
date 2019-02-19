@@ -9,7 +9,7 @@ import TotalPerfomance from "../../tables/totalPerformance/totalPerfomance.jsx"
 // import RobotsInfoTabs from "./robotsInfoTabs";
 
 
-import WizardModal from "../../elements/WizardModal.jsx";
+import WizardModal from "../../components/WizardModal.jsx";
 export default class RobotsPageTableTabs extends React.Component {
     elem;
 

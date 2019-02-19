@@ -6,15 +6,15 @@ import classnames from 'classnames';
 
 import Dashboard from '../pages/dashboard/dashboardPage.jsx';
 
-import DataBlock from '../dataBlock/dataBlock.jsx';
+import DataBlock from '../pages/dataBlock/dataBlock.jsx';
 
 
 import RobotsPage from '../pages/robotsPage/robotsPage.jsx';
 
-import SettingsPage from '../settingsPage/settingsPage.jsx';
+import SettingsPage from '../pages/settingsPage/settingsPage.jsx';
 // import {Chart, ChartCanvas} from "react-stockcharts";
 
-import { Robots, Crypto } from '../demo_data/robots.jsx';
+import { Robots, Crypto, Balance } from '../demo_data/demo.jsx';
 
 
 export default class ExampleMenu extends React.Component {
@@ -28,6 +28,7 @@ export default class ExampleMenu extends React.Component {
             activeTab: '1',
             robots: Robots,
             crypto: Crypto,
+            balance: Balance
         };
 
         this.activeMenu = false;
@@ -110,7 +111,6 @@ export default class ExampleMenu extends React.Component {
                             </div>
                         </div>
 
-
                         <div className="log_out_container">
                             <Row>
                                 <ul>
@@ -134,7 +134,7 @@ export default class ExampleMenu extends React.Component {
                             <Dashboard 
                                 tableValue={this.state.activeTab == 1}
                                 robots={this.state.robots}
-                                // crypto={this.state.crypto}
+                                balance={this.state.balance}
                             />
                         </TabPane>
                         <TabPane tabId="2" id={'dataBlock'}>

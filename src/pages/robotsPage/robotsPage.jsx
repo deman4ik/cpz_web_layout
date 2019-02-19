@@ -36,17 +36,6 @@ export default class RobotsPage extends React.Component {
             .domain([1, 2])
             .range(['#F56565']);
         this.toggleBlockTest = this.toggleBlockTest.bind(this);
-        this.data = [
-            {
-                label: 'somethingA',
-                values: [{x: 0, y: 2}, {x: 1.3, y: 5}, {x: 3, y: 6}, {x: 3.5, y: 6.5}, {x: 4, y: 6}, {
-                    x: 4.5,
-                    y: 6
-                }, {x: 5, y: 7}, {x: 5.5, y: 8}]
-
-            }
-
-        ];
         this.state = {elementStat: this.elem};
         this.setState(state => ({
             elementStat: this.elem
@@ -130,7 +119,7 @@ export default class RobotsPage extends React.Component {
                                 started={robot.started} started_day={robot.started_day}
                                 button_type={robot.button_type}
                                 button_checkbox={robot.button_checkbox}
-                                data={this.data}
+                                data={robot.data}
                                 color={this.colorScale} color2={this.colorScale2}
                             />
                         ))}

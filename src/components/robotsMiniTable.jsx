@@ -17,25 +17,19 @@ export default class RobotsMiniTable extends React.Component {
 
     constructor(props) {
         super(props);
-
         this.data = this.props.data;
 
     }
 
     render() {
         return (
-
             <div className={'Chart_container'}>
-
                 <AreaChart
                     data={this.data}
                     width={110}
                     height={50}
                     margin={{top: 0, bottom: 0, left: 0, right: 0}}
                     colorScale={this.props.color}>
-
-
-
                 </AreaChart>
                 <div className="LineChart_container">
                     <LineChart

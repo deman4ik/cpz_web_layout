@@ -6,7 +6,7 @@ import {
     ModalBody, 
     // ModalFooter, CardBody, Card
 } from 'reactstrap';
-import  SelectElement  from '../elements/selectElement.jsx';
+import  SelectElement  from '../components/selectElement.jsx';
 
 export default class robotsOpenedElement extends React.Component {
     constructor(props) {

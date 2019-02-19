@@ -9,11 +9,11 @@ export default class dataElement extends React.Component {
             <div onClick={this.props.onClickElem} className="col-12 balance_line_container">
                 <div className="row">
                     <div className={"col-1_5 data_page_content_icon " + this.props.crypto_balance_icon}>
-                        <span className={'crypto_balance_name crypto_balance_name_top crypto_balance_name'}>{this.props.balance_name}</span>
+                        <span className={'crypto_balance_name ' + (this.props.change_proc.search(/\+/) > -1 ? 'crypto_balance_name_top' : 'crypto_balance_name_bottom')}>{this.props.balance_name}</span>
                         <span>{this.props.balance_dollar}</span>
                     </div>
                     <div className="col-1">
-                        <span className={'green_info'}>{this.props.change_proc}</span>
+                        <span className={this.props.change_proc.search(/\+/) > -1 ? 'green_info' : 'red_info'}>{this.props.change_proc}</span>
                         <span>{this.props.change_val}</span>
                     </div>
                     <div className="col-2">

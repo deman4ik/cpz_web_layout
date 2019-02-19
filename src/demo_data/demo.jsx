@@ -23,7 +23,20 @@ export const Robots = [
         'button_val': 'Stop',
         'button_class': '',
         'button_type': '',
-        'button_checkbox': 'checked'
+        'button_checkbox': 'checked',
+        'data': [{
+            label: 'ETHBot1Data',
+            values: [
+                {x: 0, y: 8},
+                {x: 1.3, y: 6},
+                {x: 3, y: 6.5},
+                {x: 3.5, y: 5},
+                {x: 4, y: 6},
+                {x: 4.5, y: 7},
+                {x: 5, y: 7.5},
+                {x: 5.5, y: 8}
+            ]
+        }]
     },
     {   
         'id': 2,
@@ -49,7 +62,20 @@ export const Robots = [
         'button_val': 'Stop',
         'button_class': '',
         'button_type': '',
-        'button_checkbox': ''
+        'button_checkbox': '',
+        'data': [{
+            label: 'RIPPLEBot1Data',
+            values: [
+                {x: 0, y: 8},
+                {x: 1.3, y: 7},
+                {x: 3, y: 6},
+                {x: 3.5, y: 5},
+                {x: 4, y: 6},
+                {x: 4.5, y: 6},
+                {x: 5, y: 7},
+                {x: 5.5, y: 8}
+            ]
+        }]
     },
     {   
         'id': 3,
@@ -75,7 +101,20 @@ export const Robots = [
         'button_val': 'Resume',
         'button_class': 'button_resume',
         'button_type': '',
-        'button_checkbox': ''
+        'button_checkbox': '',
+        'data': [{
+            label: 'ETHBot2Data',
+            values: [
+                {x: 0, y: 8},
+                {x: 1.3, y: 5},
+                {x: 3, y: 6},
+                {x: 3.5, y: 6.5},
+                {x: 4, y: 6},
+                {x: 4.5, y: 6},
+                {x: 5, y: 7},
+                {x: 5.5, y: 8}
+            ]
+        }]
     },
     {   
         'id': 4,
@@ -101,7 +140,20 @@ export const Robots = [
         'button_val': 'Resume',
         'button_class': 'button_resume',
         'button_type': '',
-        'button_checkbox': 'checked'
+        'button_checkbox': 'checked',
+        'data': [{
+            label: 'BTCBot1Data',
+            values: [
+                {x: 0, y: 8},
+                {x: 1.3, y: 4},
+                {x: 3, y: 2},
+                {x: 3.5, y: 3.5},
+                {x: 4, y: 8},
+                {x: 4.5, y: 6.5},
+                {x: 5, y: 5},
+                {x: 5.5, y: 4}
+            ]
+        }]
     },
     {   
         'id': 5,
@@ -127,7 +179,20 @@ export const Robots = [
         'button_val': 'Run',
         'button_class': 'button_run',
         'button_type': '',
-        'button_checkbox': 'checked'
+        'button_checkbox': 'checked',
+        'data': [{
+            label: 'ETHBot3Data',
+            values: [
+                {x: 0, y: 8},
+                {x: 1.3, y: 5},
+                {x: 3, y: 6},
+                {x: 3.5, y: 5},
+                {x: 4, y: 6},
+                {x: 4.5, y: 8},
+                {x: 5, y: 7},
+                {x: 5.5, y: 5}
+            ]
+        }]
     }
 ];
 
@@ -146,19 +211,19 @@ export const Crypto = [
         },
         'market_cap': {
             'dollar': '$ 6,312.31',
-            'volume': '0.78365479 BTC',
+            'value': '0.78365479 BTC',
         },
         'volume_24h': {
             'dollar': '$ 6,312.31',
-            'volume': '0.78365479 BTC',
+            'value': '0.78365479 BTC',
         },
         'circulating_supply': {
             'dollar': '$ 6,312.31',
-            'volume': '0.78365479 BTC',
+            'value': '0.78365479 BTC',
         },
         'max_supply': {
             'dollar': '$ 6,312.31',
-            'volume': '0.78365479 BTC',
+            'value': '0.78365479 BTC',
         }
     },
     {
@@ -170,24 +235,24 @@ export const Crypto = [
             'current': '1.98362546 ETH'
         },
         'change': {
-            'proc': '+ 1,53%',
-            'val': '+ 40,75 $',
+            'proc': '- 1,53%',
+            'val': '- 40,75 $',
         },
         'market_cap': {
             'dollar': '$ 1,876.14',
-            'volume': '0.78365479 ETH',
+            'value': '0.78365479 ETH',
         },
         'volume_24h': {
             'dollar': '$ 1,876.14',
-            'volume': '0.78365479 ETH',
+            'value': '0.78365479 ETH',
         },
         'circulating_supply': {
             'dollar': '$ 1,876.14',
-            'volume': '0.78365479 ETH',
+            'value': '0.78365479 ETH',
         },
         'max_supply': {
             'dollar': '$ 1,876.14',
-            'volume': '0.78365479 ETH',
+            'value': '0.78365479 ETH',
         }
     },
     {
@@ -204,19 +269,19 @@ export const Crypto = [
         },
         'market_cap': {
             'dollar': '$ 48,15',
-            'volume': '3.87235789 XRP',
+            'value': '3.87235789 XRP',
         },
         'volume_24h': {
             'dollar': '$ 48,15',
-            'volume': '3.87235789 XRP',
+            'value': '3.87235789 XRP',
         },
         'circulating_supply': {
             'dollar': '$ 48,15',
-            'volume': '3.87235789 XRP',
+            'value': '3.87235789 XRP',
         },
         'max_supply': {
             'dollar': '$ 48,15',
-            'volume': '3.87235789 XRP',
+            'value': '3.87235789 XRP',
         }
     },
     {
@@ -233,19 +298,19 @@ export const Crypto = [
         },
         'market_cap': {
             'dollar': '$ 48,98',
-            'volume': '0.78365479 LTC',
+            'value': '0.78365479 LTC',
         },
         'volume_24h': {
             'dollar': '$ 48,98',
-            'volume': '0.78365479 LTC',
+            'value': '0.78365479 LTC',
         },
         'circulating_supply': {
             'dollar': '$ 48,98',
-            'volume': '0.78365479 LTC',
+            'value': '0.78365479 LTC',
         },
         'max_supply': {
             'dollar': '$ 48,98',
-            'volume': '0.78365479 LTC',
+            'value': '0.78365479 LTC',
         }
     },
     {
@@ -262,19 +327,19 @@ export const Crypto = [
         },
         'market_cap': {
             'dollar': '$ 467,18',
-            'volume': '0.78365479 DASH',
+            'value': '0.78365479 DASH',
         },
         'volume_24h': {
             'dollar': '$ 467,18',
-            'volume': '0.78365479 DASH',
+            'value': '0.78365479 DASH',
         },
         'circulating_supply': {
             'dollar': '$ 467,18',
-            'volume': '0.78365479 DASH',
+            'value': '0.78365479 DASH',
         },
         'max_supply': {
             'dollar': '$ 467,18',
-            'volume': '0.78365479 DASH',
+            'value': '0.78365479 DASH',
         }
     },
     {
@@ -291,19 +356,52 @@ export const Crypto = [
         },
         'market_cap': {
             'dollar': '$ 765,16',
-            'volume': '0.78365479 ETC',
+            'value': '0.78365479 ETC',
         },
         'volume_24h': {
             'dollar': '$ 765,16',
-            'volume': '0.78365479 ETC',
+            'value': '0.78365479 ETC',
         },
         'circulating_supply': {
             'dollar': '$ 765,16',
-            'volume': '0.78365479 ETC',
+            'value': '0.78365479 ETC',
         },
         'max_supply': {
             'dollar': '$ 765,16',
-            'volume': '0.78365479 ETC',
+            'value': '0.78365479 ETC',
         }
     }
 ];
+
+export const Balance = [
+    {
+        'name': 'Bitcoin',
+        'class': 'col-4 crypto_balance_icon crypto_balance_icon_bitcoin',
+        'dollar': '$ 6,422.11',
+        'grouth': {
+            'percent': '+ 12,23%',
+            'dollar': '+ 40,75 $'
+        },
+        'crypto': '1.23845521 BTC'
+    },
+    {
+        'name': 'Etherium',
+        'class': 'col-4 crypto_balance_icon crypto_balance_icon_etherium',
+        'dollar': '$ 421,21',
+        'grouth': {
+            'percent': '− 18,27%',
+            'dollar': '− 24,12 $'
+        },
+        'crypto': '134.28762974 ETH'
+    },
+    {
+        'name': 'Ripple',
+        'class': 'col-4 crypto_balance_icon crypto_balance_icon_RIPPLE',
+        'dollar': '$ 64,41',
+        'grouth': {
+            'percent': '+ 8,13%',
+            'dollar': '+ 13,89 $'
+        },
+        'crypto': '160.29867236 XRP'
+    },
+]
