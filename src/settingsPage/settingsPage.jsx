@@ -20,7 +20,7 @@ export default class SettingsPage extends React.Component {
 
     handleChange(e) {
         this.setState({value: e.target.value});
-        if (e.target.value != '') {
+        if (e.target.value !== '') {
             this.elemStatus = 'd-flex';
         }
     }

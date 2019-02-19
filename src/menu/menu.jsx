@@ -12,7 +12,7 @@ import DataBlock from '../dataBlock/dataBlock.jsx';
 import RobotsPage from '../pages/robotsPage/robotsPage.jsx';
 
 import SettingsPage from '../settingsPage/settingsPage.jsx';
-import {Chart, ChartCanvas} from "react-stockcharts";
+// import {Chart, ChartCanvas} from "react-stockcharts";
 
 import { Robots, Crypto } from '../demo_data/robots.jsx';
 
@@ -31,14 +31,13 @@ export default class ExampleMenu extends React.Component {
         };
 
         this.activeMenu = false;
-        this.colMenu = 'col-2'
-        this.colContent = 'col-10'
+        this.colMenu = 'col-2';
+        this.colContent = 'col-10';
 
         console.log(window.innerWidth);
         if (window.innerWidth < 767) {
-
-            this.colMenu = 'col-1'
-            this.colContent = 'col-11'
+            this.colMenu = 'col-1';
+            this.colContent = 'col-11';
             this.activeMenu = true;
         }
     }
@@ -57,16 +56,15 @@ export default class ExampleMenu extends React.Component {
             this.setState({
                 activeMenu: false
             });
-            this.colMenu = 'col-2'
-            this.colContent = 'col-10'
+            this.colMenu = 'col-2';
+            this.colContent = 'col-10';
         } else {
             this.activeMenu = true;
             this.setState({
                 activeMenu: true
             });
-
-            this.colMenu = 'col-1'
-            this.colContent = 'col-11'
+            this.colMenu = 'col-1';
+            this.colContent = 'col-11';
         }
 
     }

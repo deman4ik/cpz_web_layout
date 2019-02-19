@@ -17,18 +17,16 @@ import ExampleMenu from './menu/menu.jsx';
 
 
 //BalanceBlock
-import BalanceBlock from './tables/balanceBlock/balanceBlock.jsx';
-import BalanceBlockElem from './tables/balanceBlock/balanceBlockElem.jsx';
+// import BalanceBlock from './tables/balanceBlock/balanceBlock.jsx';
+// import BalanceBlockElem from './tables/balanceBlock/balanceBlockElem.jsx';
 
 import * as serviceWorker from './serviceWorker';
 
-import  DataBlock  from './dataBlock/dataBlock.jsx';
+// import  DataBlock  from './dataBlock/dataBlock.jsx';
 
-import  RobotsPage  from './pages/robotsPage/robotsPage.jsx';
+// import  RobotsPage  from './pages/robotsPage/robotsPage.jsx';
 
-import  SettingsPage  from './settingsPage/settingsPage.jsx';
-
-
+// import  SettingsPage  from './settingsPage/settingsPage.jsx';
 
 
 /* подключения */

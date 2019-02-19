@@ -1,5 +1,7 @@
 import React from 'react';
-import {Row, Col} from 'reactstrap';
+import {Row, 
+    // Col
+} from 'reactstrap';
 
 // import * as d3 from "d3";
 
@@ -18,7 +20,7 @@ export default class robotsPageElement extends React.Component {
         this.data = this.props.data;
 
 
-        if (this.props.button_type == 'text') {
+        if (this.props.button_type === 'text') {
                 this.buttonText =
                 <div>
                     <div className="row">

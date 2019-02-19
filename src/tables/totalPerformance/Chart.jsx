@@ -11,7 +11,7 @@
     import {createVerticalLinearGradient, hexToRGBA} from "react-stockcharts/lib/utils";
 
 
-    import {ema} from "react-stockcharts/lib/indicator";
+    // import {ema} from "react-stockcharts/lib/indicator";
 
 
     // import {SingleValueTooltip, HoverTooltip, GroupTooltip, ToolTipText} from "react-stockcharts/lib/tooltip";
@@ -63,45 +63,45 @@
             //     })
             //     .accessor(d => d.ema50);
 
-            const dateFormat = timeFormat("%Y-%m-%d");
-            const numberFormat = format(".2f");
+            // const dateFormat = timeFormat("%Y-%m-%d");
+            // const numberFormat = format(".2f");
 
 
-            function tooltipContent(ys) {
-                return ({currentItem, xAccessor}) => {
-                    return {
+            // function tooltipContent(ys) {
+            //     return ({currentItem, xAccessor}) => {
+            //         return {
 
-                        y: [
-                            {
-                                label: "open",
-                                value: currentItem.open && numberFormat(currentItem.open)
-                            },
-                            {
-                                label: "high",
-                                value: currentItem.high && numberFormat(currentItem.high)
-                            },
-                            {
-                                label: "low",
-                                value: currentItem.low && numberFormat(currentItem.low)
-                            },
-                            {
-                                label: "close",
-                                value: currentItem.close && numberFormat(currentItem.close)
-                            }
-                        ]
+            //             y: [
+            //                 {
+            //                     label: "open",
+            //                     value: currentItem.open && numberFormat(currentItem.open)
+            //                 },
+            //                 {
+            //                     label: "high",
+            //                     value: currentItem.high && numberFormat(currentItem.high)
+            //                 },
+            //                 {
+            //                     label: "low",
+            //                     value: currentItem.low && numberFormat(currentItem.low)
+            //                 },
+            //                 {
+            //                     label: "close",
+            //                     value: currentItem.close && numberFormat(currentItem.close)
+            //                 }
+            //             ]
 
-                            .concat(
-                                ys.map(each => ({
-                                    label: each.label,
-                                    value: each.value(currentItem),
-                                    stroke: each.stroke
-                                }))
-                            )
-                            .filter(line => line.value),
-                        x: dateFormat(xAccessor(currentItem))
-                    };
-                };
-            }
+            //                 .concat(
+            //                     ys.map(each => ({
+            //                         label: each.label,
+            //                         value: each.value(currentItem),
+            //                         stroke: each.stroke
+            //                     }))
+            //                 )
+            //                 .filter(line => line.value),
+            //             x: dateFormat(xAccessor(currentItem))
+            //         };
+            //     };
+            // }
 
 
             return (
