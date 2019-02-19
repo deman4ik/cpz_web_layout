@@ -224,7 +224,50 @@ export const Crypto = [
         'max_supply': {
             'dollar': '$ 6,312.31',
             'value': '0.78365479 BTC',
-        }
+        },
+        'news': [
+            {
+                'id': 1,
+                'image': '/image/Bitmap.png',
+                'title': 'CNN',
+                'date': '19 min ago',
+                'text': 'As Bitcoin\'s Slide Continues, Prices Look Towards $8K',
+                'content': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion. Slump Begone: What’s Next For Cryptocurrencies? Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December'
+            },
+            {
+                'id': 2,
+                'image': '/image/Bitmap1.png',
+                'title': 'CRYPTOSTUFF',
+                'date': 'Jan 17, 2018',
+                'text': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion',
+                'content': 'Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December. As Bitcoin\'s Slide Continues, Prices Look Towards $8K. Israel Releases Draft Plan for Taxing ICOs'
+            },
+            {
+                'id': 3,
+                'image': '/image/Bitmap2.png',
+                'title': 'CNN',
+                'date': '19 min ago',
+                'text': 'As Bitcoin\'s Slide Continues, Prices Look Towards $8K',
+                'content': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion. Slump Begone: What’s Next For Cryptocurrencies? Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December'
+            },
+            {
+                'id': 4,
+                'image': '/image/Bitmap3.png',
+                'title': 'CRYPTOSTUFF',
+                'date': 'Jan 15, 2018',
+                'text': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion',
+                'content': 'Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December. As Bitcoin\'s Slide Continues, Prices Look Towards $8K. Israel Releases Draft Plan for Taxing ICOs'
+            },
+            {
+                'id': 5,
+                'image': '/image/Bitmap4.png',
+                'title': 'CNN',
+                'date': 'Jan 12, 2018',
+                'text': 'As Bitcoin\'s Slide Continues, Prices Look Towards $8K',
+                'content': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion. Slump Begone: What’s Next For Cryptocurrencies? Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December'
+
+            }
+        ]
     },
     {
         'id': 2,
@@ -253,7 +296,50 @@ export const Crypto = [
         'max_supply': {
             'dollar': '$ 1,876.14',
             'value': '0.78365479 ETH',
-        }
+        },
+        'news': [
+            {
+                'id': 1,
+                'image': '/image/Bitmap.png',
+                'title': 'CNN',
+                'date': '19 min ago',
+                'text': 'As Bitcoin\'s Slide Continues, Prices Look Towards $8K',
+                'content': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion. Slump Begone: What’s Next For Cryptocurrencies? Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December'
+            },
+            {
+                'id': 2,
+                'image': '/image/Bitmap1.png',
+                'title': 'CRYPTOSTUFF',
+                'date': 'Jan 17, 2018',
+                'text': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion',
+                'content': 'Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December. As Bitcoin\'s Slide Continues, Prices Look Towards $8K. Israel Releases Draft Plan for Taxing ICOs'
+            },
+            {
+                'id': 3,
+                'image': '/image/Bitmap2.png',
+                'title': 'CNN',
+                'date': '19 min ago',
+                'text': 'As Bitcoin\'s Slide Continues, Prices Look Towards $8K',
+                'content': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion. Slump Begone: What’s Next For Cryptocurrencies? Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December'
+            },
+            {
+                'id': 4,
+                'image': '/image/Bitmap3.png',
+                'title': 'CRYPTOSTUFF',
+                'date': 'Jan 15, 2018',
+                'text': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion',
+                'content': 'Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December. As Bitcoin\'s Slide Continues, Prices Look Towards $8K. Israel Releases Draft Plan for Taxing ICOs'
+            },
+            {
+                'id': 5,
+                'image': '/image/Bitmap4.png',
+                'title': 'CNN',
+                'date': 'Jan 12, 2018',
+                'text': 'As Bitcoin\'s Slide Continues, Prices Look Towards $8K',
+                'content': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion. Slump Begone: What’s Next For Cryptocurrencies? Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December'
+
+            }
+        ]
     },
     {
         'id': 3,
@@ -282,7 +368,50 @@ export const Crypto = [
         'max_supply': {
             'dollar': '$ 48,15',
             'value': '3.87235789 XRP',
-        }
+        },
+        'news': [
+            {
+                'id': 1,
+                'image': '/image/Bitmap.png',
+                'title': 'CNN',
+                'date': '19 min ago',
+                'text': 'As Bitcoin\'s Slide Continues, Prices Look Towards $8K',
+                'content': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion. Slump Begone: What’s Next For Cryptocurrencies? Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December'
+            },
+            {
+                'id': 2,
+                'image': '/image/Bitmap1.png',
+                'title': 'CRYPTOSTUFF',
+                'date': 'Jan 17, 2018',
+                'text': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion',
+                'content': 'Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December. As Bitcoin\'s Slide Continues, Prices Look Towards $8K. Israel Releases Draft Plan for Taxing ICOs'
+            },
+            {
+                'id': 3,
+                'image': '/image/Bitmap2.png',
+                'title': 'CNN',
+                'date': '19 min ago',
+                'text': 'As Bitcoin\'s Slide Continues, Prices Look Towards $8K',
+                'content': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion. Slump Begone: What’s Next For Cryptocurrencies? Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December'
+            },
+            {
+                'id': 4,
+                'image': '/image/Bitmap3.png',
+                'title': 'CRYPTOSTUFF',
+                'date': 'Jan 15, 2018',
+                'text': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion',
+                'content': 'Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December. As Bitcoin\'s Slide Continues, Prices Look Towards $8K. Israel Releases Draft Plan for Taxing ICOs'
+            },
+            {
+                'id': 5,
+                'image': '/image/Bitmap4.png',
+                'title': 'CNN',
+                'date': 'Jan 12, 2018',
+                'text': 'As Bitcoin\'s Slide Continues, Prices Look Towards $8K',
+                'content': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion. Slump Begone: What’s Next For Cryptocurrencies? Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December'
+
+            }
+        ]
     },
     {
         'id': 4,
@@ -311,7 +440,50 @@ export const Crypto = [
         'max_supply': {
             'dollar': '$ 48,98',
             'value': '0.78365479 LTC',
-        }
+        },
+        'news': [
+            {
+                'id': 1,
+                'image': '/image/Bitmap.png',
+                'title': 'CNN',
+                'date': '19 min ago',
+                'text': 'As Bitcoin\'s Slide Continues, Prices Look Towards $8K',
+                'content': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion. Slump Begone: What’s Next For Cryptocurrencies? Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December'
+            },
+            {
+                'id': 2,
+                'image': '/image/Bitmap1.png',
+                'title': 'CRYPTOSTUFF',
+                'date': 'Jan 17, 2018',
+                'text': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion',
+                'content': 'Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December. As Bitcoin\'s Slide Continues, Prices Look Towards $8K. Israel Releases Draft Plan for Taxing ICOs'
+            },
+            {
+                'id': 3,
+                'image': '/image/Bitmap2.png',
+                'title': 'CNN',
+                'date': '19 min ago',
+                'text': 'As Bitcoin\'s Slide Continues, Prices Look Towards $8K',
+                'content': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion. Slump Begone: What’s Next For Cryptocurrencies? Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December'
+            },
+            {
+                'id': 4,
+                'image': '/image/Bitmap3.png',
+                'title': 'CRYPTOSTUFF',
+                'date': 'Jan 15, 2018',
+                'text': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion',
+                'content': 'Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December. As Bitcoin\'s Slide Continues, Prices Look Towards $8K. Israel Releases Draft Plan for Taxing ICOs'
+            },
+            {
+                'id': 5,
+                'image': '/image/Bitmap4.png',
+                'title': 'CNN',
+                'date': 'Jan 12, 2018',
+                'text': 'As Bitcoin\'s Slide Continues, Prices Look Towards $8K',
+                'content': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion. Slump Begone: What’s Next For Cryptocurrencies? Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December'
+
+            }
+        ]
     },
     {
         'id': 5,
@@ -340,7 +512,50 @@ export const Crypto = [
         'max_supply': {
             'dollar': '$ 467,18',
             'value': '0.78365479 DASH',
-        }
+        },
+        'news': [
+            {
+                'id': 1,
+                'image': '/image/Bitmap.png',
+                'title': 'CNN',
+                'date': '19 min ago',
+                'text': 'As Bitcoin\'s Slide Continues, Prices Look Towards $8K',
+                'content': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion. Slump Begone: What’s Next For Cryptocurrencies? Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December'
+            },
+            {
+                'id': 2,
+                'image': '/image/Bitmap1.png',
+                'title': 'CRYPTOSTUFF',
+                'date': 'Jan 17, 2018',
+                'text': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion',
+                'content': 'Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December. As Bitcoin\'s Slide Continues, Prices Look Towards $8K. Israel Releases Draft Plan for Taxing ICOs'
+            },
+            {
+                'id': 3,
+                'image': '/image/Bitmap2.png',
+                'title': 'CNN',
+                'date': '19 min ago',
+                'text': 'As Bitcoin\'s Slide Continues, Prices Look Towards $8K',
+                'content': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion. Slump Begone: What’s Next For Cryptocurrencies? Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December'
+            },
+            {
+                'id': 4,
+                'image': '/image/Bitmap3.png',
+                'title': 'CRYPTOSTUFF',
+                'date': 'Jan 15, 2018',
+                'text': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion',
+                'content': 'Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December. As Bitcoin\'s Slide Continues, Prices Look Towards $8K. Israel Releases Draft Plan for Taxing ICOs'
+            },
+            {
+                'id': 5,
+                'image': '/image/Bitmap4.png',
+                'title': 'CNN',
+                'date': 'Jan 12, 2018',
+                'text': 'As Bitcoin\'s Slide Continues, Prices Look Towards $8K',
+                'content': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion. Slump Begone: What’s Next For Cryptocurrencies? Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December'
+
+            }
+        ]
     },
     {
         'id': 6,
@@ -369,7 +584,50 @@ export const Crypto = [
         'max_supply': {
             'dollar': '$ 765,16',
             'value': '0.78365479 ETC',
-        }
+        },
+        'news': [
+            {
+                'id': 1,
+                'image': '/image/Bitmap.png',
+                'title': 'CNN',
+                'date': '19 min ago',
+                'text': 'As Bitcoin\'s Slide Continues, Prices Look Towards $8K',
+                'content': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion. Slump Begone: What’s Next For Cryptocurrencies? Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December'
+            },
+            {
+                'id': 2,
+                'image': '/image/Bitmap1.png',
+                'title': 'CRYPTOSTUFF',
+                'date': 'Jan 17, 2018',
+                'text': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion',
+                'content': 'Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December. As Bitcoin\'s Slide Continues, Prices Look Towards $8K. Israel Releases Draft Plan for Taxing ICOs'
+            },
+            {
+                'id': 3,
+                'image': '/image/Bitmap2.png',
+                'title': 'CNN',
+                'date': '19 min ago',
+                'text': 'As Bitcoin\'s Slide Continues, Prices Look Towards $8K',
+                'content': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion. Slump Begone: What’s Next For Cryptocurrencies? Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December'
+            },
+            {
+                'id': 4,
+                'image': '/image/Bitmap3.png',
+                'title': 'CRYPTOSTUFF',
+                'date': 'Jan 15, 2018',
+                'text': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion',
+                'content': 'Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December. As Bitcoin\'s Slide Continues, Prices Look Towards $8K. Israel Releases Draft Plan for Taxing ICOs'
+            },
+            {
+                'id': 5,
+                'image': '/image/Bitmap4.png',
+                'title': 'CNN',
+                'date': 'Jan 12, 2018',
+                'text': 'As Bitcoin\'s Slide Continues, Prices Look Towards $8K',
+                'content': 'Bitcoin Price Leads Crypto Comeback after Market Briefly Dips Below $250 Billion. Slump Begone: What’s Next For Cryptocurrencies? Bitcoin\'s Price Drops Below $10,000 for First Time Since Early December'
+
+            }
+        ]
     }
 ];
 

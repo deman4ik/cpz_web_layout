@@ -20,6 +20,7 @@ export default class dataElementCollapse extends React.Component {
         this.setState({ collapse: !this.state.collapse });
     }
     render() {
+        console.log(this.props);
         return (
 
             <div className={'data_line_main_container'}>
@@ -34,7 +35,11 @@ export default class dataElementCollapse extends React.Component {
                 <Collapse isOpen={this.state.collapse}>
                     <Card>
                         <CardBody>
-                            <DataElementTable  onClickElemStatus={this.state.collapse} />
+                            <DataElementTable  
+                                onClickElemStatus={this.state.collapse}
+                                name={this.props.balance_name}
+                                news={this.props.news}
+                            />
                         </CardBody>
                     </Card>
                 </Collapse>
