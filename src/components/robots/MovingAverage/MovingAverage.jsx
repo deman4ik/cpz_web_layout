@@ -4,7 +4,7 @@ import { getData } from "./utils";
 import { Row, Col } from 'reactstrap';
 
 import { TypeChooser } from "react-stockcharts/lib/helper";
-import ChartHeader from '../../components/chartHeader.jsx';
+import ChartHeader from '../../chartHeader.jsx';
 
 
 export default class MovingAverage extends React.Component {

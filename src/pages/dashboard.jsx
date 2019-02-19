@@ -1,12 +1,12 @@
 import React from 'react';
 // import {Row, Col} from 'reactstrap';
 
-import BalanceBlock from '../../tables/balanceBlock/balanceBlock.jsx';
-import ChartComponent from "../../tables/totalPerformance/totalPerfomance.jsx"
-import CryptoMiniRow from "../../components/cryptoMiniRow.jsx";
+import BalanceBlock from '../components/dashboard/balanceBlock.jsx';
+import ChartComponent from "../components/totalPerformance/totalPerfomance.jsx";
+import CryptoMiniRow from "../components/dashboard/cryptoMiniRow.jsx";
 
-import RobotsBlock from './robots.jsx';
-import CounDropdowns from './counDropdowns.jsx';
+import RobotsBlock from '../components/dashboard/robots.jsx';
+import CounDropdowns from '../components/dashboard/counDropdowns.jsx';
 
 
 export default class SettingsPage extends React.Component {

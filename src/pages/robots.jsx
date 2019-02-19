@@ -7,11 +7,11 @@ import {
 // import classnames from 'classnames';
 
 // import RobotsPageElement from './robotsPageElement.jsx';
-import RobotsElementCollapse from './robotsElementCollapse.jsx';
+import RobotsElementCollapse from '../components/robots/robotsElementCollapse.jsx';
 
 
-import RobotsPageTableTabs from './robotsPageTableTabs.jsx';
-import RobotsInfoTabs from './robotsInfoTabs.jsx';
+import RobotsPageTableTabs from '../components/robots/robotsPageTableTabs.jsx';
+import RobotsInfoTabs from '../components/robots/robotsInfoTabs.jsx';
 import * as d3 from "d3";
 
 // import TotalPerfomance from "../../tables/totalPerformance/totalPerfomance.jsx"

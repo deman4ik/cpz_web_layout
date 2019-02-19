@@ -1,18 +1,15 @@
 import React from 'react';
 // import {Row, Col} from 'reactstrap';
 
-import OtherAccount from './otherAccount.jsx';
-import AddAccount from './addAccount.jsx';
-import ExtraSettingsElement from './extraSettingsElement.jsx';
-
+import OtherAccount from '../components/settings/otherAccount.jsx';
+import AddAccount from '../components/settings/addAccount.jsx';
+import ExtraSettingsElement from '../components/settings/extraSettingsElement.jsx';
 
 export default class SettingsPage extends React.Component {
     elemStatus;
 
     constructor(props) {
         super(props);
-
-
         this.handleChange = this.handleChange.bind(this);
         this.state = {value: ''};
         this.elemStatus = 'hidden_element'
@@ -91,25 +88,16 @@ export default class SettingsPage extends React.Component {
                             <div className="settings_title account_icon ">Accounts</div>
                             <div className="col-12 other_account_card_container_main">
                                 <div className="row">
-
                                     <OtherAccount account_name={'My Bitfinex ETH 001'} exchange={'BITFINEX'}
                                                   main_keys_status={'Verified'} spared_status_keys={'None'}
                                                   currency={'BTC, ETC'}/>
-
-
                                     <OtherAccount account_name={'My Bitfinex ETH 002'} exchange={'OKEX'}
                                                   main_keys_status={'Wrong Keys'} spared_status_keys={'Verified'}
                                                   currency={'BTC'}/>
-
-
                                     <OtherAccount account_name={'My Bitfinex ETH 003'} exchange={'BITFINEX'}
                                                   main_keys_status={'Verified'} spared_status_keys={'Wrong Keys'}
                                                   currency={'ETC'}/>
-
-
                                     <AddAccount/>
-
-
                                 </div>
                             </div>
                         </div>
@@ -120,19 +108,15 @@ export default class SettingsPage extends React.Component {
                     <div className="col-12 content_container">
                         <div className="row">
                             <div className="settings_title settings_icon ">Extra</div>
-
-
                             <ExtraSettingsElement/>
                             <ExtraSettingsElement/>
                             <ExtraSettingsElement/>
-
                         </div>
                         <div className="extra_checkbox">
                             <label className="control control--checkbox">Balance Display
                                 <input type="checkbox"/>
                                 <div className="control__indicator"></div>
                                 <span>Generate and specify a spare key pair to avoid connection problems with the exchange.</span>
-
                             </label>
                         </div>
 
@@ -141,7 +125,6 @@ export default class SettingsPage extends React.Component {
                                 <input type="checkbox"/>
                                 <div className="control__indicator"></div>
                                 <span>Access to all notification features</span>
-
                             </label>
                         </div>
 
@@ -150,12 +133,9 @@ export default class SettingsPage extends React.Component {
                                 <input type="checkbox"/>
                                 <div className="control__indicator"></div>
                                 <span>Generate and specify a spare key pair.</span>
-
                             </label>
                         </div>
                     </div>
-
-
                 </div>
             </div>
 

@@ -155,10 +155,10 @@
                                 <stop offset="90%" stopColor="#13B1E6" stopOpacity={0.4}/>
                                 <stop offset="100%" stopColor="#13B1E6" stopOpacity={0.8}/>
                             </linearGradient>
+
                             <linearGradient id="tableLine">
                                 <stop offset="0%" stopColor="#9554E0" stopOpacity={1}/>
                                 <stop offset="10%" stopColor="#16B4EB" stopOpacity={1}/>
-
                                 <stop offset="90%" stopColor="#16B4EB" stopOpacity={1}/>
                                 <stop offset="100%" stopColor="#9554E0" stopOpacity={1}/>
 
@@ -167,14 +167,12 @@
                                 <stop offset="0%" stopColor="#65F5E5" stopOpacity={0}/>
                                 <stop offset="50%" stopColor="#65F5E5" stopOpacity={0.3}/>
                                 <stop offset="100%" stopColor="#65F5E5" stopOpacity={0.6}/>
-
                             </linearGradient>
 
                             <linearGradient id="MyGradientRed" x1="0" y1="100%" x2="0" y2="0%">
                                 <stop offset="0%" stopColor="#CD3E60" stopOpacity={0}/>
                                 <stop offset="50%" stopColor="#CD3E60" stopOpacity={0.3}/>
                                 <stop offset="100%" stopColor="#CD3E60" stopOpacity={0.6}/>
-
                             </linearGradient>
                         </defs>
 

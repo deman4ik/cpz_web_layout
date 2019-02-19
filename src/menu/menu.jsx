@@ -4,14 +4,13 @@ import {TabContent, TabPane, Row,
 } from 'reactstrap';
 import classnames from 'classnames';
 
-import Dashboard from '../pages/dashboard/dashboardPage.jsx';
+import Dashboard from '../pages/dashboard.jsx';
 
-import DataBlock from '../pages/dataBlock/dataBlock.jsx';
+import DataBlock from '../pages/crypto.jsx';
 
+import RobotsPage from '../pages/robots.jsx';
 
-import RobotsPage from '../pages/robotsPage/robotsPage.jsx';
-
-import SettingsPage from '../pages/settingsPage/settingsPage.jsx';
+import SettingsPage from '../pages/settings.jsx';
 // import {Chart, ChartCanvas} from "react-stockcharts";
 
 import { Robots, Crypto, Balance } from '../demo_data/demo.jsx';
