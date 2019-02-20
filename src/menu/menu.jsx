@@ -1,16 +1,13 @@
 import React from 'react';
-import {TabContent, TabPane, Card, Button, CardTitle, CardText, Row, Col} from 'reactstrap';
+import {TabContent, TabPane, Row} from 'reactstrap';
 import classnames from 'classnames';
 
-import Dashboard from '../dashboard/dashboardPage.jsx'
+import Dashboard from '../pages/dashboard.jsx';
+import DataBlock from '../pages/crypto.jsx';
+import RobotsPage from '../pages/robots.jsx';
+import SettingsPage from '../pages/settings.jsx';
 
-import DataBlock from '../dataBlock/dataBlock.jsx';
-
-
-import RobotsPage from '../robotsPage/robotsPage.jsx';
-
-import SettingsPage from '../settingsPage/settingsPage.jsx';
-import {Chart, ChartCanvas} from "react-stockcharts";
+import { Robots, Crypto, Balance, Account } from '../demo_data/demo.jsx';
 
 
 export default class ExampleMenu extends React.Component {
@@ -21,18 +18,21 @@ export default class ExampleMenu extends React.Component {
 
         this.toggle = this.toggle.bind(this);
         this.state = {
-            activeTab: '1'
+            activeTab: '1',
+            robots: Robots,
+            crypto: Crypto,
+            balance: Balance,
+            account: Account
         };
 
         this.activeMenu = false;
-        this.colMenu = 'col-2'
-        this.colContent = 'col-10'
+        this.colMenu = 'col-2';
+        this.colContent = 'col-10';
 
-        console.log(window.innerWidth)
+        console.log(window.innerWidth);
         if (window.innerWidth < 767) {
-
-            this.colMenu = 'col-1'
-            this.colContent = 'col-11'
+            this.colMenu = 'col-1';
+            this.colContent = 'col-11';
             this.activeMenu = true;
         }
     }
@@ -51,16 +51,15 @@ export default class ExampleMenu extends React.Component {
             this.setState({
                 activeMenu: false
             });
-            this.colMenu = 'col-2'
-            this.colContent = 'col-10'
+            this.colMenu = 'col-2';
+            this.colContent = 'col-10';
         } else {
             this.activeMenu = true;
             this.setState({
                 activeMenu: true
             });
-
-            this.colMenu = 'col-1'
-            this.colContent = 'col-11'
+            this.colMenu = 'col-1';
+            this.colContent = 'col-11';
         }
 
     }
@@ -106,7 +105,6 @@ export default class ExampleMenu extends React.Component {
                             </div>
                         </div>
 
-
                         <div className="log_out_container">
                             <Row>
                                 <ul>
@@ -127,29 +125,29 @@ export default class ExampleMenu extends React.Component {
                 <div id="content" className={classnames(this.colContent)}>
                     <TabContent activeTab={this.state.activeTab}>
                         <TabPane tabId="1">
-                            <Dashboard tableValue={this.state.activeTab == 1}/>
+                            <Dashboard 
+                                tableValue={this.state.activeTab == 1}
+                                robots={this.state.robots}
+                                balance={this.state.balance}
+                            />
                         </TabPane>
                         <TabPane tabId="2" id={'dataBlock'}>
-                            <DataBlock/>
-
+                            <DataBlock
+                                crypto={this.state.crypto}/>
                         </TabPane>
                         <TabPane tabId="3" id={'robotsPage'}>
-
-
-                            <RobotsPage/>
-
-
+                            <RobotsPage
+                                robots={this.state.robots}
+                            />
                         </TabPane>
                         <TabPane tabId="4" id={'settingsPage'}>
-                            <SettingsPage/>
+                            <SettingsPage
+                                account={this.state.account}
+                            />
                         </TabPane>
                     </TabContent>
-
-
                 </div>
             </Row>
-
-
         );
     }
 }
