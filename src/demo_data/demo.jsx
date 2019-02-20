@@ -689,6 +689,7 @@ export const Robots = [
 export const Crypto = [
     {   
         'id': 1,
+        'code': 'BTC',
         'balance': {
             'name': 'Bitcoin',
             'dollar': '$ 6,312.31',
@@ -761,6 +762,7 @@ export const Crypto = [
     },
     {
         'id': 2,
+        'code': 'ETH',
         'balance': {
             'name': 'Etherium',
             'dollar': '$ 1,422.11',
@@ -833,6 +835,7 @@ export const Crypto = [
     },
     {
         'id': 3,
+        'code': 'RPL',
         'balance': {
             'name': 'Ripple',
             'dollar': '$ 37.11',
@@ -905,6 +908,7 @@ export const Crypto = [
     },
     {
         'id': 4,
+        'code': 'LCT',
         'balance': {
             'name': 'Litecoin',
             'dollar': '$ 48.74',
@@ -977,6 +981,7 @@ export const Crypto = [
     },
     {
         'id': 5,
+        'code': 'DCH',
         'balance': {
             'name': 'Dash',
             'dollar': '$ 48.74',
@@ -1049,6 +1054,7 @@ export const Crypto = [
     },
     {
         'id': 6,
+        'code': 'ETC',
         'balance': {
             'name': 'Eth. Classic',
             'dollar': '$ 789,15',

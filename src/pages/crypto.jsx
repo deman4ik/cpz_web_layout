@@ -65,6 +65,7 @@ export default class dataBlock extends React.Component {
                             max_supply_dollar={coin.max_supply.dollar} 
                             max_supply_val={coin.max_supply.value}
                             news={coin.news}
+                            code={coin.code}
                         />
                     ))}
                 </div>

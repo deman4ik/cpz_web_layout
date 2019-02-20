@@ -30,7 +30,7 @@ export default class dataElementCollapse extends React.Component {
                         <CardBody>
                             <DataElementTable  
                                 onClickElemStatus={this.state.collapse}
-                                coin_name={this.props.balance_name}
+                                coin_name={this.props.code}
                                 news={this.props.news}
                             />
                         </CardBody>

@@ -21,7 +21,7 @@ export default class ChartComponent extends React.Component {
 
             return (
                 <Row>
-                    <Col sm="12">
+                    <Col>
                         <div className={'total_table_container '}>
                             <ChartHeader coin_name={this.props.coin_name}/>
                             <div className="percent_container d-flex justify-content-end align-items-center table_header col-12">

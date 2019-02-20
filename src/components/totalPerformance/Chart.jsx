@@ -12,8 +12,6 @@
 
 
     // import {ema} from "react-stockcharts/lib/indicator";
-
-
     // import {SingleValueTooltip, HoverTooltip, GroupTooltip, ToolTipText} from "react-stockcharts/lib/tooltip";
 
     import {timeFormat} from "d3-time-format";
@@ -35,6 +33,7 @@
         render() {
             const height = 750;
             const {data, type, width, ratio} = this.props;
+            console.log(this.props);
 
             const margin = {left: 70, right: 70, top: 20, bottom: 30};
 
@@ -200,7 +199,6 @@
                         {/*</ToolTipText>*/}
                     </Chart>
                 </ChartCanvas>
-
             );
         }
     }
