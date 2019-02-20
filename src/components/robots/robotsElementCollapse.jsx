@@ -10,13 +10,9 @@ export default class dataElementCollapse extends React.Component {
 
     constructor(props) {
         super(props);
-
         this.statatusElement = true
         // this.toggleBlockTest = this.toggleBlockTest.bind(this);
-
         this.state = {elementStat: true};
-
-
     }
 
     // toggleBlockTest() {
@@ -48,12 +44,9 @@ export default class dataElementCollapse extends React.Component {
                                    button_checkbox={this.props.button_checkbox}
                                    data={this.props.data}
                                    color={this.props.color}  color2={this.props.color2}
+                                   statistic={this.props.statistic}
                 />
-
-
             </div>
-
         )
-
     }
 }

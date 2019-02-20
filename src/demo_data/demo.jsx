@@ -36,7 +36,105 @@ export const Robots = [
                 {x: 5, y: 7.5},
                 {x: 5.5, y: 8}
             ]
-        }]
+        }],
+        'statistic': [
+            {
+                'id': 1,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'profit'
+            },
+            {
+                'id': 2,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 3,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'profit'
+            },
+            {
+                'id': 4,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 5,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'profit'
+            },
+            {
+                'id': 6,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 7,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'profit'
+            },
+            {
+                'id': 8,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 8,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'winner'
+            },
+            {
+                'id': 9,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'winner'
+            },
+            {
+                'id': 10,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'winner'
+            },
+            {
+                'id': 11,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'winner'
+            },
+            {
+                'id': 12,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'lost'
+            },
+            {
+                'id': 13,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'lost'
+            },
+            {
+                'id': 14,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'lost'
+            },
+            {   
+                'id': 15,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'lost'
+            },
+        ]
     },
     {   
         'id': 2,
@@ -75,7 +173,105 @@ export const Robots = [
                 {x: 5, y: 7},
                 {x: 5.5, y: 8}
             ]
-        }]
+        }],
+        'statistic': [
+            {
+                'id': 1,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'profit'
+            },
+            {
+                'id': 2,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 3,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'profit'
+            },
+            {
+                'id': 4,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 5,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'profit'
+            },
+            {
+                'id': 6,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 7,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'profit'
+            },
+            {
+                'id': 8,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 8,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'winner'
+            },
+            {
+                'id': 9,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'winner'
+            },
+            {
+                'id': 10,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'winner'
+            },
+            {
+                'id': 11,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'winner'
+            },
+            {
+                'id': 12,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'lost'
+            },
+            {
+                'id': 13,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'lost'
+            },
+            {
+                'id': 14,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'lost'
+            },
+            {   
+                'id': 15,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'lost'
+            },
+        ]
     },
     {   
         'id': 3,
@@ -114,7 +310,105 @@ export const Robots = [
                 {x: 5, y: 7},
                 {x: 5.5, y: 8}
             ]
-        }]
+        }],
+        'statistic': [
+            {
+                'id': 1,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'profit'
+            },
+            {
+                'id': 2,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 3,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'profit'
+            },
+            {
+                'id': 4,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 5,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'profit'
+            },
+            {
+                'id': 6,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 7,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'profit'
+            },
+            {
+                'id': 8,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 8,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'winner'
+            },
+            {
+                'id': 9,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'winner'
+            },
+            {
+                'id': 10,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'winner'
+            },
+            {
+                'id': 11,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'winner'
+            },
+            {
+                'id': 12,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'lost'
+            },
+            {
+                'id': 13,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'lost'
+            },
+            {
+                'id': 14,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'lost'
+            },
+            {   
+                'id': 15,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'lost'
+            },
+        ]
     },
     {   
         'id': 4,
@@ -153,7 +447,105 @@ export const Robots = [
                 {x: 5, y: 5},
                 {x: 5.5, y: 4}
             ]
-        }]
+        }],
+        'statistic': [
+            {
+                'id': 1,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'profit'
+            },
+            {
+                'id': 2,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 3,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'profit'
+            },
+            {
+                'id': 4,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 5,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'profit'
+            },
+            {
+                'id': 6,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 7,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'profit'
+            },
+            {
+                'id': 8,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 8,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'winner'
+            },
+            {
+                'id': 9,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'winner'
+            },
+            {
+                'id': 10,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'winner'
+            },
+            {
+                'id': 11,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'winner'
+            },
+            {
+                'id': 12,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'lost'
+            },
+            {
+                'id': 13,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'lost'
+            },
+            {
+                'id': 14,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'lost'
+            },
+            {   
+                'id': 15,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'lost'
+            },
+        ]
     },
     {   
         'id': 5,
@@ -192,7 +584,105 @@ export const Robots = [
                 {x: 5, y: 7},
                 {x: 5.5, y: 5}
             ]
-        }]
+        }],
+        'statistic': [
+            {
+                'id': 1,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'profit'
+            },
+            {
+                'id': 2,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 3,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'profit'
+            },
+            {
+                'id': 4,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 5,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'profit'
+            },
+            {
+                'id': 6,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 7,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'profit'
+            },
+            {
+                'id': 8,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'profit'
+            },
+            {
+                'id': 8,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'winner'
+            },
+            {
+                'id': 9,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'winner'
+            },
+            {
+                'id': 10,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'winner'
+            },
+            {
+                'id': 11,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'winner'
+            },
+            {
+                'id': 12,
+                'name': 'Average Bars Held',
+                'trades': { 'all': 10, 'long': 10, 'short': 10, },
+                'state': 'lost'
+            },
+            {
+                'id': 13,
+                'name': 'Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'lost'
+            },
+            {
+                'id': 14,
+                'name': 'Number of Trades',
+                'trades': { 'all': 63, 'long': 37, 'short': 26, },
+                'state': 'lost'
+            },
+            {   
+                'id': 15,
+                'name': 'Average Net Profit',
+                'trades': { 'all': 295.09, 'long': 229.54, 'short': 388.38, },
+                'state': 'lost'
+            },
+        ]
     }
 ];
 
@@ -662,4 +1152,26 @@ export const Balance = [
         },
         'crypto': '160.29867236 XRP'
     },
-]
+];
+
+export const Account = {
+    'balances': [
+        {'name': 'BTC', 'value': '2.23845521 BTC'},
+        {'name': 'USD', 'value': '$ 6,537.13'},
+        {'name': 'EUR', 'value': '€ 6,537.13'}
+    ],
+    'accounts': [
+        {'name': 'My Bitfinex ETH 001', 'exchange': 'BITFINEX',
+         'main_keys_st': 'Verified', 'spared_keys_st': 'None',
+         'currency': 'BTC, ETH'
+        },
+        {'name': 'My Bitfinex ETH 002', 'exchange': 'OKEX',
+         'main_keys_st': 'Wrong Keys', 'spared_keys_st': 'Verified',
+         'currency': 'BTC'
+        },
+        {'name': 'My Bitfinex ETH 003', 'exchange': 'BITFINEX',
+         'main_keys_st': 'Verified', 'spared_keys_st': 'Wrong Keys',
+         'currency': 'ETH'
+        },
+    ]
+}

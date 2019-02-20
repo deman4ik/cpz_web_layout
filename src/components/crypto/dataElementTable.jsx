@@ -12,7 +12,9 @@ export default class DataElementTable extends React.Component {
         return (
             <div>
                 <div>
-                    <ChartComponent onClickElemStatus={this.props.onClickElemStatus}/>
+                    <ChartComponent onClickElemStatus={this.props.onClickElemStatus}
+                        coin_name={this.props.coin_name}
+                    />
                 </div>
                 <div className={'news_container'}>
                     <div className="page_title">

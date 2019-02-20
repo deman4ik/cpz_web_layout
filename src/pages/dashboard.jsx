@@ -43,7 +43,9 @@ export default class SettingsPage extends React.Component {
                     <div className="col-12 total_performance_title total_performance_icon">
                         <span>Total performance</span></div>
                     <div id="total_performance">
-                        <ChartComponent onClickElemStatus = {this.props.tableValue}/>
+                        <ChartComponent onClickElemStatus = {this.props.tableValue}
+                            coin_name={'BTC'}
+                        />
                     </div>
                 </div>
                 <div id={'robots_container'}>

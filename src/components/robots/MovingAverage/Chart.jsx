@@ -174,7 +174,7 @@ class HeikinAshi extends React.Component {
                         {/*orient="left"*/}
                         {/*displayFormat={format(".4s")} />*/}
 
-                    <BarSeries yAccessor={d => d.volume} fill={d => d.close > d.open ? "#42547A" : "#42547A"}    opacity="0.7" />
+                    <BarSeries yAccessor={d => d.volume} fill={d => d.close > d.open ? "#42547A" : "#42547A"} opacity={0.7} />
                     {/*<AreaSeries yAccessor={smaVolume50.accessor()} stroke={smaVolume50.stroke()} fill={smaVolume50.fill()}/>*/}
 
                     {/*<CurrentCoordinate yAccessor={smaVolume50.accessor()} fill={smaVolume50.stroke()} />*/}

@@ -94,9 +94,8 @@ export default class RobotsPage extends React.Component {
                                     Performance
                                 </div>
                                 <div className="col-1 align-self-center text-right">
-                                    <div className="row  justify-content-end">
+                                    <div className="row justify-content-end">
                                         Status
-
                                     </div>
                                 </div>
                             </Row>
@@ -118,6 +117,7 @@ export default class RobotsPage extends React.Component {
                                 data={robot.data}
                                 color={robot.performance_val.current.search(/\+/) > -1 ? this.colorScale: this.colorScaleRed} 
                                 color2={robot.performance_val.current.search(/\+/) > -1 ? this.colorScale2: this.colorScale2Red} 
+                                statistic={robot.statistic}
                             />
                         ))}
                     </div>
@@ -128,7 +128,7 @@ export default class RobotsPage extends React.Component {
             return (
                 <div className={'detail_robot'}>
                     <RobotsPageTableTabs toggleBlockTest={this.toggleBlockTest} elem={this.state.elementStat}/>
-                    <RobotsInfoTabs/>
+                    <RobotsInfoTabs elem={this.state.elementStat}/>
                 </div>
             )
         }

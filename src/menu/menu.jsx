@@ -13,7 +13,7 @@ import RobotsPage from '../pages/robots.jsx';
 import SettingsPage from '../pages/settings.jsx';
 // import {Chart, ChartCanvas} from "react-stockcharts";
 
-import { Robots, Crypto, Balance } from '../demo_data/demo.jsx';
+import { Robots, Crypto, Balance, Account } from '../demo_data/demo.jsx';
 
 
 export default class ExampleMenu extends React.Component {
@@ -27,7 +27,8 @@ export default class ExampleMenu extends React.Component {
             activeTab: '1',
             robots: Robots,
             crypto: Crypto,
-            balance: Balance
+            balance: Balance,
+            account: Account
         };
 
         this.activeMenu = false;
@@ -146,7 +147,9 @@ export default class ExampleMenu extends React.Component {
                             />
                         </TabPane>
                         <TabPane tabId="4" id={'settingsPage'}>
-                            <SettingsPage/>
+                            <SettingsPage
+                                account={this.state.account}
+                            />
                         </TabPane>
                     </TabContent>
                 </div>

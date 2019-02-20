@@ -103,7 +103,6 @@ export default class RobotsPageTableTabs extends React.Component {
                                     />
                                 </TabPane>
                                 <TabPane tabId="3">
-
                                     <ChartComponent onClickElemStatus={this.state.activeTab==3}
                                                     coin_name={this.elementStat.elementStat.coin_name}
                                     />
