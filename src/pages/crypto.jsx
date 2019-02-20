@@ -69,9 +69,6 @@ export default class dataBlock extends React.Component {
                     ))}
                 </div>
             </div>
-
-
         )
     }
-
 }

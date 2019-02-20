@@ -31,4 +31,3 @@ export default class MovingAverage extends React.Component {
         )
     }
 }
-

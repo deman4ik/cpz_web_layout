@@ -36,7 +36,6 @@ export default class RobotsMiniTable extends React.Component {
                     />
                 </div>
             </div>
-
         )
     }
 }

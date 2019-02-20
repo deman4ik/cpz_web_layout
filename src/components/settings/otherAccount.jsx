@@ -43,13 +43,10 @@ export default class OtherAccount extends React.Component {
                             <span className={'account_info_value'}>{this.props.currency}</span>
                         </div>
                     </div>
-
                     <EditExchange/>
                     <DeleteExchange/>
-
                 </div>
             </div>
         )
     }
-
 }

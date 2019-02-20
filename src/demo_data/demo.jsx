@@ -1174,4 +1174,4 @@ export const Account = {
          'currency': 'ETH'
         },
     ]
-}
+};

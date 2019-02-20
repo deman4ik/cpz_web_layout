@@ -113,9 +113,6 @@ export default class addAccount extends React.Component {
 
                 </Modal>
             </div>
-
-
         )
     }
-
 }

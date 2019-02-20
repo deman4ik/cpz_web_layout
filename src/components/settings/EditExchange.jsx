@@ -78,7 +78,6 @@ class EditExchange extends React.Component {
                             <input type="submit" value={'Save changes'}/>
                         </div>
                     </ModalBody>
-
                 </Modal>
             </div>
         );

@@ -25,13 +25,11 @@
         MouseCoordinateY,
     } from "react-stockcharts/lib/coordinates";
 
-
     const canvasGradient = createVerticalLinearGradient([
         {stop: 0, color: hexToRGBA("#13B1E6", 0)},
         {stop: 0.9, color: hexToRGBA("#13B1E6", 0.4)},
         {stop: 1, color: hexToRGBA("#13B1E6", 0.8)}
     ]);
-
 
     class AreaChart extends React.Component {
         render() {
