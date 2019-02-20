@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ChartComponent from "../totalPerformance/totalPerfomance.jsx"
+import ChartComponent from "../totalPerformance/totalPerfomance.jsx";
 import NewsLine from '../../components/newsLine.jsx';
 
 

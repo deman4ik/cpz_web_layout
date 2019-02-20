@@ -11,7 +11,7 @@ export default class robotsPageElement extends React.Component {
 
         this.toggleSelect = this.toggleSelect.bind(this);
         this.changeSelectValue = this.changeSelectValue.bind(this);
-        this.selectClass = 'select_element '
+        this.selectClass = 'select_element';
     }
 
 
@@ -20,9 +20,9 @@ export default class robotsPageElement extends React.Component {
             openSelectElem: !this.state.openSelectElem
         }));
         if(this.state.openSelectElem){
-            this.selectClass  = 'select_element '
+            this.selectClass  = 'select_element';
         }else {
-            this.selectClass  = 'select_element is-open'
+            this.selectClass  = 'select_element is-open';
         }
     }
     changeSelectValue(element){
