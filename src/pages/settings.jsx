@@ -1,20 +1,18 @@
 import React from "react";
-// import {Row, Col} from 'reactstrap';
 
 import OtherAccount from "../components/settings/otherAccount.jsx";
 import AddAccount from "../components/settings/addAccount.jsx";
 import ExtraSettingsElement from "../components/settings/extraSettingsElement.jsx";
 
+
 export default class SettingsPage extends React.Component {
   elemStatus;
-
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
     this.state = { value: "" };
     this.elemStatus = "hidden_element";
   }
-
   handleChange(e) {
     this.setState({ value: e.target.value });
     if (e.target.value !== "") {
@@ -73,7 +71,6 @@ export default class SettingsPage extends React.Component {
                     <span className={"profile_balance_value"}>{balance.value}</span>
                 </div>
           ))}
-
           <a href="#"> Deposit</a>
           <p>
             We assure you that your payment can be securely made in accordance

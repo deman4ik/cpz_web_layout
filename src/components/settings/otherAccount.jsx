@@ -1,5 +1,4 @@
 import React from 'react';
-//import {Row, Col} from 'reactstrap';
 
 import EditExchange from './EditExchange.jsx';
 import DeleteExchange from './deleteAccount.jsx';
@@ -47,7 +46,6 @@ export default class OtherAccount extends React.Component {
 
                     <EditExchange/>
                     <DeleteExchange/>
-                    {/*<a href="" className={'trash_icon account_trash_icon'}></a>*/}
 
                 </div>
             </div>

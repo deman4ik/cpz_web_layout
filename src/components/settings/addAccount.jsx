@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-    // Button, ModalHeader, ModalFooter,
-    Modal, ModalBody} from 'reactstrap';
+import {Modal, ModalBody} from 'reactstrap';
 import SelectElement from "../../components/selectElement";
 
 

@@ -1,28 +1,17 @@
 import React from 'react';
-import {
-    // TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, 
-    Row, 
-    // Col
-} from 'reactstrap';
-// import classnames from 'classnames';
-
-// import RobotsPageElement from './robotsPageElement.jsx';
-import RobotsElementCollapse from '../components/robots/robotsElementCollapse.jsx';
-
-
-import RobotsPageTableTabs from '../components/robots/robotsPageTableTabs.jsx';
-import RobotsInfoTabs from '../components/robots/robotsInfoTabs.jsx';
+import { Row } from 'reactstrap';
 import * as d3 from "d3";
 
-// import TotalPerfomance from "../../tables/totalPerformance/totalPerfomance.jsx"
+import RobotsElementCollapse from '../components/robots/robotsElementCollapse.jsx';
+import RobotsPageTableTabs from '../components/robots/robotsPageTableTabs.jsx';
+import RobotsInfoTabs from '../components/robots/robotsInfoTabs.jsx';
+
 
 export default class RobotsPage extends React.Component {
     elem;
 
-
     constructor(props) {
         super(props);
-
         this.colorScale = d3.scaleOrdinal()
             .domain([1, 2])
             .range(['url(#MyGradientGreenNew)']);
@@ -38,7 +27,6 @@ export default class RobotsPage extends React.Component {
         this.toggleBlockTest = this.toggleBlockTest.bind(this);
         this.state = {elementStat: this.elem};
     }
-
     toggleBlockTest(elem) {
         this.setState(state => ({
             elementStat: elem
@@ -60,7 +48,6 @@ export default class RobotsPage extends React.Component {
                                     <stop offset="50%" stopColor="#65F5E5" stopOpacity={0.3}/>
                                     <stop offset="100%" stopColor="#65F5E5" stopOpacity={0.6}/>
                                 </linearGradient>
-
                                 <linearGradient id="MyGradientRedNew" x1="0" y1="100%" x2="0" y2="0%">
                                     <stop offset="0%" stopColor="#CD3E60" stopOpacity={0}/>
                                     <stop offset="50%" stopColor="#CD3E60" stopOpacity={0.3}/>

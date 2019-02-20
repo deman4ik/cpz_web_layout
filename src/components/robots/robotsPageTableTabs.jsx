@@ -4,7 +4,6 @@ import classnames from 'classnames';
 
 import MovingAverage from "./MovingAverage/MovingAverage.jsx";
 import ChartComponent from "../totalPerformance/totalPerfomance.jsx";
-// import RobotsInfoTabs from "./robotsInfoTabs";
 
 import WizardModal from "../WizardModal.jsx";
 
@@ -108,7 +107,6 @@ export default class RobotsPageTableTabs extends React.Component {
                                     />
                                 </TabPane>
                             </TabContent>
-
                         </div>
                     </div>
 

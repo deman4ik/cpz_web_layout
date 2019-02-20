@@ -1,10 +1,9 @@
 import React from 'react';
+
 import  SelectElement  from '../../components/selectElement.jsx';
 
 
 export default class robotsPageElement extends React.Component {
-
-
     constructor(props) {
         super(props);
 

@@ -1,17 +1,7 @@
 import React from 'react';
-import {Row,
-    //  Col
-} from 'reactstrap';
-
-// import * as d3 from "d3";
-
-// import * as ReactD3 from "react-d3-components";
+import { Row } from 'reactstrap';
 
 import RobotsMiniTable from '../../components/robotsMiniTable.jsx';
-
-
-// var AreaChart = ReactD3.AreaChart;
-// var LineChart = ReactD3.LineChart;
 
 
 export default class RobotsElement extends React.Component {

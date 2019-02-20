@@ -1,11 +1,6 @@
 import React from 'react';
-//import {Row, Col} from 'reactstrap';
-
-//import * as d3 from "d3";
 
 import * as ReactD3 from "react-d3-components";
-//import {Chart} from "react-stockcharts";
-
 
 
 var AreaChart = ReactD3.AreaChart;

@@ -1,7 +1,5 @@
 import React from 'react';
-import {Row, 
-    // Col
-} from 'reactstrap';
+import { Row } from 'reactstrap';
 import RobotsMiniTable from '../../components/robotsMiniTable.jsx';
 
 

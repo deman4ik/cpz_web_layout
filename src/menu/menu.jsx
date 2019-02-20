@@ -1,17 +1,11 @@
 import React from 'react';
-import {TabContent, TabPane, Row,
-    // Card, Button, CardTitle, CardText, Col
-} from 'reactstrap';
+import {TabContent, TabPane, Row} from 'reactstrap';
 import classnames from 'classnames';
 
 import Dashboard from '../pages/dashboard.jsx';
-
 import DataBlock from '../pages/crypto.jsx';
-
 import RobotsPage from '../pages/robots.jsx';
-
 import SettingsPage from '../pages/settings.jsx';
-// import {Chart, ChartCanvas} from "react-stockcharts";
 
 import { Robots, Crypto, Balance, Account } from '../demo_data/demo.jsx';
 

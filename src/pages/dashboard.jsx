@@ -1,10 +1,8 @@
 import React from 'react';
-// import {Row, Col} from 'reactstrap';
 
 import BalanceBlock from '../components/dashboard/balanceBlock.jsx';
 import ChartComponent from "../components/totalPerformance/totalPerfomance.jsx";
 import CryptoMiniRow from "../components/dashboard/cryptoMiniRow.jsx";
-
 import RobotsBlock from '../components/dashboard/robots.jsx';
 import CounDropdowns from '../components/dashboard/counDropdowns.jsx';
 
