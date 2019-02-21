@@ -1,42 +1,38 @@
 import React from 'react';
-// import {Row, Col} from 'reactstrap';
+import { CoinState, CoinChange, InfoCell, Balance } from '../tableRowBricks.jsx';
 
 export default class dataElement extends React.Component {
-
     render() {
         return (
-
             <div onClick={this.props.onClickElem} className="col-12 balance_line_container">
                 <div className="row">
-                    <div className={"col-1_5 data_page_content_icon " + this.props.crypto_balance_icon}>
-                        <span className={'crypto_balance_name ' + (this.props.change_proc.search(/\+/) > -1 ? 'crypto_balance_name_top' : 'crypto_balance_name_bottom')}>{this.props.balance_name}</span>
-                        <span>{this.props.balance_dollar}</span>
-                    </div>
-                    <div className="col-1">
-                        <span className={this.props.change_proc.search(/\+/) > -1 ? 'green_info' : 'red_info'}>{this.props.change_proc}</span>
-                        <span>{this.props.change_val}</span>
-                    </div>
-                    <div className="col-2">
-                        <span>{this.props.market_cap_dollar}</span>
-                        <span className={'data_page_blue_text'}>{this.props.market_cap_value}</span>
-                    </div>
-                    <div className="col-2">
-                        <span>{this.props.volume_24h_dollar}</span>
-                        <span className={'data_page_blue_text'}>{this.props.volume_24h_val}</span>
-                    </div>
-                    <div className="col-2">
-                        <span>{this.props.circulating_supply_dollar}</span>
-                        <span className={'data_page_blue_text'}>{this.props.circulating_supply_val}</span>
-                    </div>
-                    <div className="col-2">
-                        <span>{this.props.max_supply_dollar}</span>
-                        <span className={'data_page_blue_text'}>{this.props.max_supply_val}</span>
-                    </div>
-                    <div className="col-1 col-1_5 d-flex align-items-center justify-content-flex-start">
-                        <div className="row ">
-                            <span>{this.props.balance}</span>
-                        </div>
-                    </div>
+                    <CoinState crypto_balance_icon={"col-1_5 data_page_content_icon " + this.props.crypto_balance_icon}
+                               change_proc={this.props.change_proc}
+                               balance_dollar={this.props.balance_dollar}
+                               balance_name={this.props.balance_name}/>
+                    <CoinChange change_proc={this.props.change_proc}
+                                change_val={this.props.change_val}/>
+                    <InfoCell divClassName={"col-2"}
+                              spanClassName={'data_page_blue_text'}
+                              top_value={this.props.market_cap_dollar}
+                              bottom_value={this.props.market_cap_value}
+                              />
+                    <InfoCell divClassName={"col-2"}
+                              spanClassName={'data_page_blue_text'}
+                              top_value={this.props.volume_24h_dollar}
+                              bottom_value={this.props.volume_24h_val}
+                              />
+                    <InfoCell divClassName={"col-2"}
+                              spanClassName={'data_page_blue_text'}
+                              top_value={this.props.circulating_supply_dollar}
+                              bottom_value={this.props.circulating_supply_val}
+                              />
+                    <InfoCell divClassName={"col-2"}
+                              spanClassName={'data_page_blue_text'}
+                              top_value={this.props.max_supply_dollar}
+                              bottom_value={this.props.max_supply_val}
+                              />
+                    <Balance balance={this.props.balance}/>
                 </div>
             </div>
 

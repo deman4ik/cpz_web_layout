@@ -1,9 +1,7 @@
 import React from 'react';
 import { Row } from 'reactstrap';
 
-// import RobotsMiniTable from '../../components/robotsMiniTable.jsx';
-
-import { Coin, CoinInfoCell, DateInfoCell, MiniChart, RoboButton, RoboName, Exchange } from '../bricks.jsx';
+import { Coin, CoinInfoCell, InfoCell, MiniChart, RoboButton, RoboName, Exchange } from '../tableRowBricks.jsx';
 
 
 export default class RobotsElement extends React.Component {
@@ -36,7 +34,10 @@ export default class RobotsElement extends React.Component {
                                col_class={"col-2 col-2_5"}/>
                     <div className="col-2 col-2_5 align-self-center">
                         <div className="row d-flex align-self-center justify-content-between flex-row robots_container_for_button">
-                            <DateInfoCell started={this.props.started} started_day={this.props.started_day}/>
+                            <InfoCell top_value={this.props.started} 
+                                      divClassName={'align-self-center'}
+                                      spanClassName={'old_coin_value'}
+                                      bottom_value={this.props.started_day}/>
                             <RoboButton button_class={this.props.button_class} button_val={this.props.button_val}/>
                         </div>
                     </div>

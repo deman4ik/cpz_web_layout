@@ -6,7 +6,6 @@ import CryptoMiniRow from "../components/dashboard/cryptoMiniRow.jsx";
 import RobotsBlock from '../components/dashboard/robots.jsx';
 import CounDropdowns from '../components/dashboard/counDropdowns.jsx';
 
-
 export default class SettingsPage extends React.Component {
     render() {
         return (
