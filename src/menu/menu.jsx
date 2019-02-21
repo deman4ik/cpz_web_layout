@@ -7,7 +7,9 @@ import DataBlock from '../pages/crypto.jsx';
 import RobotsPage from '../pages/robots.jsx';
 import SettingsPage from '../pages/settings.jsx';
 import Menu from '../components/menu/menu.jsx';
+import TabContainer from '../components/appTabs/tabContainer.jsx';
 import { Robots, Crypto, Balance, Account } from '../demo_data/demo.jsx';
+
 
 
 export default class ExampleMenu extends React.Component {
@@ -70,31 +72,12 @@ export default class ExampleMenu extends React.Component {
                       activeTab={this.state.activeTab}
                       closeMenu={this.closeMenu.bind(this)}
                       toggle={this.toggle.bind(this)}/>
-                <div id="content" className={classnames(this.colContent)}>
-                    <TabContent activeTab={this.state.activeTab}>
-                        <TabPane tabId="1">
-                            <Dashboard 
-                                tableValue={this.state.activeTab == 1}
-                                robots={this.state.robots}
-                                balance={this.state.balance}
-                            />
-                        </TabPane>
-                        <TabPane tabId="2" id={'dataBlock'}>
-                            <DataBlock
-                                crypto={this.state.crypto}/>
-                        </TabPane>
-                        <TabPane tabId="3" id={'robotsPage'}>
-                            <RobotsPage
-                                robots={this.state.robots}
-                            />
-                        </TabPane>
-                        <TabPane tabId="4" id={'settingsPage'}>
-                            <SettingsPage
-                                account={this.state.account}
-                            />
-                        </TabPane>
-                    </TabContent>
-                </div>
+                <TabContainer colContent={this.colContent} activeTab={this.state.activeTab}
+                              tableValue={this.state.activeTab == 1}
+                              robots={this.state.robots}
+                              balance={this.state.balance}
+                              crypto={this.state.crypto}
+                              account={this.state.account}/>
             </Row>
         );
     }

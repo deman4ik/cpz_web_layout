@@ -17,10 +17,10 @@ const Menu = props => (
         <div className={"menu_container"}>
           <div className="row">
             <ul>
-                <MenuTab toggleNum={"1"} name={"Dashboard"} toggle={props.toggle}/>
-                <MenuTab toggleNum={"2"} name={"Data"} toggle={props.toggle}/>
-                <MenuTab toggleNum={"3"} name={"Robots"} toggle={props.toggle}/>
-                <MenuTab toggleNum={"4"} name={"Settings"} toggle={props.toggle}/>
+                <MenuTab toggleNum={"1"} name={"Dashboard"} toggle={props.toggle} activeTab={props.activeTab}/>
+                <MenuTab toggleNum={"2"} name={"Data"} toggle={props.toggle} activeTab={props.activeTab}/>
+                <MenuTab toggleNum={"3"} name={"Robots"} toggle={props.toggle} activeTab={props.activeTab}/>
+                <MenuTab toggleNum={"4"} name={"Settings"} toggle={props.toggle} activeTab={props.activeTab}/>
             </ul>
           </div>
         </div>

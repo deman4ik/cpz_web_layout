@@ -3,8 +3,8 @@ import classnames from "classnames";
 
 export const MenuTab = props => (
     <li className={classnames({ active: props.activeTab === props.toggleNum }, "menu_tab menu_tab_" + props.toggleNum )}>
-        <a href="javascript:void(0)" onClick={() => {props.toggle(props.toggleNum);}}>
-            <span>{props.name}</span>{" "}
+        <a href="javascript:void(0)" onClick={() => {props.toggle(props.toggleNum)}}>
+            <span>{props.name}</span>
         </a>
     </li>
 )
@@ -20,7 +20,7 @@ export const CollapseMenuTab = props => (
 export const LogOutMenuTab = props => (
     <li className={"menu_tab"}>
         <a className={"log_out_image"} href="">
-            <span>{props.name}</span>{" "}
+            <span>{props.name}</span>
         </a>
     </li>
 )
