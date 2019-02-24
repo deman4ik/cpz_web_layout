@@ -1,13 +1,12 @@
 import React from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
-import classnames from 'classnames';
 import StatisticWidget from './statisticWidget/statisticWidget';
+import { RoboLink, RoboHeader } from './robotsBricks';
 
 
 export default class RobotsInfoTabs extends React.Component {
     constructor(props) {
         super(props);
-
         this.toggle = this.toggle.bind(this);
         this.state = {
             activeTab: '1'
@@ -25,82 +24,15 @@ export default class RobotsInfoTabs extends React.Component {
             <div className={'robots_tabs_container'}>
                 <div className="col-12">
                     <Nav tabs>
-                        <NavItem>
-                            <div
-                                className={'tabs_link_container ' + classnames({active: this.state.activeTab === '1'})}>
-                                <NavLink
-                                    className={classnames({active: this.state.activeTab === '1'})}
-                                    onClick={() => {
-                                        this.toggle('1');
-                                    }}
-                                >
-                                    Statistics
-                                </NavLink>
-                            </div>
-                        </NavItem>
-                        <NavItem>
-                            <div
-                                className={'tabs_link_container ' + classnames({active: this.state.activeTab === '2'})}>
-                                <NavLink
-                                    className={classnames({active: this.state.activeTab === '2'})}
-                                    onClick={() => {
-                                        this.toggle('2');
-                                    }}
-                                >
-                                    Signals
-                                </NavLink>
-                            </div>
-                        </NavItem>
-                        <NavItem>
-                            <div
-                                className={'tabs_link_container ' + classnames({active: this.state.activeTab === '3'})}>
-                                <NavLink
-                                    className={classnames({active: this.state.activeTab === '3'})}
-                                    onClick={() => {
-                                        this.toggle('3');
-                                    }}
-                                >
-                                    Public Statistics
-                                </NavLink>
-                            </div>
-                        </NavItem>
-                        <NavItem>
-                            <div
-                                className={'tabs_link_container ' + classnames({active: this.state.activeTab === '4'})}>
-                                <NavLink
-                                    className={classnames({active: this.state.activeTab === '4'})}
-                                    onClick={() => {
-                                        this.toggle('4');
-                                    }}
-                                >
-                                    My Statistics
-                                </NavLink>
-                            </div>
-                        </NavItem>
-                        <NavItem>
-                            <div
-                                className={'tabs_link_container ' + classnames({active: this.state.activeTab === '5'})}>
-                                <NavLink
-                                    className={classnames({active: this.state.activeTab === '5'})}
-                                    onClick={() => {
-                                        this.toggle('5');
-                                    }}
-                                >
-                                    Trading History
-                                </NavLink>
-                            </div>
-                        </NavItem>
+                        <RoboLink activeTab={this.state.activeTab} toggle={this.toggle} name={'Statistics'} tabNum={"1"}/>
+                        <RoboLink activeTab={this.state.activeTab} toggle={this.toggle} name={'Signals'} tabNum={"2"}/>
+                        <RoboLink activeTab={this.state.activeTab} toggle={this.toggle} name={'Public Statistics'} tabNum={"3"}/>
+                        <RoboLink activeTab={this.state.activeTab} toggle={this.toggle} name={'My Statistics'} tabNum={"4"}/>
+                        <RoboLink activeTab={this.state.activeTab} toggle={this.toggle} name={'Trading History'} tabNum={"5"}/>
                     </Nav>
                 </div>
                 <div className="col-12">
-                    <div className="col-12">
-                        <div className={'robots_tabs_header row'}>
-                            <div className="col-3">Robot Name</div>
-                            <div className="col-3">All Trades</div>
-                            <div className="col-3">Long Trades</div>
-                            <div className="col-3">Short Trades</div>
-                        </div>
-                    </div>
+                    <RoboHeader/>
                 </div>
                 <TabContent activeTab={this.state.activeTab}>
                     <TabPane tabId="1">

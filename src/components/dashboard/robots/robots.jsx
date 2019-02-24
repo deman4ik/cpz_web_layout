@@ -1,8 +1,8 @@
 import React from 'react';
-import { Row } from 'reactstrap';
 import * as d3 from "d3";
 
 import RobotsElement from './robotsElement.jsx';
+import { RobotsHeader } from '../dashBoardBricks.jsx';
 
 
 export default class RobotsBlock extends React.Component {
@@ -31,37 +31,7 @@ export default class RobotsBlock extends React.Component {
                 <div className="col-12 robots_title">
                     Robots
                 </div>
-
-                <div className="col-12 robots_line">
-                    <Row>
-                        <div className="col-1">
-                            <div className="row">
-                                Robot Name
-                            </div>
-                        </div>
-                        <div className="col-1">
-                            Coin
-                        </div>
-                        <div className="col-1">
-                            Exchange
-                        </div>
-                        <div className="col-2">
-                                Initial Capital
-                        </div>
-                        <div className="col-2">
-                            Robot Balance
-                        </div>
-                        <div className="col-2 col-2_5">
-                                Performance
-                        </div>
-                        <div className="col-2 col-2_5">
-                            <div className="row">
-                                Started
-                            </div>
-                        </div>
-                    </Row>
-                </div>
-
+                <RobotsHeader/>
                 {this.props.robots.map(robot => (
                     <RobotsElement key={robot.id} 
                         color={robot.performance_val.current.search(/\+/) > -1 ? this.colorScale: this.colorScaleRed} 

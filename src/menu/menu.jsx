@@ -11,7 +11,6 @@ import TabContainer from '../components/appTabs/tabContainer.jsx';
 import { Robots, Crypto, Balance, Account } from '../demo_data/demo.jsx';
 
 
-
 export default class ExampleMenu extends React.Component {
     deviceWidth;
 

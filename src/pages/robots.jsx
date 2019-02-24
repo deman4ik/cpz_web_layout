@@ -5,6 +5,7 @@ import * as d3 from "d3";
 import RobotsElementCollapse from '../components/robots/robotsElementCollapse.jsx';
 import RobotsPageTableTabs from '../components/robots/robotsPageTableTabs.jsx';
 import RobotsInfoTabs from '../components/robots/robotsInfoTabs.jsx';
+import { RoboCollapsedHeader } from '../components/robots/robotsBricks';
 
 
 export default class RobotsPage extends React.Component {
@@ -59,33 +60,7 @@ export default class RobotsPage extends React.Component {
                             <div className="col-12 robots_title">Robots</div>
                         </div>
                         <div className={'col-12 robots_line'}>
-                            <Row>
-                                <div className="col-2 align-self-center">
-                                    <Row>
-                                        Robot Name
-                                    </Row>
-                                </div>
-                                <div className="col-1 align-self-center">
-                                    Coin
-                                </div>
-                                <div className="col-1 align-self-center">
-                                    Exchange
-                                </div>
-                                <div className="col-2 align-self-center">
-                                    Initial Capital
-                                </div>
-                                <div className="col-2 align-self-center">
-                                    Robot Balance
-                                </div>
-                                <div className="col-3 align-self-center">
-                                    Performance
-                                </div>
-                                <div className="col-1 align-self-center text-right">
-                                    <div className="row justify-content-end">
-                                        Status
-                                    </div>
-                                </div>
-                            </Row>
+                            <RoboCollapsedHeader/>
                         </div>
                         {this.props.robots.map(robot => (
                             <RobotsElementCollapse key={robot.id}

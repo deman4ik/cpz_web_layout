@@ -1,7 +1,7 @@
 import React from "react";
 import {getData} from "./utils";
 import {TypeChooser} from "react-stockcharts/lib/helper/index";
-import AreaChart from "./Chart";
+import AreaChart from "./Chart.jsx";
 import { Row, Col } from 'reactstrap';
 import ChartHeader from '../../components/chartHeader.jsx';
 

@@ -31,25 +31,19 @@ export default class addAccount extends React.Component {
                             Add New
                         </span>
                     </a>
-
                 </div>
 
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={'modal_container'}>
                     <a href={'javascript:void(0)'} className={'close_window close_icon'}  onClick={this.toggle}></a>
                     <ModalBody>
-
                         <p className={'modal_title'}>New Exchange</p>
-
                         <div className="col-12 input_container">
                             <span>
                             Account name*
                              </span>
                             <input type="text" placeholder={'My Bitfinex ETH 001'}/>
-
-
                             <div className="col-12 select_modal_container">
                                 <div className="row justify-content-between align-items-center ">
-
                                     <span>Exchange*</span>
                                     <SelectElement class={'long_select'}/>
                                 </div>
@@ -57,7 +51,6 @@ export default class addAccount extends React.Component {
                             </div>
                             <div className="col-12 select_modal_container">
                                 <div className="row justify-content-between align-items-center ">
-
                                     <span>Currency*</span>
                                     <SelectElement class={'long_select'}/>
                                 </div>
