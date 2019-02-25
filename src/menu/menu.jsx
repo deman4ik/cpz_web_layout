@@ -1,11 +1,5 @@
 import React from 'react';
 import {TabContent, TabPane, Row} from 'reactstrap';
-import classnames from 'classnames';
-
-import Dashboard from '../pages/dashboard.jsx';
-import DataBlock from '../pages/crypto.jsx';
-import RobotsPage from '../pages/robots.jsx';
-import SettingsPage from '../pages/settings.jsx';
 import Menu from '../components/menu/menu.jsx';
 import TabContainer from '../components/appTabs/tabContainer.jsx';
 import { Robots, Crypto, Balance, Account } from '../demo_data/demo.jsx';

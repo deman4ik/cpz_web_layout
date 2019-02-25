@@ -111,3 +111,19 @@ export class RoboCheckbox extends React.Component {
         }
     }
 }
+
+export const CryptoHeader = () => (
+    <div className="row">
+        <div className="col-2 col-1_5">Coin</div>
+        <div className="col-1">24h Change</div>
+        <div className="col-2">Market Cap</div>
+        <div className="col-2">Volume 24h</div>
+        <div className="col-2">Circulating Supply</div>
+        <div className="col-2">Max Supply</div>
+        <div className="col-1 col-1_5">
+            <div className="row">
+                Balance
+            </div>
+        </div>
+    </div>
+)

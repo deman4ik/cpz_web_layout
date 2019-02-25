@@ -36,3 +36,16 @@ export const ExtraSettingsLine = props => (
         <p className='extra_settings_text'>{props.value}</p>
     </div>
 )
+
+export const KeyFieldWidget = props => (
+    <div className="col-6">
+        <span>{props.title}</span>
+        <textarea placeholder={props.placeholder} />
+    </div>
+)
+
+export const StateField = props => (
+    <div className="button_container">
+        <a className={props.className} href="">{props.value}</a>
+    </div>
+)

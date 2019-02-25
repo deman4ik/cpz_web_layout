@@ -1,7 +1,8 @@
 import React from 'react';
 
 import DataElementCollapse from "../components/crypto/dataElementCollapse.jsx";
-
+import SearchWidget from "../components/crypto/searchWidget";
+import { CryptoHeader } from "../components/tableRowBricks";
 
 export default class dataBlock extends React.Component {
     constructor(props) {
@@ -18,39 +19,14 @@ export default class dataBlock extends React.Component {
         return (
             <div className="row search_container">
                 <div className="col-12">
-                    <div className="row">
-                        <div className="col-8">
-                            <div className="row">
-                                <input type="text" placeholder={'Search…'}/>
-                                <button className={'search_button button_search_icon'}></button>
-                            </div>
-                        </div>
-                        <div className="col-4">
-                            <button className={'search_button_down arrow_data_down'}></button>
-                           <span className={'search_text'}>
-                               List of coins for which we have robots currently. New listings will be published here.
-                           </span>
-                        </div>
-                    </div>
+                    <SearchWidget/>
                 </div>
                 <div className="col-12 data_page_content">
                     <div className="data_page_title">
                         <span>Data</span>
                     </div>
                     <div className="col-12 data_page_tables_header">
-                        <div className="row">
-                            <div className="col-2 col-1_5">Coin</div>
-                            <div className="col-1">24h Change</div>
-                            <div className="col-2">Market Cap</div>
-                            <div className="col-2">Volume 24h</div>
-                            <div className="col-2">Circulating Supply</div>
-                            <div className="col-2">Max Supply</div>
-                            <div className="col-1 col-1_5">
-                                <div className="row">
-                                    Balance
-                                </div>
-                            </div>
-                        </div>
+                        <CryptoHeader/>
                     </div>
 
                     {this.props.crypto.map(coin => (

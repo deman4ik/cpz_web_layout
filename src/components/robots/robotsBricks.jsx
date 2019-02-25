@@ -1,6 +1,9 @@
 import React from 'react';
-import { NavItem, NavLink, Row } from 'reactstrap';
+import { TabPane, NavItem, NavLink, Row } from 'reactstrap';
 import classnames from 'classnames';
+
+import MovingAverage from "./MovingAverage/MovingAverage.jsx";
+import ChartComponent from "../totalPerformance/totalPerfomance.jsx";
 
 export const RoboLink = (props) => (
     <NavItem>
@@ -41,3 +44,53 @@ export const RoboCollapsedHeader = () => (
     </Row>
 )
  
+export const RoboLinkAlt = props => (
+    <NavItem>
+        <NavLink 
+            className={classnames({
+                active: props.activeTab === props.Num
+            })}
+            onClick={() => {
+                props.toggle(props.Num);
+            }}
+        >
+            {props.content}
+            {props.html}
+        </NavLink>
+    </NavItem>
+)
+
+export const RetButton = (props) => (
+    <button
+        className={"float-left button_back"}
+        onClick={props.handler}
+    >
+        {" "}
+        {"<"}{" "}
+    </button>
+)
+
+export const InfoField = props => (
+    <div>
+        <span className={props.titleClass}>{props.title}</span>
+        <span className={props.valueClass}>{props.value}</span>
+    </div>
+)
+
+export const MovingAverageTab = props => (
+    <TabPane tabId={props.tabNum}>
+        <MovingAverage
+            activeElem={props.activeTab}
+            coin_name={props.coin_name}
+        />
+    </TabPane>
+)
+
+export const ChartComponentTab = props => (
+    <TabPane tabId={props.tabNum}>
+        <ChartComponent
+            onClickElemStatus={props.activeTab == props.tabNum}
+            coin_name={props.coin_name}
+        />
+    </TabPane>
+)
