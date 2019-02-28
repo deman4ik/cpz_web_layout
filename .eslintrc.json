@@ -1,0 +1,67 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb-base",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "plugin:jest/recommended"
+  ],
+  "globals": {
+    "document": true
+  },
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "plugins": [
+    "prettier",
+    "react",
+    "jest"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": false
+      }
+    ],
+    "no-unused-vars": "warn",
+    "consistent-return": "warn",
+    "import/prefer-default-export": "off",
+    "class-methods-use-this": "off",
+    "no-console": "off",
+    "no-param-reassign": "off",
+    "no-underscore-dangle": "off",
+    "react/display-name": "off"
+  },
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    },
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "version": "detect",
+      "flowVersion": "0.53"
+    },
+    "propWrapperFunctions": [
+      "forbidExtraProps",
+      {
+        "property": "freeze",
+        "object": "Object"
+      },
+      {
+        "property": "myFavoriteWrapper"
+      }
+    ]
+  }
+}
