@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
+import {Modal, ModalBody} from 'reactstrap';
 import SelectElement from "../elements/selectElement";
 
 
@@ -80,8 +80,8 @@ export default class addAccount extends React.Component {
                             </div>
 
 
-                            <div className="button_container">
-                                <a className={'red_info'} href="">Wrong Keys</a>
+                            <div className="button_container ">
+                                <a className={'red_info standard_button'} href="">Wrong Keys</a>
                             </div>
 
                         </div>
@@ -99,15 +99,13 @@ export default class addAccount extends React.Component {
                                     <textarea placeholder={'1Cs4wu6pu5qCZ35bSLNVzGyEx5N6uzbg9t'}/>
                                 </div>
                             </div>
-
-
-                            <div className="button_container">
-                                <a className={'green_info'} href="">Verified</a>
+                            <div className="button_container ">
+                                <a className={'green_info standard_button'} href="">Verified</a>
                             </div>
                         </div>
 
                         <div className="button_save col-12">
-                            <input type="submit" value={'Save changes'}/>
+                            <button  className={'standard_button'}>Save changes</button>
                         </div>
                     </ModalBody>
 

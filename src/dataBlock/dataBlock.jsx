@@ -1,11 +1,5 @@
 import React from 'react';
-import {render} from "react-dom";
 
-import {Collapse, Button, CardBody, Card} from 'reactstrap';
-
-
-import DataElement from "./dataElement.jsx";
-import DataElementTable from "./dataElementTable.jsx";
 import DataElementCollapse from "./dataElementCollapse.jsx";
 
 export default class dataBlock extends React.Component {
@@ -30,7 +24,7 @@ export default class dataBlock extends React.Component {
                 <div className="col-12">
                     <div className="row">
                         <div className="col-8">
-                            <div className="row">
+                            <div className="row input_container_for_data_page">
                                 <input type="text" placeholder={'Search…'}/>
                                 <button className={'search_button button_search_icon'}></button>
                             </div>

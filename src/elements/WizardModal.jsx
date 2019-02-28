@@ -1,5 +1,5 @@
 import React from 'react';
-import {Collapse, Button, Modal, ModalHeader, ModalBody, ModalFooter, CardBody, Card} from 'reactstrap';
+import {Modal, ModalBody} from 'reactstrap';
 import  SelectElement  from '../elements/selectElement.jsx';
 
 export default class robotsOpenedElement extends React.Component {
@@ -56,22 +56,18 @@ export default class robotsOpenedElement extends React.Component {
                                 </div>
                             </div>
                         </div>
-
-
                         <div className="col-12 input_container">
                             <span>Trading volume (order size) for robot</span>
                             <input type={'text'} placeholder={'Typing... 0.78365479 BTC'}/>
                             <div
                                 className={' justify-content-end d-flex buttons_save_and_cancel_container'}>
-                                <span className={'button_save_green'}>Save</span>
-                                <span className={'button_cancel'}>Cancel</span>
+                                <span className={'button_save_green standard_button'}>Save</span>
+                                <span className={'button_cancel standard_button'}>Cancel</span>
                             </div>
                             <span>Subscription time, Months</span>
                             <input type={'number'} className={'number_input'} placeholder={'8'}/>
 
                         </div>
-
-
                         <p className={'modal_title'}>Your Price</p>
                         <div className={'modal_text_for_title'}>
 
@@ -108,7 +104,7 @@ export default class robotsOpenedElement extends React.Component {
                             </label>
                         </div>
                         <div className="button_run_modal col-12">
-                            <button type="submit"  value={''}> <span className={'button_run_icon'}>Run</span>  </button>
+                            <button className={'standard_button'} type="submit"  value={''}> <span className={'button_run_icon'}>Run</span>  </button>
                         </div>
                     </ModalBody>
 

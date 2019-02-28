@@ -36,8 +36,6 @@ export default class RobotsPage extends React.Component {
         //     started: "18/17/2019",
         //     started_day: "24 Days Active",
         // }
-
-
         this.colorScale = d3.scaleOrdinal()
             .domain([1, 2])
             .range(['url(#MyGradientGreenNew)']);
@@ -70,10 +68,8 @@ export default class RobotsPage extends React.Component {
 
         ];
 
-        this.state = {elementStat: this.elem};
-        this.setState(state => ({
-            elementStat: this.elem
-        }));
+        this.state = {elementStat: false};
+
 
     }
 
@@ -95,8 +91,11 @@ export default class RobotsPage extends React.Component {
             return (
                 <div>
 
-
-
+                    <div className={'search_container search_robots_container'}>
+                        <input type="text" placeholder={'Search…'}/>
+                        <button className="search_button button_search_icon"></button>
+                        <button className="search_button_down arrow_data_down"></button>
+                    </div>
                     <div className={'robots_container robots_page_container'}>
                         <svg height={0} width={0} style={{
                             overflow: 'hidden',
@@ -128,7 +127,9 @@ export default class RobotsPage extends React.Component {
                                     </Row>
                                 </div>
                                 <div className="col-1 align-self-center">
+                                    <Row>
                                     Coin
+                                    </Row>
                                 </div>
                                 <div className="col-1 align-self-center">
                                     Exchange
@@ -174,7 +175,7 @@ export default class RobotsPage extends React.Component {
                                                performance_class={'green_info'}
                                                started={'18/17/2019'} started_day={'24 Days Active'}
                                                button_type={'text'}
-                                               button_checkbox={'checked'}
+                                               button_checkbox={''}
                                                data={this.data}
                                                color={this.colorScale} color2={this.colorScale2}
                         />

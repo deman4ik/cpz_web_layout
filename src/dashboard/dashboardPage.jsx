@@ -1,5 +1,4 @@
 import React from 'react';
-import {Row, Col} from 'reactstrap';
 
 import BalanceBlock from '../tables/balanceBlock/balanceBlock.jsx';
 import ChartComponent from "../tables/totalPerformance/totalPerfomance.jsx"
@@ -88,15 +87,17 @@ export default class SettingsPage extends React.Component {
                 </div>
 
                 <div className="col-6 total_performance_container">
-                    <div className="col-12 total_performance_title total_performance_icon">
-                        <span>Total performance</span></div>
-                    <div id="total_performance">
-                    <ChartComponent onClickElemStatus = {this.props.tableValue}/>
+                    <div className={'total_performance_container_background'}>
+                        <div className="col-12 total_performance_title total_performance_icon">
+                            <span>Total performance</span></div>
+                        <div id="total_performance">
+                            <ChartComponent onClickElemStatus={this.props.tableValue}/>
+                        </div>
                     </div>
                 </div>
                 <div id={'robots_container'}>
 
-                  <RobotsBlock/>
+                    <RobotsBlock/>
                 </div>
             </div>
 

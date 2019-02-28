@@ -1,12 +1,8 @@
 import React from 'react';
-import {Row, Col} from 'reactstrap';
+import {Row} from 'reactstrap';
 
-import * as d3 from "d3";
 
-import * as ReactD3 from "react-d3-components";
 import RobotsMiniTable from '../elements/robotsMiniTable.jsx';
-
-var AreaChart = ReactD3.AreaChart;
 
 
 export default class robotsPageElement extends React.Component {
@@ -19,7 +15,7 @@ export default class robotsPageElement extends React.Component {
 
 
         if (this.props.button_type == 'text') {
-                this.buttonText =
+            this.buttonText =
                 <div>
                     <div className="row">
                         <span className={'buttonText_value '}>Active</span>
@@ -27,12 +23,11 @@ export default class robotsPageElement extends React.Component {
                     </div>
                 </div>
 
-        }else {
+        } else {
             this.buttonText = <Row>
 
                 <div className="col-12 d-flex align-self-right justify-content-end button_container ">
-
-                    <input checked = {this.props.button_checkbox} type="checkbox" id="test1"/>
+                    <input defaultChecked={this.props.button_checkbox} type="checkbox" id="test1"/>
                     <label htmlFor="test1"> </label>
 
                 </div>
@@ -71,7 +66,7 @@ export default class robotsPageElement extends React.Component {
                         <div className="d-flex justify-content-start flex-row align-items-end">
                             <div>
 
-                                <RobotsMiniTable data={this.data} color={this.props.color} color2={this.props.color2} />
+                                <RobotsMiniTable data={this.data} color={this.props.color} color2={this.props.color2}/>
 
                             </div>
                             <div className="table_robot_value">

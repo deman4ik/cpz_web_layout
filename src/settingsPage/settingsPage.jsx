@@ -1,5 +1,4 @@
 import React from 'react';
-import {Row, Col} from 'reactstrap';
 
 import OtherAccount from './otherAccount.jsx';
 import AddAccount from './addAccount.jsx';
@@ -51,9 +50,11 @@ export default class SettingsPage extends React.Component {
                                 <span>Telegram username</span>
                                 <input type="text" placeholder={'Enter your name'}/>
                             </label>
-                            <div className="form_button_container">
+                            <div className="form_button_container ">
                                 <a href="#">Password</a>
-                                <input type="submit" value={'Change Password'}/>
+                                <button className={'standard_button'}>
+                                    Change Password
+                                </button>
 
                             </div>
 
@@ -82,7 +83,7 @@ export default class SettingsPage extends React.Component {
                         <span className={'profile_balance_value'}>€ 6,537.13</span>
                     </div>
 
-                    <a href="#"> Deposit</a>
+                    <button  className={'standard_button'}>Deposit</button>
                     <p>We assure you that your payment can be securely made in accordance with the international
                         standards of online payment.</p>
                 </div>

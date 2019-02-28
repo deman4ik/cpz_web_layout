@@ -6,7 +6,6 @@ import MoveingAverage from "../tables/MovingAverage/MovingAverage.jsx";
 
 
 import TotalPerfomance from "../tables/totalPerformance/totalPerfomance.jsx"
-import RobotsInfoTabs from "./robotsInfoTabs";
 
 
 import WizardModal from "../elements/WizardModal.jsx";

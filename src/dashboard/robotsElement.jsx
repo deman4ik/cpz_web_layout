@@ -1,15 +1,11 @@
 import React from 'react';
-import {Row, Col} from 'reactstrap';
+import {Row} from 'reactstrap';
 
-import * as d3 from "d3";
 
-import * as ReactD3 from "react-d3-components";
 
 import RobotsMiniTable from '../elements/robotsMiniTable.jsx';
 
 
-var AreaChart = ReactD3.AreaChart;
-var LineChart = ReactD3.LineChart;
 
 
 export default class RobotsElement extends React.Component {
@@ -73,7 +69,7 @@ export default class RobotsElement extends React.Component {
                                 </div>
                                 <div className="d-flex align-self-center button_container">
                                     <Row>
-                                        <button className={this.props.button_class}>{this.props.button_val}</button>
+                                        <button className={this.props.button_class + " standard_button"} >{this.props.button_val}</button>
                                     </Row>
                                 </div>
                             </div>

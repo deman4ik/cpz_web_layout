@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
+import {Modal, ModalBody} from 'reactstrap';
 
 class EditExchange extends React.Component {
     constructor(props) {
@@ -49,7 +49,7 @@ class EditExchange extends React.Component {
 
 
                             <div className="button_container">
-                                <a className={'red_info'} href="">Wrong Keys</a>
+                                <a className={'red_info standard_button'} href="">Wrong Keys</a>
                             </div>
                         </div>
 
@@ -69,13 +69,13 @@ class EditExchange extends React.Component {
                             </div>
 
 
-                            <div className="button_container">
-                                <a className={'green_info'} href="">Verified</a>
+                            <div className="button_container ">
+                                <a className={'green_info standard_button'} href="">Verified</a>
                             </div>
                         </div>
 
                         <div className="button_save col-12">
-                            <input type="submit" value={'Save changes'}/>
+                            <button  className={'standard_button'}>Save changes</button>
                         </div>
                     </ModalBody>
 

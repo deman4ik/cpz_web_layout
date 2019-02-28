@@ -1,5 +1,4 @@
 import React from 'react';
-import {Row, Col} from 'reactstrap';
 
 
 import RobotsPageElement from "./robotsPageElement.jsx";
@@ -12,23 +11,12 @@ export default class dataElementCollapse extends React.Component {
         super(props);
 
         this.statatusElement = true
-        // this.toggleBlockTest = this.toggleBlockTest.bind(this);
 
         this.state = {elementStat: true};
 
 
     }
 
-    // toggleBlockTest() {
-    //     // this.statatusElement = {statatus: !this.statatusElement.statatus}
-    //
-    //     console.log(this)
-    //     this.statatusElement = !this.statatusElement;
-    //
-    //     this.setState(state => ({
-    //         elementStat: !this.state.elementStat
-    //     }));
-    // }
 
 
     render() {

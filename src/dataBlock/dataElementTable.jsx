@@ -1,11 +1,6 @@
 import React from 'react';
-import {Row, Col} from 'reactstrap';
 
-
-import ChartTP from '../tables/totalPerformance/Chart.jsx';
-import {getData} from "../tables/totalPerformance/utils"
 import ChartComponent from "../tables/totalPerformance/totalPerfomance.jsx"
-import {render} from "react-dom";
 
 
 export default class DataElementTable extends React.Component {

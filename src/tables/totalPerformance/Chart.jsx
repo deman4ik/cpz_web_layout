@@ -1,125 +1,112 @@
-    import React from "react";
-    import PropTypes from "prop-types";
-
-    import {scaleTime} from "d3-scale";
-    import {curveMonotoneX} from "d3-shape";
-
-    import {ChartCanvas, Chart} from "react-stockcharts";
-    import {AreaSeries, LineSeries} from "react-stockcharts/lib/series";
-    import {XAxis, YAxis} from "react-stockcharts/lib/axes";
-    import {fitWidth} from "react-stockcharts/lib/helper";
-    import {createVerticalLinearGradient, hexToRGBA} from "react-stockcharts/lib/utils";
+import React from "react";
+import PropTypes from "prop-types";
 
 
-    import {ema, sma, macd} from "react-stockcharts/lib/indicator";
+import {scaleTime} from "d3-scale";
+import {curveMonotoneX} from "d3-shape";
+
+import {ChartCanvas, Chart} from "react-stockcharts";
+import {AreaSeries} from "react-stockcharts/lib/series";
+import {XAxis, YAxis} from "react-stockcharts/lib/axes";
+import {fitWidth} from "react-stockcharts/lib/helper";
+import {createVerticalLinearGradient, hexToRGBA} from "react-stockcharts/lib/utils";
+
+import {InteractiveText, ClickCallback} from "react-stockcharts/lib/interactive";
 
 
-    import {SingleValueTooltip, HoverTooltip, GroupTooltip, ToolTipText} from "react-stockcharts/lib/tooltip";
+import {discontinuousTimeScaleProvider} from "react-stockcharts/lib/scale";
+import {ToolTipText} from "react-stockcharts/lib/tooltip";
 
-    import {timeFormat} from "d3-time-format";
+import {timeFormat} from "d3-time-format";
 
-    import {format} from "d3-format";
-    import {
-        CurrentCoordinate,
-        MouseCoordinateX,
-        MouseCoordinateY,
-    } from "react-stockcharts/lib/coordinates";
-
-
-    const canvasGradient = createVerticalLinearGradient([
-        {stop: 0, color: hexToRGBA("#13B1E6", 0)},
-        {stop: 0.9, color: hexToRGBA("#13B1E6", 0.4)},
-        {stop: 1, color: hexToRGBA("#13B1E6", 0.8)}
-    ]);
+import {format} from "d3-format";
+import {
+    CurrentCoordinate,
+    MouseCoordinateX,
+    MouseCoordinateY,
+} from "react-stockcharts/lib/coordinates";
 
 
-    class AreaChart extends React.Component {
+const canvasGradient = createVerticalLinearGradient([
+    {stop: 0, color: hexToRGBA("#13B1E6", 0)},
+    {stop: 0.9, color: hexToRGBA("#13B1E6", 0.4)},
+    {stop: 1, color: hexToRGBA("#13B1E6", 0.8)}
+]);
 
 
-        render() {
+class AreaChart extends React.Component {
 
 
-            const height = 750;
-            const {data, type, width, ratio} = this.props;
+    constructor(props) {
+        super(props);
+        this.addTextLable = this.addTextLable.bind(this);
+        this.state = {
+            enableInteractiveObject: true,
+            textList_1: [],
+            x: -200,
+            y: -200,
 
-            const margin = {left: 70, right: 70, top: 20, bottom: 30};
+            valueText: '$ 7,230.69',
+            dateText: 'Wednesday, Nov 22, 2017',
+        };
+    }
 
-            const gridHeight = height - margin.top - margin.bottom;
-            const gridWidth = width - margin.left - margin.right;
+    addTextLable(e) {
 
-            const showGrid = true;
-            const yGrid = showGrid ? {innerTickSize: -1 * gridWidth, tickStrokeOpacity: 0.1,} : {};
-            const xGrid = showGrid ? {innerTickSize: -1 * gridHeight, tickStrokeOpacity: 0.1} : {};
-
-
-            const ema20 = ema()
-                .id(0)
-                .options({windowSize: 20})
-                .merge((d, c) => {
-                    d.ema20 = c;
-                })
-                .accessor(d => d.ema20);
-
-            const ema50 = ema()
-                .id(2)
-                .options({windowSize: 50})
-                .merge((d, c) => {
-                    d.ema50 = c;
-                })
-                .accessor(d => d.ema50);
-
-            const dateFormat = timeFormat("%Y-%m-%d");
-            const numberFormat = format(".2f");
+        var formatter = new Intl.DateTimeFormat("en", { month: "short"}),
+            formatterW = new Intl.DateTimeFormat("en", {weekday: "long"}),
+            month2 = formatter.format(e.currentItem.date),
+            week2 = formatterW.format(e.currentItem.date);
 
 
-            function tooltipContent(ys) {
-                return ({currentItem, xAccessor}) => {
-                    return {
-
-                        y: [
-                            {
-                                label: "open",
-                                value: currentItem.open && numberFormat(currentItem.open)
-                            },
-                            {
-                                label: "high",
-                                value: currentItem.high && numberFormat(currentItem.high)
-                            },
-                            {
-                                label: "low",
-                                value: currentItem.low && numberFormat(currentItem.low)
-                            },
-                            {
-                                label: "close",
-                                value: currentItem.close && numberFormat(currentItem.close)
-                            }
-                        ]
-
-                            .concat(
-                                ys.map(each => ({
-                                    label: each.label,
-                                    value: each.value(currentItem),
-                                    stroke: each.stroke
-                                }))
-                            )
-                            .filter(line => line.value),
-                        x: dateFormat(xAccessor(currentItem))
-                    };
-                };
-            }
+        var dateElem = week2 + ', ' + month2 + ' ' + e.currentItem.date.getDate()+ ', ' +  e.currentItem.date.getFullYear()
+        this.setState({
+            x: e.mouseXY[0],
+            y: e.mouseXY[1],
+            valueText: e.currentItem.close,
+            dateText: dateElem
 
 
-            return (
+        });
+    }
+
+    render() {
+
+
+        const height = 750;
+        const {data, type, width, ratio, initialData} = this.props;
+
+
+        const xScaleProvider = discontinuousTimeScaleProvider
+            .inputDateAccessor(d => d.date);
+
+
+        const margin = {left: 70, right: 70, top: 20, bottom: 30};
+
+        const gridHeight = height - margin.top - margin.bottom;
+        const gridWidth = width - margin.left - margin.right;
+
+        const showGrid = true;
+        const yGrid = showGrid ? {innerTickSize: -1 * gridWidth, tickStrokeOpacity: 0.1,} : {};
+        const xGrid = showGrid ? {innerTickSize: -1 * gridHeight, tickStrokeOpacity: 0.1} : {};
+
+
+
+
+
+        return (
+            <div>
                 <ChartCanvas ratio={ratio} width={width} height={300}
                              margin={{left: 50, right: 50, top: 10, bottom: 30}}
                              seriesName="MSFTEST"
                              data={data} type={type}
                              xAccessor={d => d.date}
                              xScale={scaleTime()}
-                             xExtents={[new Date(2012, 11, 1), new Date(2013, 0, 5)]}
-                >
+                             xExtents={[new Date(2011, 0, 1), new Date(2011, 1, 2)]}>
 
                     <Chart id={0} yExtents={d => d.close}>
+
+
                         <MouseCoordinateX
                             at="bottom"
                             orient="bottom"
@@ -131,27 +118,18 @@
                             displayFormat={format(".2f")}
                         />
 
+                        <CurrentCoordinate yAccessor={d => d.close} fill="rgba(11,152,197,0.5)" r={14}/>
+                        <CurrentCoordinate yAccessor={d => d.close} fill="rgba(11,152,197,1)" r={7}/>
 
-                        <CurrentCoordinate yAccessor={d => d.close} fill="rgba(11,152,197,0.5)" r={'14'}/>
-                        <CurrentCoordinate yAccessor={d => d.close} fill="rgba(11,152,197,1)" r={'7'}/>
 
-                        {/*<SingleValueTooltip*/}
-                        {/*yAccessor={ d => d.date}*/}
-                        {/*tooltipContent={tooltipContent([*/}
-                        {/*{*/}
-                        {/*label: `${ema20.type()}(${ema20.options()*/}
-                        {/*.windowSize})`,*/}
-                        {/*value: d => numberFormat(d => d.close(d)),*/}
-                        {/*stroke: ema20.stroke()*/}
-                        {/*},*/}
-                        {/*{*/}
-                        {/*label: `${'svg'}(${100})`,*/}
-                        {/*value: d => numberFormat(d => d.close(d)),*/}
-                        {/*stroke: ema50.stroke()*/}
-                        {/*}*/}
-                        {/*])}*/}
-                        {/*fontSize={15}*/}
-                        {/*/>*/}
+                        <InteractiveText
+                            enabled={true}
+                            // textList={this.state.textList}
+                            text={"Lorem ipsum..."}
+                        />
+
+                        <ClickCallback enabled={true}
+                                       onClick={this.addTextLable.bind(d => d)}/>
 
 
                         <defs>
@@ -188,9 +166,6 @@
                         <YAxis axisAt="left" orient="left" percentScale={true} stroke="rgba(0,0,0, 0)"
                                tickStroke='#ffffff' {...yGrid} />
 
-                        {/*<YAxis axisAt="right" orient="right" ticks={5} {...yGrid}/>*/}
-
-
                         <AreaSeries
                             yAccessor={d => d.close}
                             fill="url(#MyGradient)"
@@ -199,31 +174,43 @@
                             interpolation={curveMonotoneX}
                             canvasGradient={canvasGradient}
                         />
-
-                        {/*<ToolTipText*/}
-                            {/*x={xGrid} y={yGrid}*/}
-                            {/*xLabel="Date"*/}
-                            {/*yAccessor={d => d.close}*/}
-                            {/*xDisplayFormat={timeFormat("%Y-%m-%d")} yDisplayFormat={format(".2f")}>*/}
-                            {/*<tspan key="value" fill={'#fff'}>sss</tspan>*/}
-                        {/*</ToolTipText>*/}
                     </Chart>
+
+                    <g>
+                        <rect className={'label_background'} x={this.state.x - 100} y={this.state.y - 50} width="200"
+                              height="50" stroke="#3D4977"
+                              fill="#3D4977" rx="2" ry="2"/>
+                        <polygon
+                            points={(this.state.x - 10) + ',' + (this.state.y) + ' ' + (this.state.x) + ',' + (this.state.y + 10) + ' ' + (this.state.x + 10) + ',' + (this.state.y)}
+                            fill="#3D4977" stroke="#3D4977" strokeWidth="0"/>
+                        <ToolTipText x={this.state.x} y={this.state.y}
+                                   >
+                            <tspan className={'label_date_text'} x={this.state.x} textAnchor="middle" dy="-1em"
+                                   fill={'#fff'}>{this.state.dateText}</tspan>
+                            <tspan className={'label_date_value_text'} x={this.state.x} textAnchor="middle" key="value"
+                                   dy="-1em"
+                                   fill={'#fff'}>Performance: {this.state.valueText}</tspan>
+
+
+                        </ToolTipText>
+                    </g>
                 </ChartCanvas>
 
-            );
-        }
+            </div>
+        );
     }
+}
 
-    AreaChart.propTypes = {
-        data: PropTypes.array.isRequired,
-        width: PropTypes.number.isRequired,
-        ratio: PropTypes.number.isRequired,
-        type: PropTypes.oneOf(["svg", "hybrid"]).isRequired,
-    };
+AreaChart.propTypes = {
+    data: PropTypes.array.isRequired,
+    width: PropTypes.number.isRequired,
+    ratio: PropTypes.number.isRequired,
+    type: PropTypes.oneOf(["svg", "hybrid"]).isRequired,
+};
 
-    AreaChart.defaultProps = {
-        type: "svg",
-    };
-    AreaChart = fitWidth(AreaChart);
+AreaChart.defaultProps = {
+    type: "svg",
+};
+AreaChart = fitWidth(AreaChart);
 
-    export default AreaChart;
+export default AreaChart;

@@ -1,5 +1,4 @@
 import React from 'react';
-import {Row, Col} from 'reactstrap';
 
 import EditExchange from './EditExchange.jsx';
 import DeleteExchange from './deleteAccount.jsx';

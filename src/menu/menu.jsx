@@ -1,5 +1,5 @@
 import React from 'react';
-import {TabContent, TabPane, Card, Button, CardTitle, CardText, Row, Col} from 'reactstrap';
+import {TabContent, TabPane, Row} from 'reactstrap';
 import classnames from 'classnames';
 
 import Dashboard from '../dashboard/dashboardPage.jsx'
@@ -10,11 +10,9 @@ import DataBlock from '../dataBlock/dataBlock.jsx';
 import RobotsPage from '../robotsPage/robotsPage.jsx';
 
 import SettingsPage from '../settingsPage/settingsPage.jsx';
-import {Chart, ChartCanvas} from "react-stockcharts";
 
 
 export default class ExampleMenu extends React.Component {
-    deviceWidth;
 
     constructor(props) {
         super(props);
@@ -28,7 +26,7 @@ export default class ExampleMenu extends React.Component {
         this.colMenu = 'col-2'
         this.colContent = 'col-10'
 
-        console.log(window.innerWidth)
+
         if (window.innerWidth < 767) {
 
             this.colMenu = 'col-1'
