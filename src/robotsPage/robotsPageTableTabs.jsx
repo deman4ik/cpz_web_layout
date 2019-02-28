@@ -112,7 +112,7 @@ export default class RobotsPageTableTabs extends React.Component {
                                 <TabPane tabId="1">
                                     <Row>
                                         <Col sm="12">
-                                            <div className="d-flex justify-content-between align-items-center table_header">
+                                            <div className="col-sm-12 d-flex justify-content-between align-items-center table_header">
                                                 <div>BTC/USD</div>
                                                 <div>
                                                     <ul className="float-left data_table">
