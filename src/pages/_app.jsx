@@ -9,7 +9,11 @@ class CPZApp extends App {
     return (
       <Container>
         <ApolloProvider client={apolloClient}>
-          <Component {...pageProps} />
+          <div className="container-fluid">
+            <div id="main-container">
+              <Component {...pageProps} />
+            </div>
+          </div>
         </ApolloProvider>
       </Container>
     );
