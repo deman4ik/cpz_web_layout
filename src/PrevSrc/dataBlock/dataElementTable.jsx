@@ -26,7 +26,7 @@ export default class DataElementTable extends React.Component {
                     <div className="news_line">
                         <div className="d-flex justify-content-start ">
                             <div>
-                                <img src="/image/Bitmap.png" alt=""/>
+                                <img src="/static/image/Bitmap.png" alt=""/>
                             </div>
                             <div className={'news_text_container'}>
                                 <div className={'col-12'}>
@@ -57,7 +57,7 @@ export default class DataElementTable extends React.Component {
                     <div className="news_line">
                         <div className="d-flex justify-content-start ">
                             <div>
-                                <img src="/image/Bitmap1.png" alt=""/>
+                                <img src="/static/image/Bitmap1.png" alt=""/>
                             </div>
                             <div className={'news_text_container'}>
                                 <div className={'col-12'}>
@@ -87,7 +87,7 @@ export default class DataElementTable extends React.Component {
                     <div className="news_line">
                         <div className="d-flex justify-content-start ">
                             <div>
-                                <img src="/image/Bitmap2.png" alt=""/>
+                                <img src="/static/image/Bitmap2.png" alt=""/>
                             </div>
                             <div className={'news_text_container'}>
                                 <div className={'col-12'}>
@@ -121,7 +121,7 @@ export default class DataElementTable extends React.Component {
                     <div className="news_line">
                         <div className="d-flex justify-content-start ">
                             <div>
-                                <img src="/image/Bitmap3.png" alt=""/>
+                                <img src="/static/image/Bitmap3.png" alt=""/>
                             </div>
                             <div className={'news_text_container'}>
                                 <div className={'col-12'}>
@@ -152,7 +152,7 @@ export default class DataElementTable extends React.Component {
                     <div className="news_line">
                         <div className="d-flex justify-content-start ">
                             <div>
-                                <img src="/image/Bitmap4.png" alt=""/>
+                                <img src="/static/image/Bitmap4.png" alt=""/>
                             </div>
                             <div className={'news_text_container'}>
                                 <div className={'col-12'}>
@@ -179,7 +179,7 @@ export default class DataElementTable extends React.Component {
                             </div>
                         </div>
                     </div>
-                    
+
                     <div className="show_more">Show more</div>
 
                 </div>

@@ -132,7 +132,7 @@ button {
     background-repeat: no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
-    background-image: url(/image/LOGO_crypto.svg);
+    background-image: url(/static/image/LOGO_crypto.svg);
 }
 
 #left-column .logo_item {
@@ -142,7 +142,7 @@ button {
     display: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(/image/logo.svg);
+    background-image: url(/static/image/logo.svg);
     margin-top: 10px;
 }
 
@@ -196,35 +196,35 @@ button {
 }
 
 #left-column ul li.menu_tab_1 a {
-    background-image: url(/image/dashboard_no_active.svg);
+    background-image: url(/static/image/dashboard_no_active.svg);
 }
 
 #left-column ul li.menu_tab_1.active a {
-    background-image: url(/image/menu_tab_1.svg);
+    background-image: url(/static/image/menu_tab_1.svg);
 }
 
 #left-column ul li.menu_tab_2 a {
-    background-image: url(/image/menu_tab_2.svg);
+    background-image: url(/static/image/menu_tab_2.svg);
 }
 
 #left-column ul li.menu_tab_2.active a {
-    background-image: url(/image/data_active.svg);
+    background-image: url(/static/image/data_active.svg);
 }
 
 #left-column ul li.menu_tab_3 a {
-    background-image: url(/image/menu_tab_3.svg);
+    background-image: url(/static/image/menu_tab_3.svg);
 }
 
 #left-column ul li.menu_tab_3.active a {
-    background-image: url(/image/robots_icon_active.svg);
+    background-image: url(/static/image/robots_icon_active.svg);
 }
 
 #left-column ul li.menu_tab_4 a {
-    background-image: url(/image/menu_tab_4.svg);
+    background-image: url(/static/image/menu_tab_4.svg);
 }
 
 #left-column ul li.menu_tab_4.active a {
-    background-image: url(/image/settings_active.svg);
+    background-image: url(/static/image/settings_active.svg);
 }
 
 #left-column ul li.active:after {
@@ -247,7 +247,7 @@ button {
 }
 
 #left-column .log_out_container .log_out_image {
-    background-image: url(/image/log_out.svg);
+    background-image: url(/static/image/log_out.svg);
 }
 
 #left-column .collapse_menu_container {
@@ -266,7 +266,7 @@ button {
     background-repeat: no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
-    background-image: url(/image/collapse_menu.svg);
+    background-image: url(/static/image/collapse_menu.svg);
 }
 
 #left-column .collapse_menu:hover {
@@ -437,7 +437,7 @@ button {
 .balance_block .balance_block_title_name .dropdown-toggle::after {
     background-color: rgba(0, 0, 0, 0);
     border-color: rgba(0, 0, 0, 0);
-    background-image: url('/image/run.svg');
+    background-image: url('/static/image/run.svg');
     background-repeat: no-repeat;
     padding: 6px;
     background-size: contain;
@@ -458,49 +458,49 @@ button {
 }
 
 .balance_block_title_icon {
-    background-image: url(/image/DOLLAR.svg);
+    background-image: url(/static/image/DOLLAR.svg);
 }
 
 .total_performance_icon {
-    background-image: url(/image/total_per.svg);
+    background-image: url(/static/image/total_per.svg);
 }
 
 .profile_icon {
-    background-image: url(/image/profile.svg);
+    background-image: url(/static/image/profile.svg);
 }
 
 .edit_icon {
-    background-image: url(/image/edit.svg);
+    background-image: url(/static/image/edit.svg);
 }
 
 .trash_icon {
-    background-image: url(/image/trashbin.svg);
+    background-image: url(/static/image/trashbin.svg);
 }
 
 .add_icon {
-    background-image: url(/image/icon-add.svg);
+    background-image: url(/static/image/icon-add.svg);
 }
 
 .add_white {
-    background-image: url(/image/add.svg);
+    background-image: url(/static/image/add.svg);
 }
 .add_blue {
-    background-image: url(/image/add_blue.svg);
+    background-image: url(/static/image/add_blue.svg);
 }
 .close_icon {
-    background-image: url(/image/close.svg);
+    background-image: url(/static/image/close.svg);
 }
 
 .balance_icon {
-    background-image: url(/image/BALANCE.svg);
+    background-image: url(/static/image/BALANCE.svg);
 }
 
 .account_icon {
-    background-image: url(/image/Account.svg);
+    background-image: url(/static/image/Account.svg);
 }
 
 .settings_icon {
-    background-image: url(/image/settings.svg);
+    background-image: url(/static/image/settings.svg);
 }
 
 .balance_block_title span, .total_performance_title span {
@@ -540,39 +540,39 @@ button {
 }
 
 .crypto_balance_icon_bitcoin {
-    background-image: url(/image/Bitcoin_Icon.svg);
+    background-image: url(/static/image/Bitcoin_Icon.svg);
 }
 
 .crypto_balance_icon_etherium {
-    background-image: url(/image/etherium.svg);
+    background-image: url(/static/image/etherium.svg);
 }
 
 .crypto_balance_icon_RIPPLE {
-    background-image: url(/image/RIPPLE_ICON.svg);
+    background-image: url(/static/image/RIPPLE_ICON.svg);
 }
 
 .crypto_balance_icon_litecoin {
-    background-image: url(/image/litecoin.svg);
+    background-image: url(/static/image/litecoin.svg);
 }
 
 .crypto_balance_icon_dash {
-    background-image: url(/image/dash.svg);
+    background-image: url(/static/image/dash.svg);
 }
 
 .crypto_balance_icon_ETH_Classic {
-    background-image: url(/image/ETH_Classic.svg);
+    background-image: url(/static/image/ETH_Classic.svg);
 }
 
 .button_run_icon {
-    background-image: url(/image/run.svg);
+    background-image: url(/static/image/run.svg);
 }
 
 .button_search_icon {
-    background-image: url(/image/search.svg);
+    background-image: url(/static/image/search.svg);
 }
 
 .arrow_data_down {
-    background-image: url(/image/arrow_data_down.svg);
+    background-image: url(/static/image/arrow_data_down.svg);
 }
 
 .crypto_balance span {
@@ -623,19 +623,19 @@ button {
 }
 
 .crypto_balance .crypto_balance_name_top:after {
-    background-image: url(/image/ARROW_UP.svg);
+    background-image: url(/static/image/ARROW_UP.svg);
 }
 
 .crypto_balance_name_top:after {
-    background-image: url(/image/ARROW_UP.svg);
+    background-image: url(/static/image/ARROW_UP.svg);
 }
 
 .crypto_balance .crypto_balance_name_bottom:after {
-    background-image: url(/image/ARROW_DOWN.svg);
+    background-image: url(/static/image/ARROW_DOWN.svg);
 }
 
 .crypto_balance_name_bottom:after {
-    background-image: url(/image/ARROW_DOWN.svg);
+    background-image: url(/static/image/ARROW_DOWN.svg);
 }
 
 #robots_container {
@@ -660,7 +660,7 @@ button {
     justify-content: flex-start;
     align-items: center;
     color: #344257;
-    background-image: url(/image/data_icon.svg);
+    background-image: url(/static/image/data_icon.svg);
     font-weight: bold;
 }
 
@@ -683,7 +683,7 @@ button {
 }
 
 .robots_container .robots_content_line > a {
-    background-image: url(/image/trashbin.svg);
+    background-image: url(/static/image/trashbin.svg);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
@@ -695,7 +695,7 @@ button {
 }
 
 .robots_container .robots_content_line > a:hover {
-    background-image: url(/image/trashbin_blue.svg);
+    background-image: url(/static/image/trashbin_blue.svg);
 }
 
 .robots_container .robots_content_line > .row {
@@ -757,7 +757,7 @@ button {
     border: none;
     border-radius: 2px;
     padding: 7px 27px 7px 5px;
-    background-image: url(/image/resume.svg);
+    background-image: url(/static/image/resume.svg);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: 68px center;
@@ -771,7 +771,7 @@ button {
     border: none;
     border-radius: 2px;
     padding: 7px 0;
-    background-image: url(/image/run.svg);
+    background-image: url(/static/image/run.svg);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: 75px center;
@@ -789,27 +789,27 @@ button {
 }
 
 .coin_icon_eth {
-    background-image: url(/image/etherium.svg);
+    background-image: url(/static/image/etherium.svg);
 }
 
 .robots_container .robots_content_line .coin_icon_eth {
-    background-image: url(/image/etherium.svg);
+    background-image: url(/static/image/etherium.svg);
 }
 
 .coin_icon_RIPPLE {
-    background-image: url(/image/RIPPLE_ICON.svg);
+    background-image: url(/static/image/RIPPLE_ICON.svg);
 }
 
 .robots_container .robots_content_line .coin_icon_RIPPLE {
-    background-image: url(/image/RIPPLE_ICON.svg);
+    background-image: url(/static/image/RIPPLE_ICON.svg);
 }
 
 .coin_icon_bitcoin {
-    background-image: url(/image/Bitcoin_Icon.svg);
+    background-image: url(/static/image/Bitcoin_Icon.svg);
 }
 
 .robots_container .robots_content_line .coin_icon_bitcoin {
-    background-image: url(/image/Bitcoin_Icon.svg);
+    background-image: url(/static/image/Bitcoin_Icon.svg);
 }
 
 .search_container .search_text {
@@ -887,7 +887,7 @@ button {
 }
 
 .data_page_title {
-    background-image: url(/image/DATA.svg);
+    background-image: url(/static/image/DATA.svg);
     background-repeat: no-repeat;
     margin-left: -15px;
     height: 40px;
