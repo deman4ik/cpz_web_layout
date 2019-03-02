@@ -16,6 +16,8 @@ export default class OtherAccount extends React.Component {
                 return  'account_info_value_red';
             case 'None':
                 return 'account_info_value_grey';
+            default:
+                return 'account_info_value_grey';
         }
     }
     render() {

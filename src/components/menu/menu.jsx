@@ -5,10 +5,7 @@ import classnames from "classnames";
 import { MenuTab, CollapseMenuTab, LogOutMenuTab, Logo } from './menuBricks.jsx';
 
 const Menu = props => (
-    <div
-        id="left-column"
-        className={classnames({ close_menu: props.activeMenu }, props.colMenu )}
-    >
+    <div id="left-column" className={classnames({ close_menu: props.activeMenu }, props.colMenu )}>
         <div className="left-column-container">
             <div className="logo_container">
                 <Logo/>

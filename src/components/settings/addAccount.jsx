@@ -1,6 +1,6 @@
 import React from 'react';
 import {Modal, ModalBody} from 'reactstrap';
-import SelectElement from "../selectElement";
+import SelectElement from "../common/selectElement";
 
 
 export default class addAccount extends React.Component {

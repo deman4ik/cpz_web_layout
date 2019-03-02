@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ChartComponent from "../totalPerformance/totalPerfomance.jsx";
-import NewsLine from '../../components/newsLine.jsx';
+import NewsLine from './newsLine.jsx';
 
 
 export default class DataElementTable extends React.Component {

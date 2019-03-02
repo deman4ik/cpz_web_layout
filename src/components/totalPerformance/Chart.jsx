@@ -74,11 +74,7 @@ class AreaChart extends React.Component {
 
 
         const height = 750;
-        const {data, type, width, ratio, initialData} = this.props;
-
-
-        const xScaleProvider = discontinuousTimeScaleProvider
-            .inputDateAccessor(d => d.date);
+        const {data, type, width, ratio } = this.props;
 
 
         const margin = {left: 70, right: 70, top: 20, bottom: 30};

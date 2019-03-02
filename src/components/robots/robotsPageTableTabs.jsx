@@ -1,9 +1,5 @@
 import React from 'react';
-import {TabContent, TabPane, Nav, NavItem, NavLink, Row, Col} from 'reactstrap';
-import classnames from 'classnames';
 
-import MoveingAverage from "./MovingAverage/MovingAverage.jsx";
-import TotalPerfomance from "../totalPerformance/totalPerfomance.jsx"
 import { RetButton, InfoField } from './robotsBricks';
 
 import WizardModal from "../modal/WizardModal.jsx";

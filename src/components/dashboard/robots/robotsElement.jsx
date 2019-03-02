@@ -1,9 +1,7 @@
 import React from 'react';
 import {Row} from 'reactstrap';
 
-import { Coin, CoinInfoCell, InfoCell, MiniChart, RoboButton, RoboName, Exchange } from '../../tableRowBricks.jsx';
-
-import RobotsMiniTable from '../../robotsMiniTable.jsx';
+import { Coin, CoinInfoCell, InfoCell, MiniChart, RoboButton, RoboName, Exchange } from '../../common/tableRowBricks.jsx';
 
 
 export default class RobotsElement extends React.Component {

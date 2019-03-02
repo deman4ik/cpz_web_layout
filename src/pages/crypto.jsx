@@ -2,7 +2,7 @@ import React from 'react';
 
 import DataElementCollapse from "../components/crypto/dataElementCollapse.jsx";
 import SearchWidget from "../components/crypto/searchWidget";
-import { CryptoHeader } from "../components/tableRowBricks";
+import { CryptoHeader } from "../components/common/tableRowBricks";
 
 export default class dataBlock extends React.Component {
     constructor(props) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import SelectElement  from '../selectElement.jsx';
+import SelectElement  from '../common/selectElement.jsx';
 
 export const FullWidthField = props => (
     <div>

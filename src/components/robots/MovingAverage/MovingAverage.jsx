@@ -1,16 +1,12 @@
 import React from 'react';
 import Chart from './Chart';
-import { getData } from "./utils";
+import { getData } from "../../common/utils";
 import { Row, Col } from 'reactstrap';
 import { TypeChooser } from "react-stockcharts/lib/helper";
 
-import ChartHeader from '../../chartHeader.jsx';
+import ChartHeader from '../../common/chartHeader.jsx';
 
 export default class MovingAverage extends React.Component {
-
-    constructor(props) {
-        super(props);
-    }
     componentDidMount() {
         getData().then(data => {
             this.setState({ data })

@@ -2,8 +2,7 @@ import React from 'react';
 import {Row} from 'reactstrap';
 
 
-import RobotsMiniTable from '../robotsMiniTable.jsx';
-import { Coin, CoinInfoCell, MiniChart, RoboCheckbox, RoboName, Exchange } from '../tableRowBricks.jsx';
+import { Coin, CoinInfoCell, MiniChart, RoboCheckbox, RoboName, Exchange } from '../common/tableRowBricks.jsx';
 
 export default class robotsPageElement extends React.Component {
     buttonText;

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Modal, ModalBody} from 'reactstrap';
-import  SelectElement  from '../selectElement.jsx';
+import  SelectElement  from '../common/selectElement.jsx';
 
 export default class robotsOpenedElement extends React.Component {
     constructor(props) {

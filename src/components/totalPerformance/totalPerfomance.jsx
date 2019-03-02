@@ -1,9 +1,9 @@
 import React from "react";
-import {getData} from "./utils";
+import {getData} from "../common/utils";
 import {TypeChooser} from "react-stockcharts/lib/helper/index";
 import ChartTP from "./Chart";
 
-import ChartHeader from '../chartHeader.jsx';
+import ChartHeader from '../common/chartHeader.jsx';
 
 export default class ChartComponent extends React.Component {
 

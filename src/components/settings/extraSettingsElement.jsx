@@ -1,6 +1,6 @@
 import React from 'react';
 
-import  SelectElement  from '../../components/selectElement.jsx';
+import  SelectElement  from '../common/selectElement.jsx';
 import { ExtraSettingsLine } from './settingsBricks.jsx';
 
 

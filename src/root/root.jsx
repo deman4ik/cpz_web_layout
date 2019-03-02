@@ -5,11 +5,16 @@ import Menu from '../components/menu/menu.jsx';
 import TabContainer from '../components/appTabs/tabContainer.jsx';
 import { Robots, Crypto, Balance, Account } from '../demo_data/demo.jsx';
 
-export default class ExampleMenu extends React.Component {
+/* 
+*   Это корневой компонент приложения. В нем расположено основное разделение на два контейнера.
+*   Контейнер Menu предназначен для отрисовки элементов меню.
+*   Контейнер TabContainer предназначен для отрисовки содержимого страниц.    
+*/
+
+export default class Root extends React.Component {
 
     constructor(props) {
         super(props);
-
         this.toggle = this.toggle.bind(this);
         this.state = {
             activeTab: '1',
@@ -18,11 +23,9 @@ export default class ExampleMenu extends React.Component {
             balance: Balance,
             account: Account
         };
-
         this.activeMenu = false;
         this.colMenu = 'col-2'
         this.colContent = 'col-10'
-
         if (window.innerWidth < 767) {
             this.colMenu = 'col-1'
             this.colContent = 'col-11'
@@ -30,6 +33,7 @@ export default class ExampleMenu extends React.Component {
         }
     }
     toggle(tab) {
+        // Переключение между страницами
         if (this.state.activeTab !== tab) {
             this.setState({
                 activeTab: tab
@@ -37,6 +41,7 @@ export default class ExampleMenu extends React.Component {
         }
     }
     closeMenu() {
+        // Сворачивание меню
         if (this.activeMenu) {
             this.activeMenu = false;
             this.setState({
@@ -49,7 +54,6 @@ export default class ExampleMenu extends React.Component {
             this.setState({
                 activeMenu: true
             });
-
             this.colMenu = 'col-1'
             this.colContent = 'col-11'
         }
