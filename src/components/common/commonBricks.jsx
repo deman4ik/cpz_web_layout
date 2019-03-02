@@ -1,3 +1,7 @@
+/*
+*   Компоненты разбивки, которые могут быть использованы в различных частях проекта
+*/
+
 import React from 'react';
 import { Row } from 'reactstrap';
 
@@ -127,5 +131,11 @@ export const CryptoHeader = () => (
                 Balance
             </div>
         </div>
+    </div>
+)
+
+export const ContainerName = props => (
+    <div className={props.className}>
+        <span>{props.name}</span>
     </div>
 )

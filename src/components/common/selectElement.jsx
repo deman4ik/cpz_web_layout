@@ -4,14 +4,11 @@ import React from 'react';
 export default class robotsOpenedElement extends React.Component {
     constructor(props) {
         super(props);
-
         this.state = {openSelectElem: false, selectValue: 'BTC, USD'};
-
         this.toggleSelect = this.toggleSelect.bind(this);
         this.changeSelectValue = this.changeSelectValue.bind(this);
         this.selectClass = 'select_element '
     }
-
 
     toggleSelect(){
         this.setState(state => ({
@@ -24,11 +21,9 @@ export default class robotsOpenedElement extends React.Component {
         }
     }
     changeSelectValue(element){
-
         this.setState(state => ({
             selectValue: element
         }));
-
     }
 
     render() {

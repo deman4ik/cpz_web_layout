@@ -2,7 +2,8 @@ import React from 'react';
 
 import DataElementCollapse from "../components/crypto/dataElementCollapse.jsx";
 import SearchWidget from "../components/crypto/searchWidget";
-import { CryptoHeader } from "../components/common/tableRowBricks";
+import { CryptoHeader } from "../components/common/commonBricks";
+import { ContainerName } from "../components/common/commonBricks";
 
 export default class dataBlock extends React.Component {
     constructor(props) {
@@ -22,13 +23,10 @@ export default class dataBlock extends React.Component {
                     <SearchWidget/>
                 </div>
                 <div className="col-12 data_page_content">
-                    <div className="data_page_title">
-                        <span>Data</span>
-                    </div>
+                    <ContainerName className={'data_page_title'} name={'Data'}/>
                     <div className="col-12 data_page_tables_header">
                         <CryptoHeader/>
                     </div>
-
                     {this.props.crypto.map(coin => (
                         <DataElementCollapse key={coin.id}
                             balance_name={coin.balance.name} balance_dollar={coin.balance.dollar} balance={coin.balance.current}

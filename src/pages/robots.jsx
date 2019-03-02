@@ -6,6 +6,7 @@ import RobotsElementCollapse from '../components/robots/robotsElementCollapse.js
 import RobotsPageTableTabs from '../components/robots/robotsPageTableTabs.jsx';
 import RobotsInfoTabs from '../components/robots/robotsInfoTabs.jsx';
 import { RoboCollapsedHeader } from '../components/robots/robotsBricks';
+import { ContainerName } from '../components/common/commonBricks';
 
 export default class RobotsPage extends React.Component {
     elem;
@@ -65,7 +66,7 @@ export default class RobotsPage extends React.Component {
                             </defs>
                         </svg>
                         <div className="row">
-                            <div className="col-12 robots_title">Robots</div>
+                            <ContainerName className={'col-12 robots_title'} name={'Robots'}/>
                         </div>
                         <div className={'col-12 robots_line'}>
                             <RoboCollapsedHeader/>

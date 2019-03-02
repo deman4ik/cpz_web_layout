@@ -23,6 +23,7 @@ export const ExtraCheckBox = props => (
     </div>
 )
 
+// TODO рассмотреть возможность объединения этих лайнов в один (структура похожая)
 export const AccountInfoLine = props => (
     <div>
         <span className={'account_info_name'}>{props.title}</span>

@@ -1,10 +1,5 @@
 import React from 'react';
-
-
 import * as ReactD3 from "react-d3-components";
-
-
-
 var AreaChart = ReactD3.AreaChart;
 var LineChart = ReactD3.LineChart;
 

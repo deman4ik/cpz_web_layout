@@ -1,5 +1,5 @@
 import React from 'react';
-import { CoinState, CoinChange, Balance } from '../../common/tableRowBricks.jsx';
+import { CoinState, CoinChange, Balance } from '../../common/commonBricks.jsx';
 
 export default class CryptoMiniRow extends React.Component {
     constructor(props) {

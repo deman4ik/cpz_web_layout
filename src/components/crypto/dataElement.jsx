@@ -1,5 +1,5 @@
 import React from 'react';
-import { CoinState, CoinChange, InfoCell, Balance } from '../common/tableRowBricks.jsx';
+import { CoinState, CoinChange, InfoCell, Balance } from '../common/commonBricks.jsx';
 
 export default class dataElement extends React.Component {
     render() {

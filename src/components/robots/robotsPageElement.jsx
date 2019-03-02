@@ -2,7 +2,7 @@ import React from 'react';
 import {Row} from 'reactstrap';
 
 
-import { Coin, CoinInfoCell, MiniChart, RoboCheckbox, RoboName, Exchange } from '../common/tableRowBricks.jsx';
+import { Coin, CoinInfoCell, MiniChart, RoboCheckbox, RoboName, Exchange } from '../common/commonBricks.jsx';
 
 export default class robotsPageElement extends React.Component {
     buttonText;

@@ -1,9 +1,9 @@
 import React from 'react';
-import {Row} from 'reactstrap';
 import * as d3 from "d3";
 
 import RobotsElement from './robotsElement.jsx';
 import { RobotsHeader } from '../dashBoardBricks.jsx';
+import { ContainerName } from '../../common/commonBricks';
 
 export default class RobotsBlock extends React.Component {
     data;
@@ -16,7 +16,6 @@ export default class RobotsBlock extends React.Component {
         this.colorScale2 = d3.scaleOrdinal()
             .domain([1, 2])
             .range(['#65F5E5']);
-
         this.colorScaleRed = d3.scaleOrdinal()
             .domain([1, 2])
             .range(['url(#MyGradientRed)']);
@@ -28,9 +27,7 @@ export default class RobotsBlock extends React.Component {
     render() {
         return (
             <div className="robots_container">
-                <div className="col-12 robots_title">
-                    Robots
-                </div>
+                <ContainerName className={'col-12 robots_title'} name={'Robots'}/>
                 <RobotsHeader/>
                 {this.props.robots.map(robot => (
                     <RobotsElement key={robot.id} 

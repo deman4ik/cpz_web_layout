@@ -2,6 +2,8 @@ import React from "react";
 import CounDropdowns from './crypto/counDropdowns.jsx';
 import { Row } from 'reactstrap';
 
+import { ContainerName } from '../common/commonBricks';
+
 export const BalanceTableHeader = () => (
     <div className="row crypto_balance_title">
         <div className="col-4">Name/Price</div>
@@ -12,9 +14,7 @@ export const BalanceTableHeader = () => (
 
 export const BalanceHeader = () => (
     <div className="row">
-        <div className="col-3 balance_block_title balance_block_title_icon">
-            <span>Balance</span>
-        </div>
+        <ContainerName className={'col-3 balance_block_title balance_block_title_icon'} name={'Balance'}/>
         <div className="col-9 balance_block_title_name">
             <CounDropdowns/>
         </div>
