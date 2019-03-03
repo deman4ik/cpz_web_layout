@@ -1,3 +1,9 @@
+/*
+* Таб с таблицей криптовалют. В свернутом виде в таблице отражены криптовалюты,
+* с которыми ведется работа. В развернутом состоянии показывается график изменения
+* курса криптовалюты и 
+*/
+
 import React from 'react';
 
 import DataElementCollapse from "../components/crypto/dataElementCollapse.jsx";
