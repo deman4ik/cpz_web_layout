@@ -9,6 +9,11 @@ import { RoboCollapsedHeader } from '../components/robots/robotsBricks';
 import { ContainerName } from '../components/common/commonBricks';
 import { SimpleSearchWidget } from '../components/common/searchWidget';
 
+
+/* 
+*   Информационная таблица по роботам, имеющимся в системе, а так же подробная информация по конкретному роботу
+*   (выбирается кликом по строке робота)
+*/
 export default class RobotsPage extends React.Component {
     elem;
 

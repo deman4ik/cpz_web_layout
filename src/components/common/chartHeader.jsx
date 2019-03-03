@@ -1,6 +1,11 @@
 import React from 'react';
 
 
+/*
+*   Хедер графика изменений стоимости криптовалют.
+*   Предназначен для выбора периода, за который запрашиваются данные.
+*       coin_name - наименование криптовалюты
+*/
 export default class ChartHeader extends React.Component {
     constructor(props) {
         super(props);

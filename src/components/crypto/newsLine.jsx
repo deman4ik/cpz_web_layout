@@ -1,6 +1,10 @@
 import React from 'react';
 import { DoubleUniField, SingleUniField } from '../common/commonBricks';
 
+
+/* 
+*   Отдельная строка новости по криптовалюте
+*/
 export default class NewsLine extends React.Component {
     render() {
         return (

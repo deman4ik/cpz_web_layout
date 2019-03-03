@@ -7,6 +7,16 @@ import { Row } from 'reactstrap';
 
 import RobotsMiniTable from './robotsMiniTable.jsx';
 
+/* 
+*   Универсальное многоцелевое поле с двумя строчными элементами
+*   Вид определяется параметрами, переданными в имя класса
+*   для div и span. Имя класса не обязательно.
+*       className - имя класса div.
+*       spanClassName1 и spanClassName2 - имя класса первого и второго
+*           строчных элементов соответственно.
+*       value1 и value2 - текст, отображаемый в первом и втором
+*           строчных элементах.
+*/
 export const DoubleUniField = (props) => (
     <div className={props.className}>
         <span className={props.spanClassName1}>{props.value1}</span>
@@ -14,6 +24,15 @@ export const DoubleUniField = (props) => (
     </div>
 )
 
+/* 
+*   Универсальное многоцелевое поле с одним строчным элементом.
+*   Вид определяется именами класса для div и span.
+*       className - имя класса div.
+*       spanClassName - имя класса span.
+*       value - текстовое содержимое span.
+*       noRow - проперти для отключения Row в поле. Влияет на
+*           положение текста в span.
+*/
 export class SingleUniField extends React.Component{
     render () {
         if (this.props.noRow) {
@@ -35,6 +54,16 @@ export class SingleUniField extends React.Component{
     }
 }
 
+/* 
+*   Мини-график, использующийся в таблицах.
+*       className - класс div;
+*       data - данные для отрисовки графика
+*       color, color2 - цвета для отрисовки графика.
+*           Зависят от изменений в данных (красный при 
+*           негативных изменениях, зеленый - при позитивных).
+*       perfomance_val, perfomance_val_old - текущее и последнее
+*           предыдущее зафиксированное изменение
+*/
 export const MiniChart = (props) => (
     <div className={props.col_class + " align-self-center"}>
         <div className=" d-flex justify-content-start flex-row align-items-center">
@@ -51,6 +80,11 @@ export const MiniChart = (props) => (
     </div>
 )
 
+/* 
+*   Табличная кнопка робота.
+*   className - класс кнопки
+*   button_val - наименование кнопки
+*/
 export class RoboButton extends React.Component {
     render () {
         return(
@@ -63,6 +97,12 @@ export class RoboButton extends React.Component {
     }
 }
 
+/*
+*   Многофункциональное поле
+*       type - если text - текстовое поле с датой начала активности
+*       started - дата начала функционирования робота
+*       button_checkbox - состояние чекбокса по-умолчанию (type не text!)
+*/
 export class RoboCheckbox extends React.Component {
     render () {
         if (this.props.type === 'text') {
@@ -87,6 +127,7 @@ export class RoboCheckbox extends React.Component {
     }
 }
 
+/* Хедер таблицы криптовалюты */
 export const CryptoHeader = () => (
     <div className="row">
         <div className="col-2 col-1_5">Coin</div>
@@ -103,6 +144,11 @@ export const CryptoHeader = () => (
     </div>
 )
 
+/*
+*   Заголовок контейнеров
+*       className - стиль заколовка + икона
+*       name - наименование контейнера
+*/
 export const ContainerName = props => (
     <div className={props.className}>
         <span>{props.name}</span>

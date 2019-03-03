@@ -6,7 +6,9 @@ import WizardModal from "../modal/WizardModal.jsx";
 import { NavPanelWidget, TabPaneWidget } from './tabWidget';
 import { DoubleUniField } from '../common/commonBricks';
 
-
+/* 
+*   Подробная информация по роботу с интерактивным графическим отображением
+*/
 export default class RobotsPageTableTabs extends React.Component {
     elem;
 

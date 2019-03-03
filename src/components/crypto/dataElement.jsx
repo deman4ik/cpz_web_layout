@@ -1,6 +1,10 @@
 import React from 'react';
 import { DoubleUniField, SingleUniField } from '../common/commonBricks.jsx';
 
+
+/*
+*   Табличная строка криптовалюты с размещенными по ячейкам данными
+*/
 export default class dataElement extends React.Component {
     render() {
         return (

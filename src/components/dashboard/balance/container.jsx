@@ -3,6 +3,11 @@ import BalanceBlock from './balanceBlock.jsx';
 import CryptoMiniRow from "../crypto/cryptoMiniRow.jsx";
 import { BalanceHeader, BalanceTableHeader } from '../dashBoardBricks.jsx';
 
+
+/*
+ *  Контейнер баланса дэшборда. Отображается основная информация
+ *  по текущему балансу аккаунта, обмену и криптовалютам.
+ */
 const BalanceContainer = props => (
     <div>
         <BalanceHeader />

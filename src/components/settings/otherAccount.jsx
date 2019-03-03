@@ -6,6 +6,12 @@ import { AccountInfoBlock } from './infoBlockWidget.jsx';
 import { DoubleUniField } from '../common/commonBricks';
 
 
+/* 
+*   Виджет биржевого счета пользователя
+*       account_name - наименование счета
+*       main_keys_status - статус главных ключей
+*       spared_status_keys - статус вспом. ключей
+*/
 export default class OtherAccount extends React.Component {
     /* It may be a statefull widget */
     getElementColor(elem){

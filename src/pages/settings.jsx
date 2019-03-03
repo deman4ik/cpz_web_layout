@@ -3,7 +3,9 @@ import React from "react";
 
 import { ProfileContainer, AccountBalanceContainer, AccountsContainer, ExtraSettingsContainer } from '../components/settings/settingsContainers';
 
-
+/*
+* Страница настроек пользователя
+*/
 export default class SettingsPage extends React.Component {
   elemStatus;
   constructor(props) {

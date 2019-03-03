@@ -4,6 +4,18 @@ import {Row} from 'reactstrap';
 import { SingleUniField, DoubleUniField, MiniChart, RoboButton } from '../../common/commonBricks.jsx';
 
 
+/*
+*   Строка сводной таблицы роботов для дэшборда
+*       robot_name - наименование робота
+*       coin_name - криптовалюта
+*       coin_class - икона криптовалюты
+*       exchange - обмен
+*       initial_capital, initial_capital_old - начальный капитал
+*       robot_balance - текущий баланс робота
+*       data, color, color2 - данные для миниграфика
+*       started, started_day - данные о дате запуска робота
+*       button_class, button_val - данные для отображения кнопки
+*/
 export default class RobotsElement extends React.Component {
     data;
 

@@ -1,9 +1,12 @@
 import React from 'react';
 import {Row} from 'reactstrap';
 
-
 import { SingleUniField, DoubleUniField, MiniChart, RoboCheckbox } from '../common/commonBricks.jsx';
 
+
+/* 
+*   Данные робота, распределенные по ячейкам табличной строки
+*/
 export default class robotsPageElement extends React.Component {
     buttonText;
 

@@ -3,6 +3,10 @@ import { Modal, ModalBody } from 'reactstrap';
 import { FullWidthField, SelectWidgetWithAdd, WizardCheckbox, ValueEnterWidget } from './modalBricks';
 import { DoubleUniField, SingleUniField } from '../common/commonBricks';
 
+
+/* 
+*   Визард настройки робота
+*/
 export default class robotsOpenedElement extends React.Component {
     constructor(props) {
         super(props);

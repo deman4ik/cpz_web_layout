@@ -5,6 +5,19 @@ import DataElement from "./dataElement.jsx";
 import DataElementTable from "./dataElementTable.jsx";
 
 
+/*
+*   Табличные данные о криптовалюте (интерактивная строка)
+*       balance_name - имя криптовалюты
+*       balance_dollar - текущий баланс в долларах
+*       crypto_balance_icon - иконка криптовалюты
+*       change_proc, change_val - изменение ст-ти (процент/валюта)
+*       market_cap_dollar, market_cap_value - рыночная капитализация (доллар, крипто)
+*       volume_24h_dollar, volume_24h_val - капитализация за 24 ч.
+*       circulating_supply_dollar, circulating_supply_val - оборот
+*       max_supply_dollar, max_supply_val - максимум
+*       code - код криптовалюты
+*       news - новости по криптовалюте
+*/
 export default class dataElementCollapse extends React.Component {
     constructor(props) {
         super(props);

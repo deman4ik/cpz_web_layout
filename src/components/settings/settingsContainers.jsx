@@ -6,6 +6,9 @@ import OtherAccount from "./otherAccount.jsx";
 import AddAccount from "./addAccount.jsx";
 import ExtraSettingsElement from "./extraSettingsElement.jsx";
 
+/* 
+*   Контейнер профиля пользователя
+*/
 export const ProfileContainer = props => (
     <div className={"content_container"}>
         <ContainerName className={'settings_title profile_icon'} name={'Profile'}/>
@@ -24,6 +27,9 @@ export const ProfileContainer = props => (
     </div>
 )
 
+/* 
+*   Контейнер баланса счета пользователя
+*/
 export const AccountBalanceContainer = props => (
     <div>
         <div className="row">
@@ -42,6 +48,9 @@ export const AccountBalanceContainer = props => (
     </div>
 )
 
+/* 
+*   Контейнер биржевых счетов пользователя
+*/
 export const AccountsContainer = props => (
     <div className="col-12 content_container">
         <div className="row">
@@ -65,6 +74,9 @@ export const AccountsContainer = props => (
     </div>
 )
 
+/* 
+*   Контейнер дополнительных настроек
+*/
 export const ExtraSettingsContainer = () => (
     <div className="col-12 content_container">
         <div className="row">

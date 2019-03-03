@@ -9,9 +9,7 @@ export default class RobotsMiniTable extends React.Component {
 
     constructor(props) {
         super(props);
-
         this.data = this.props.data;
-
     }
 
     render() {

@@ -2,6 +2,9 @@ import React from 'react';
 import {Modal, ModalBody} from 'reactstrap';
 import {FullWidthField, SimpleButton, KeyVerifyContainer } from '../modal/modalBricks';
 
+/* 
+*   Мастер редактирования биржевого счета
+*/
 class EditExchange extends React.Component {
     constructor(props) {
         super(props);

@@ -74,6 +74,9 @@ export const SimpleButton = props => (
     </div>
 )
 
+/*
+*   Виджет верификации ключей
+*/
 export const KeyVerifyContainer = props => (
     <div className={props.className}>
         <p>{props.descr}</p>

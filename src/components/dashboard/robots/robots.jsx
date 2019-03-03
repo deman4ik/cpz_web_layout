@@ -5,6 +5,9 @@ import RobotsElement from './robotsElement.jsx';
 import { RobotsHeader } from '../dashBoardBricks.jsx';
 import { ContainerName } from '../../common/commonBricks';
 
+/*
+*   Сводная информация по роботам, с которыми работает пользователь
+*/
 export default class RobotsBlock extends React.Component {
     data;
 

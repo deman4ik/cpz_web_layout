@@ -2,6 +2,11 @@ import React from 'react';
 import ChartComponent from "../../totalPerformance/totalPerfomance.jsx";
 import { ContainerName } from '../../common/commonBricks';
 
+
+/*
+*   Контейнер с графиком изменения курса криптовалют.
+*       tableValue - данные для отображения в графике
+*/
 const TotalPerfContainer = props => (
     <div className='total_performance_container_background'>
         <ContainerName className={'col-12 total_performance_title total_performance_icon'}

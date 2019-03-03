@@ -1,6 +1,10 @@
 import React from 'react';
 import {Modal, ModalBody} from 'reactstrap';
 
+
+/*
+*   Виджет удаления биржевого счета
+*/
 class EditExchange extends React.Component {
     constructor(props) {
         super(props);

@@ -7,6 +7,9 @@ import DataBlock from '../../pages/crypto.jsx';
 import RobotsPage from '../../pages/robots.jsx';
 import SettingsPage from '../../pages/settings.jsx';
 
+/*
+*   Меню навигации
+*/
 const TabContainer = props => (
     <div id="content" className={classnames(props.colContent)}>
         <TabContent activeTab={props.activeTab}>

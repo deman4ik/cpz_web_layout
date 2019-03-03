@@ -4,6 +4,10 @@ import RobotsBlock from '../components/dashboard/robots/robots.jsx';
 import BalanceContainer from '../components/dashboard/balance/container.jsx';
 import TotalPerfContainer from '../components/dashboard/totalPerformance/container.jsx';
 
+/*
+*   Дэшборд. Главная страница, на которую попадает пользователь при входе.
+*   Здесь отображена базовая информация о балансе, курсе и роботах пользователя.
+*/
 export default class SettingsPage extends React.Component {
     render() {
         return (

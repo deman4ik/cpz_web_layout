@@ -1,6 +1,12 @@
 import React from 'react';
 import { DoubleUniField, SingleUniField } from '../../common/commonBricks.jsx';
 
+
+/* 
+* Строка мини-таблицы криптовалют в балансе. В ней
+* отображается информация об изменении состояния криптовалюты
+* и текущий баланс.
+*/
 export default class CryptoMiniRow extends React.Component {
     constructor(props) {
         super(props);

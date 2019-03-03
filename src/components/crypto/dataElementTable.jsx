@@ -4,7 +4,12 @@ import ChartComponent from "../totalPerformance/totalPerfomance.jsx";
 import { SingleUniField } from '../common/commonBricks';
 import NewsLine from './newsLine.jsx';
 
-
+/*
+*   Развернутая информация по криптовалюте с последними новостями
+*       onClickElemStatus - обработчик клика на строке криптовалюты
+*       coin_name - наименование криптовалюты
+*       news - новости по криптовалюте
+*/
 export default class DataElementTable extends React.Component {
 
     render() {

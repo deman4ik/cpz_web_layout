@@ -1,11 +1,13 @@
 import React from 'react';
-import {TabContent, TabPane, Nav, NavItem, NavLink} from 'reactstrap';
-import classnames from 'classnames';
+import {TabContent, TabPane, Nav} from 'reactstrap';
 
 import StatisticWidget from './statisticWidget/statisticWidget';
 import { RoboLink, RoboHeader } from './robotsBricks';
 
 
+/*
+*   Виджет отображения статистической информации по роботу
+*/
 export default class RobotsInfoTabs extends React.Component {
     constructor(props) {
         super(props);

@@ -3,6 +3,9 @@ import { Nav, TabContent } from "reactstrap";
 import { RoboLinkAlt, MovingAverageTab, ChartComponentTab } from './robotsBricks';
 
 
+/* 
+* Виджет выбора чартов
+*/
 export const NavPanelWidget = props => (
     <Nav tabs>
         <RoboLinkAlt Num={"1"} toggle={props.toggle}
@@ -26,6 +29,9 @@ export const NavPanelWidget = props => (
     </Nav>
 )
 
+/* 
+* Виджет отображения чарта
+*/
 export const TabPaneWidget = props => (
     <TabContent activeTab={props.activeTab}>
         <MovingAverageTab activeTab={props.activeTab}

@@ -2,7 +2,19 @@ import React from 'react';
 
 import RobotsPageElement from "./robotsPageElement.jsx";
 
-
+/*
+*   Табличная строка по конкретному роботу
+*       robot_name - наименование робота
+*       coin_name, coin_class - наименование и икона криптовалюты
+*       exchange - обмен
+*       initial_capital, initial_capital_old - начальный капитал (текущий, старый)
+*       robot_balance, robot_balance_old - баланс робота (текущий, старый)
+*       performance_val, performance_val_old - оборот (текущий, старый)
+*       performance_class - состояние оборота
+*       button_type, button_checkbox - информация для отображения чекбокса
+*       data, color, color2 - данные для мини-чарта
+*       statistic - статистика робота
+*/
 export default class dataElementCollapse extends React.Component {
 
     constructor(props) {
