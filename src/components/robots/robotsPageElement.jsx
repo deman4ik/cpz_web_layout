@@ -2,7 +2,7 @@ import React from 'react';
 import {Row} from 'reactstrap';
 
 
-import { Coin, CoinInfoCell, MiniChart, RoboCheckbox, RoboName, Exchange } from '../common/commonBricks.jsx';
+import { SingleUniField, DoubleUniField, MiniChart, RoboCheckbox } from '../common/commonBricks.jsx';
 
 export default class robotsPageElement extends React.Component {
     buttonText;
@@ -12,17 +12,20 @@ export default class robotsPageElement extends React.Component {
 
             <div className={'col-12 robots_content_line robots_page_content_line'} onClick={this.props.onClick}>
                 <Row>
-                    <RoboName col_class={'col-2'} robot_name={this.props.robot_name}/>
-                    <Coin coin_class={this.props.coin_class} coin_name={this.props.coin_name} />
-                    <Exchange exchange={this.props.exchange}/>
-                    <CoinInfoCell capital={this.props.initial_capital}
-                                  coin_name={this.props.coin_name}
-                                  capital_old={this.props.initial_capital_old}
-                    />
-                    <CoinInfoCell capital={this.props.robot_balance}
-                                  coin_name={this.props.coin_name}
-                                  capital_old={this.props.initial_capital_old}
-                    />
+                    <SingleUniField className={'col-2 align-self-center'}
+                                    value={this.props.robot_name}/>
+                    <SingleUniField className={'col-1 align-self-center'}
+                                    spanClassName={'coin_icon ' + this.props.coin_class}
+                                    value={this.props.coin_name}/>
+                    <SingleUniField className={'col-1 align-self-center'}
+                                    value={this.props.exchange}
+                                    noRow/>
+                    <DoubleUniField className={"col-2 align-self-center"}
+                                    spanClassName1={this.props.initial_capital} value1={this.props.coin_name}
+                                    spanClassName2={'old_coin_value'} value2={this.props.initial_capital_old}/>
+                    <DoubleUniField className={"col-2 align-self-center"}
+                                    spanClassName1={this.props.robot_balance} value1={this.props.coin_name}
+                                    spanClassName2={'old_coin_value'} value2={this.props.initial_capital_old}/>
                     <MiniChart data={this.props.data} color={this.props.color} color2={this.props.color2}
                                performance_val={this.props.performance_val}
                                performance_val_old={this.props.performance_val_old}

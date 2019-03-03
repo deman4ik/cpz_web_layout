@@ -1,9 +1,10 @@
 import React from 'react';
 
-import { RetButton, InfoField } from './robotsBricks';
+import { RetButton } from './robotsBricks';
 
 import WizardModal from "../modal/WizardModal.jsx";
 import { NavPanelWidget, TabPaneWidget } from './tabWidget';
+import { DoubleUniField } from '../common/commonBricks';
 
 
 export default class RobotsPageTableTabs extends React.Component {
@@ -33,23 +34,14 @@ export default class RobotsPageTableTabs extends React.Component {
                 <RetButton handler={this.props.toggleBlockTest.bind(this, false)}/>
                 <div className={'coin_icon float-left ' + this.elementStat.elementStat.coin_class}>
                     <div className={'robot_name_detail'}>{this.elementStat.elementStat.robot_name}</div>
-                    <InfoField titleClass={'name_detail'} 
-                               title={this.elementStat.elementStat.coin_name}
-                               valueClass={'exchange_detail'}
-                               value={this.elementStat.elementStat.exchange}
-                    />
+                    <DoubleUniField spanClassName1={'name_detail'} value1={this.elementStat.elementStat.coin_name}
+                                    spanClassName2={'exchange_detail'} value2={this.elementStat.elementStat.exchange}/>
                 </div>
                 <div className={'float-left initial_container'}>
-                    <InfoField titleClass={'initial_name'} 
-                               title={'Initial Capital'}
-                               valueClass={'initial_value'}
-                               value={this.elementStat.elementStat.initial_capital}
-                    />
-                    <InfoField titleClass={'initial_name'} 
-                               title={'Started'}
-                               valueClass={'initial_value'}
-                               value={this.elementStat.elementStat.started}
-                    />
+                    <DoubleUniField spanClassName1={'initial_name'} value1={'Initial Capital'}
+                                    spanClassName2={'initial_value'} value2={this.elementStat.elementStat.initial_capital}/>
+                    <DoubleUniField spanClassName1={'initial_name'} value1={'Started'}
+                                    spanClassName2={'initial_value'} value2={this.elementStat.elementStat.started}/>
                 </div>
                 <WizardModal />
                 <div className={'robots_container robots_page_container robots_table_container'}>

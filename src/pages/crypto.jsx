@@ -1,7 +1,7 @@
 import React from 'react';
 
 import DataElementCollapse from "../components/crypto/dataElementCollapse.jsx";
-import SearchWidget from "../components/crypto/searchWidget";
+import { NoticedSearchWidget } from "../components/common/searchWidget";
 import { CryptoHeader } from "../components/common/commonBricks";
 import { ContainerName } from "../components/common/commonBricks";
 
@@ -20,7 +20,7 @@ export default class dataBlock extends React.Component {
         return (
             <div className="row search_container">
                 <div className="col-12">
-                    <SearchWidget/>
+                    <NoticedSearchWidget/>
                 </div>
                 <div className="col-12 data_page_content">
                     <ContainerName className={'data_page_title'} name={'Data'}/>

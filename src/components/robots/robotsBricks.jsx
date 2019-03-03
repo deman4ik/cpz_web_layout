@@ -10,28 +10,19 @@ export const RoboCollapsedHeader = () => (
         <div className="col-2 align-self-center">
             <Row>Robot Name</Row>
         </div>
-        <div className="col-1 align-self-center">
-            <Row>Coin</Row>
-        </div>
+        <div className="col-1 align-self-center">Coin</div>
         <div className="col-1 align-self-center">Exchange</div>
         <div className="col-2 align-self-center">Initial Capital</div>
         <div className="col-2 align-self-center">Robot Balance</div>
         <div className="col-3 align-self-center">Performance</div>
         <div className="col-1 align-self-center text-right">
-            <div className="row  justify-content-end">Status</div>
+            <div className="row justify-content-end">Status</div>
         </div>
     </Row>
 )
 
 export const RetButton = (props) => (
     <button className={"float-left button_back"} onClick={props.handler}>{"<"}</button>
-)
-
-export const InfoField = props => (
-    <div>
-        <span className={props.titleClass}>{props.title}</span>
-        <span className={props.valueClass}>{props.value}</span>
-    </div>
 )
 
 export const RoboLinkAlt = props => (

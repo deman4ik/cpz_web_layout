@@ -11,8 +11,8 @@ export const FullWidthField = props => (
 export const HalfWidthField = props => (
     <div className="col-6">
         <span>{props.title}</span>
-        <input type={props.type} placeholder={props.placeholder}
-               className={props.className}/>
+        <textarea placeholder={props.placeholder}
+                  className={props.className}/>
     </div>
 )
 
@@ -52,9 +52,32 @@ export const ModalSelectWidget = props => (
     <div className="col-12 select_modal_container">
         <div className="row justify-content-between align-items-center ">
             <span>{props.title}</span>
-            <SelectElement />
-            <button className={'select_modal_button_add add_white'}>{props.btnName}</button>
+            <SelectElement class={'long_select'}/>
         </div>
         <p>{props.descr}</p>
+    </div>
+)
+
+export const HrefButton = props => (
+    <div className={props.className}>
+        <a className={props.buttonClass} href="">{props.name}</a>
+    </div>
+)
+
+export const SimpleButton = props => (
+    <div className={props.className}>
+        <button className={props.buttonClass}>{props.name}</button>
+    </div>
+)
+
+export const KeyVerifyContainer = props => (
+    <div className={props.className}>
+        <p>{props.descr}</p>
+        <div className="row">
+            <HalfWidthField title={props.title1} placeholder={props.placeholder1} />
+            <HalfWidthField title={props.title2} placeholder={props.placeholder2} />
+        </div>
+        <HrefButton className={'button_container'}
+            buttonClass={props.buttonClass} name={props.btnName} />
     </div>
 )

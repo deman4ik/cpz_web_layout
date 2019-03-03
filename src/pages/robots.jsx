@@ -7,6 +7,7 @@ import RobotsPageTableTabs from '../components/robots/robotsPageTableTabs.jsx';
 import RobotsInfoTabs from '../components/robots/robotsInfoTabs.jsx';
 import { RoboCollapsedHeader } from '../components/robots/robotsBricks';
 import { ContainerName } from '../components/common/commonBricks';
+import { SimpleSearchWidget } from '../components/common/searchWidget';
 
 export default class RobotsPage extends React.Component {
     elem;
@@ -41,9 +42,7 @@ export default class RobotsPage extends React.Component {
             return (
                 <div>
                     <div className={'search_container search_robots_container'}>
-                        <input type="text" placeholder={'Search…'}/>
-                        <button className="search_button button_search_icon"></button>
-                        <button className="search_button_down arrow_data_down"></button>
+                        <SimpleSearchWidget/>
                     </div>
                     <div className={'robots_container robots_page_container'}>
                         <svg height={0} width={0} style={{

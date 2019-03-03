@@ -1,5 +1,5 @@
 import React from 'react';
-import { throws } from 'assert';
+import { DoubleUniField, SingleUniField } from '../common/commonBricks';
 
 export default class NewsLine extends React.Component {
     render() {
@@ -7,24 +7,23 @@ export default class NewsLine extends React.Component {
             <div className="news_line">
                 <div className="d-flex justify-content-start ">
                     <div>
-                                <img src={this.props.singleNew.image} alt=""/>
+                        <img src={this.props.singleNew.image} alt=""/>
                     </div>
                     <div className={'news_text_container'}>
                         <div className={'col-12'}>
-                            <div className="row">
-                                <span className={'news_title'}>{this.props.singleNew.title}</span>
-                                <span className={'news_date'}>{this.props.singleNew.date}</span>
-                            </div>
+                            <DoubleUniField className={'row'} 
+                                            spanClassName1={'news_title'} 
+                                            value1={this.props.singleNew.title}
+                                            spanClassName2={'news_date'} 
+                                            value2={this.props.singleNew.date}/>
                         </div>
                         <div className={'col-12'}>
-                            <div className="row">
-                                <span className={'news_text'}>{this.props.singleNew.text}</span>
-                            </div>
+                            <SingleUniField spanClassName={'news_text'}
+                                            value={this.props.singleNew.text}/>
                         </div>
                         <div className={'col-12'}>
-                            <div className="row">
-                                <p className={'news_content'}>{this.props.singleNew.content}</p>
-                            </div>
+                            <SingleUniField spanClassName={'news_content'}
+                                            value={this.props.singleNew.content}/>
                         </div>
                     </div>
                 </div>
