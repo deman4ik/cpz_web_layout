@@ -17,17 +17,9 @@ export const ExtraCheckBox = props => (
             <input type="checkbox" />
             <div className="control__indicator" />
             <span>
-            {props.checkBoxText}
+                {props.checkBoxText}
             </span>
         </label>
-    </div>
-)
-
-// TODO рассмотреть возможность объединения этих лайнов в один (структура похожая)
-export const AccountInfoLine = props => (
-    <div>
-        <span className={'account_info_name'}>{props.title}</span>
-        <span className={props.class}>{props.value}</span>
     </div>
 )
 

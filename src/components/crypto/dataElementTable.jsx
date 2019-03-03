@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ChartComponent from "../totalPerformance/totalPerfomance.jsx";
+import { SingleUniField } from '../common/commonBricks';
 import NewsLine from './newsLine.jsx';
 
 
@@ -15,9 +16,8 @@ export default class DataElementTable extends React.Component {
                     />
                 </div>
                 <div className={'news_container'}>
-                    <div className="page_title">
-                        <span>Latest News on {this.props.name}</span>
-                    </div>
+                    <SingleUniField noRow className={'page_title'}
+                                    value={'Latest News on ' + this.props.coin_name}/>
                     {this.props.news.map(singleNew => (
                         <NewsLine key={singleNew.id}
                             singleNew={singleNew}

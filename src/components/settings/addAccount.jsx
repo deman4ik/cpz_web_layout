@@ -51,7 +51,6 @@ export default class addAccount extends React.Component {
                         <SimpleButton className={"button_save col-12"} 
                                       buttonClass={'standard_button'} name={'Save changes'}/>
                     </ModalBody>
-
                 </Modal>
             </div>
 

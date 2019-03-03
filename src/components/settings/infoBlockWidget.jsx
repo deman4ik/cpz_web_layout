@@ -1,9 +1,11 @@
 import React from 'react';
-import { AccountInfoLine } from './settingsBricks.jsx';
+import { DoubleUniField } from '../common/commonBricks';
 
 export const AccountInfoBlock = props => (
     <div>
-        <AccountInfoLine title={props.title1} class={props.class1} value={props.value1}/>
-        <AccountInfoLine title={props.title2} class={props.class2} value={props.value2}/>
+        <DoubleUniField spanClassName1={'account_info_name'} value1={props.title1}
+                        spanClassName2={props.class1} value2={props.value1}/>
+        <DoubleUniField spanClassName1={'account_info_name'} value1={props.title2}
+                        spanClassName2={props.class2} value2={props.value2}/>
     </div>
 )

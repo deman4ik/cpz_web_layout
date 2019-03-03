@@ -3,7 +3,7 @@ import React from 'react';
 import EditExchange from './EditExchange.jsx';
 import DeleteExchange from './deleteAccount.jsx';
 import { AccountInfoBlock } from './infoBlockWidget.jsx';
-import { AccountInfoLine } from './settingsBricks.jsx';
+import { DoubleUniField } from '../common/commonBricks';
 
 
 export default class OtherAccount extends React.Component {
@@ -34,7 +34,8 @@ export default class OtherAccount extends React.Component {
                                               title2={"Spared status keys"} class2={this.getElementColor(this.props.spared_status_keys)} value2={this.props.spared_status_keys}/>
                         </div>
                         <div className="account_info_block_bottom ">
-                            <AccountInfoLine title={'Currency'} class={'account_info_value'} value={this.props.currency}/>
+                            <DoubleUniField spanClassName1={'account_info_name'} value1={'Currency'}
+                                            spanClassName2={'account_info_value'} value2={this.props.currency}/>
                         </div>
                     </div>
                     <EditExchange/>

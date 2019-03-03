@@ -26,7 +26,6 @@ class EditExchange extends React.Component {
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={'modal_container'}>
                     <a href={'javascript:void(0)'} className={'close_window close_icon'} onClick={this.toggle}></a>
                     <ModalBody>
-
                         <p className={'modal_title'}>Do you really want to delete
                             <span>“My Bitfinex ETC 001”</span>
                             exchange</p>
@@ -34,10 +33,7 @@ class EditExchange extends React.Component {
                             <a href="" className={'delete_button_cancel standard_button'}>Cancel</a>
                             <a href="" className={'delete_button_confirm standard_button'}>Confirm</a>
                         </div>
-
-
                     </ModalBody>
-
                 </Modal>
             </div>
         );

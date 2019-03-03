@@ -2,6 +2,7 @@ import React from 'react';
 
 import  SelectElement  from '../common/selectElement.jsx';
 import { ExtraSettingsLine } from './settingsBricks.jsx';
+import { DoubleUniField } from '../common/commonBricks';
 
 
 export default class robotsPageElement extends React.Component {

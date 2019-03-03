@@ -2,7 +2,7 @@ import React from 'react';
 import SelectElement  from '../common/selectElement.jsx';
 
 export const FullWidthField = props => (
-    <div>
+    <div className={props.className}>
         <span>{props.title}</span>
         <input type="text" placeholder={props.placeholder}/>
     </div>
@@ -21,13 +21,6 @@ export const WizardCheckbox = props => (
         <input type="checkbox"/>
         <div className="control__indicator"></div>
     </label>
-)
-
-export const CtrlButtons = props => (
-    <div className={'justify-content-end d-flex buttons_save_and_cancel_container'}>
-        <span className={'button_save_green'}>{props.btn1Name}</span>
-        <span className={'button_cancel'}>{props.btn2Name}</span>
-    </div>
 )
 
 export const ValueEnterWidget = props => (
@@ -53,6 +46,17 @@ export const ModalSelectWidget = props => (
         <div className="row justify-content-between align-items-center ">
             <span>{props.title}</span>
             <SelectElement class={'long_select'}/>
+        </div>
+        <p>{props.descr}</p>
+    </div>
+)
+
+export const SelectWidgetWithAdd = props => (
+    <div className="col-12 select_modal_container">
+        <div className="row justify-content-between align-items-center ">
+            <span>{props.title}</span>
+            <SelectElement />
+            <button className={'select_modal_button_add add_white'}>Add</button>
         </div>
         <p>{props.descr}</p>
     </div>
