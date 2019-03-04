@@ -1,7 +1,6 @@
 .settings__button-verify {
-    margin-left: 0px;
     display: block;
-    margin: 0, auto;
+    margin: 10px auto;
     background-color: rgb(24, 29, 46);
 }
 
