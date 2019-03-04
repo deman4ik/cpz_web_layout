@@ -1,0 +1,29 @@
+/* button.css */
+.btn_common {
+    border: 2px solid rgba(0, 0, 0, 0);
+    margin-left: 20px;
+    background-color: #2C3454;
+    padding: 5px 23px;
+    cursor: pointer;
+    color: #fff;
+    width: auto;
+}
+
+.btn_common:hover {
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgb(40, 47, 80);
+}
+
+.btn_common:focus {
+    background-color: rgb(44, 52, 88);
+    border-radius: 2px;
+    border: 2px solid rgba(59, 72, 121, 0.63)
+}
+
+.green_info, .green_info:hover{
+    color: #1CA46B;
+}
+
+.red_info, .red_info:hover {
+    color: #CD3E60;
+}

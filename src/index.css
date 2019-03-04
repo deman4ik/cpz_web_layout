@@ -457,7 +457,7 @@ button{
     background-image: url(/image/BALANCE.svg);
 }
 .account_icon {
-    background-image: url(/image/account.svg);
+    background-image: url(/image/Account.svg);
 }
 .settings_icon {
     background-image: url(/image/settings.svg);
@@ -1229,14 +1229,14 @@ button{
 
 }
 
-.profile_form button {
+/* .profile_form button {
     width: auto;
     margin-left: 20px;
     background-color: #2C3454;
     padding: 5px 23px;
     cursor: pointer;
     color: #fff;
-}
+} */
 
 input::placeholder {
     color: #6987B9;
@@ -1720,8 +1720,6 @@ select::-ms-expand {
     border-radius: 2px;
     padding: 5px 0;
     cursor: pointer;
-
-
 }
 .modal_container .button_save input:hover{
     border: 1px solid #13B3E5;
