@@ -1,0 +1,17 @@
+.settings__button-verify {
+    margin-left: 0px;
+    display: block;
+    margin: 0, auto;
+    background-color: rgb(24, 29, 46);
+}
+
+.settings__button-verify:hover {
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgb(28, 33, 56);
+}
+
+.settings__button-verify:focus {
+    background-color: rgb(28, 33, 56);
+    border-radius: 2px;
+    border: 2px solid rgba(59, 72, 121, 0.63)
+}

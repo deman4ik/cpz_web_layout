@@ -1,0 +1,22 @@
+.settings__button-orange {
+    display: inline-block;
+    width: 100%;
+    background-color: #E27034;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 9px 0px;
+    margin-top: 30px;
+    border-radius: 2px;
+}
+
+.settings__button-orange:hover {
+    background-color: rgb(170, 86, 42);
+    border-radius: 2px;
+}
+
+.settings__button-orange:focus{
+    background-color: rgb(241, 122, 58);
+    border-radius: 2px;
+    border: 2px solid rgba(251, 137, 87, 0.63)
+}

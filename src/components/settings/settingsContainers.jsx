@@ -5,6 +5,8 @@ import { FieldWidget, ExtraCheckBox } from './settingsBricks.jsx';
 import OtherAccount from "./otherAccount.jsx";
 import AddAccount from "./addAccount.jsx";
 import ExtraSettingsElement from "./extraSettingsElement.jsx";
+import { ButtonCommon } from '../common/button/button';
+import { ButtonOrange } from './button/button';
 
 /* 
 *   Контейнер профиля пользователя
@@ -21,7 +23,7 @@ export const ProfileContainer = props => (
             <FieldWidget fieldName={"Telegram username"} placeholder={"Enter your name"} />
             <div className="form_button_container">
                 <a href="#">Password</a>
-                <button className={'standard_button'}>Change Password</button>
+                <ButtonCommon btnName={'Change Password'}/>
             </div>
         </form>
     </div>
@@ -40,7 +42,7 @@ export const AccountBalanceContainer = props => (
                       spanClassName1={'profile_balance_name'} value1={balance.name}
                       spanClassName2={'profile_balance_value'} value2={balance.value}/>
         ))}
-        <button className={'standard_button'}>Deposit</button>
+        <ButtonOrange btnName={'Deposit'}/>
         <p>
             We assure you that your payment can be securely made in accordance
             with the international standards of online payment.

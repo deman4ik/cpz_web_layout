@@ -1,5 +1,6 @@
 import React from 'react';
 import SelectElement  from '../common/selectElement.jsx';
+import { ButtonVerify } from '../settings/button/verify';
 
 export const FullWidthField = props => (
     <div className={props.className}>
@@ -68,12 +69,6 @@ export const HrefButton = props => (
     </div>
 )
 
-export const SimpleButton = props => (
-    <div className={props.className}>
-        <button className={props.buttonClass}>{props.name}</button>
-    </div>
-)
-
 /*
 *   Виджет верификации ключей
 */
@@ -84,7 +79,6 @@ export const KeyVerifyContainer = props => (
             <HalfWidthField title={props.title1} placeholder={props.placeholder1} />
             <HalfWidthField title={props.title2} placeholder={props.placeholder2} />
         </div>
-        <HrefButton className={'button_container'}
-            buttonClass={props.buttonClass} name={props.btnName} />
+        <ButtonVerify btnClass={props.buttonClass} btnName={props.btnName} />
     </div>
 )

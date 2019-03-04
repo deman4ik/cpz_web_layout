@@ -1,6 +1,7 @@
 import React from 'react';
 import {Modal, ModalBody} from 'reactstrap';
-import { FullWidthField, ModalSelectWidget, SimpleButton, KeyVerifyContainer } from '../modal/modalBricks';
+import { FullWidthField, ModalSelectWidget, KeyVerifyContainer } from '../modal/modalBricks';
+import { ButtonSave } from './button/save';
 
 export default class addAccount extends React.Component {
     constructor(props) {
@@ -42,14 +43,13 @@ export default class addAccount extends React.Component {
                         <KeyVerifyContainer className={'col-12 input_container'}
                                             title1={'Main Public key*'} placeholder1={'1Cs4wu6pu5qCZ35bSLNVzGyEx5N6uzbg9t'}
                                             title2={'Main Private key*'} placeholder2={'1Cs4wu6pu5qCZ35bSLNVzGyEx5N6uzbg9t'}
-                                            buttonClass={'standard_button red_info'} btnName={'Wrong Keys'}/>
+                                            buttonClass={'red_info'} btnName={'Wrong Keys'}/>
                         <KeyVerifyContainer className={'col-12 input_container border_none'}
                                             descr={'Generate and specify a spare key pair to avoid connection problems with the exchange.'}
                                             title1={'Spare Public key*'} placeholder1={'1Cs4wu6pu5qCZ35bSLNVzGyEx5N6uzbg9t'}
                                             title2={'Spare Private key*'} placeholder2={'1Cs4wu6pu5qCZ35bSLNVzGyEx5N6uzbg9t'}
-                                            buttonClass={'standard_button green_info'} btnName={'Verified'}/>
-                        <SimpleButton className={"button_save col-12"} 
-                                      buttonClass={'standard_button'} name={'Save changes'}/>
+                                            buttonClass={'green_info'} btnName={'Verified'}/>
+                        <ButtonSave btnName={'Save changes'}/>
                     </ModalBody>
                 </Modal>
             </div>
